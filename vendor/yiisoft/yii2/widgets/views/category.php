@@ -10,8 +10,15 @@ foreach($categorys as $category)
 {
     if($category['parentid']==0)
     {
-        $str.= "<li><a href='/article/index?id={$category['id']}'>".$category['cname']."</a></li>";
+        $str.= "<li><a href='/article/index?id={$category['id']}'>".$category['cname']."</a>";
+
+        $str.="</li>";
     }
 }
 echo $str;
+
+function child($cid)
+{
+
+}
 ?>

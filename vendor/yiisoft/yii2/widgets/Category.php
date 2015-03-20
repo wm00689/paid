@@ -13,6 +13,8 @@ use yii\base\Widget;
 
 class Category extends Widget
 {
+    public $model;
+    public $url;
     public function run(){
 
         $cache = Yii::$app->cache;
