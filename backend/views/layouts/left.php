@@ -1,3 +1,6 @@
+<?php
+use yii\helpers\Url;
+?>
 <aside class="left-side sidebar-offcanvas">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -32,13 +35,17 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu" <?php if(Yii::$app->requestedAction->controller->id=='sys'):?>style="display: block;"<?php endif;?>>
-                    <li <?php if(Yii::$app->requestedAction->id=='dashboard'):?> class="active" <?php endif;?> ><a href="/sys/dashboard"><i class="fa fa-angle-double-right"></i> 系统</a></li>
-                    <li <?php if(Yii::$app->requestedAction->id=='set'):?> class="active" <?php endif;?> ><a href="/sys/set"><i class="fa fa-angle-double-right"></i> 设置</a></li>
+                    <li <?php if(Yii::$app->requestedAction->id=='dashboard'):?> class="active" <?php endif;?> >
+                        <a href="/sys/dashboard"><i class="fa fa-angle-double-right"></i> 系统</a>
+                    </li>
+                    <li <?php if(Yii::$app->requestedAction->id=='set'):?> class="active" <?php endif;?> >
+                        <a href="/sys/set"><i class="fa fa-angle-double-right"></i> 设置</a>
+                    </li>
 
                 </ul>
             </li>
             <li class="active">
-                <a href="/models/index">
+                <a href="<?= Url::to('/models/index') ?>" >
                     <i class="fa fa-dashboard"></i> <span>模型</span>
                 </a>
             </li>

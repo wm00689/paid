@@ -3,7 +3,7 @@
 use yii\db\Schema;
 use yii\db\Migration;
 
-class m150307_084149_create_category_table extends Migration
+class m150320_075428_create_models_table extends Migration
 {
     public function up()
     {
@@ -15,17 +15,21 @@ class m150307_084149_create_category_table extends Migration
 
         $this->createTable('{{%category}}', [
             'id' => Schema::TYPE_PK,
-            'parentid' => Schema::TYPE_INTEGER . ' NOT NULL',
-            'cname' => Schema::TYPE_STRING . '(32) NOT NULL',
-            'isChild' => Schema::TYPE_SMALLINT . '(1) NOT NULL',
-            'isShow' => Schema::TYPE_SMALLINT . '(1) NOT NULL',
-            'content' => Schema::TYPE_TEXT . 'NOT NULL',
-
+            'name' => Schema::TYPE_STRING . '(32) NOT NULL',
             'status' => Schema::TYPE_SMALLINT . ' NOT NULL DEFAULT 10',
             'created_at' => Schema::TYPE_INTEGER . ' NOT NULL',
             'updated_at' => Schema::TYPE_INTEGER . ' NOT NULL',
         ], $tableOptions);
     }
-
-
+    
+    /*
+    // Use safeUp/safeDown to run migration code within a transaction
+    public function safeUp()
+    {
+    }
+    
+    public function safeDown()
+    {
+    }
+    */
 }

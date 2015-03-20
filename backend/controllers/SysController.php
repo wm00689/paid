@@ -67,6 +67,8 @@ class SysController extends BaseController
     {
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
+            return $this->redirect('sys/dashboard');
+
         }
 
         $model = new LoginForm();
