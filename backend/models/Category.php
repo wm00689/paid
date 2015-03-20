@@ -13,6 +13,7 @@ use Yii;
  * @property integer $status
  * @property integer $created_at
  * @property integer $updated_at
+ * @property integer $isChild
  *
  * @property Article[] $articles
  * @property Article $id0
@@ -45,7 +46,8 @@ class Category extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['parentid', 'cname'], 'required'],
+            [['parentid', 'cname','isArticle','isShow'], 'required'],
+            [['url','content'],'safe'],
             [['parentid', 'status'], 'integer'],
             [['cname'], 'string', 'max' => 32]
         ];
@@ -59,8 +61,12 @@ class Category extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'parentid' => 'Pid',
-            'cname' => 'Cname',
+            'cname' => '分类名称',
+            'isChild' => '是否有子类',
+            'isArticle' => '是否单网页',
+            'isShow' => '是否在导航栏显示',
             'status' => 'Status',
+            'content' => '栏目介绍',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];

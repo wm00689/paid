@@ -16,21 +16,5 @@ return [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
-
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            //'enableStrictParsing' => true,
-            'rules' => [
-                // ...
-            ],
-        ],
-
-        'redis' => function(){
-            $redis = new redis;
-            $redis->connect('127.0.0.1');
-            return $redis;
-
-        }
     ],
 ];
