@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create Article'), ['create?category_id='.Yii::$app->request->get('id')], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Article'), ['create?column_id='.Yii::$app->request->get('id')], ['class' => 'btn btn-success']) ?>
     </p>
 
 
@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php foreach($article as $v):?>
     <tr>
-        <td><?= $v['id']?></td><td><?= $v['category_id']?></td><td><?= $v['title']?></td><td><?= $v['id']?></td><td><?= $v['created_at']?></td>
+        <td><?= $v['id']?></td><td><?= $v['column_id']?></td><td><?= $v['title']?></td><td><?= $v['id']?></td><td><?= $v['created_at']?></td>
         <td>
             <a href="/article/view?id=<?= $v['id']?>" >查看</a> |
             <a href="/article/update?id=<?= $v['id']?>" >更新</a> |

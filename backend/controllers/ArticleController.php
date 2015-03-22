@@ -3,7 +3,7 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\Category;
+use backend\models\Column;
 use backend\models\Article;
 use common\models\ArticleSearch;
 use yii\web\Controller;
@@ -35,10 +35,10 @@ class ArticleController extends BaseController
     public function actionIndex()
     {
 
-        $categoryObject = Category::findOne(Yii::$app->request->get('id'));
+        $columnObject = Column::findOne(Yii::$app->request->get('id'));
         return $this->render('index', [
 
-            'article' =>$categoryObject->articles,
+            'article' =>$columnObject->articles,
 
         ]);
         $searchModel = new ArticleSearch();
@@ -84,7 +84,7 @@ class ArticleController extends BaseController
     public function actionCreate()
     {
         $model = new Article();
-        $model->category_id = Yii::$app->request->get('category_id');
+        $model->column_id = Yii::$app->request->get('column_id');
         $model->created_at = date('Y-m-d H:i:s');
         $model->updated_at = date('Y-m-d H:i:s');
         $model->user_id = Yii::$app->user->id;
