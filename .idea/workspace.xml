@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20dd4c49-6bd1-4932-a2f8-03ef61317f47" name="Default" comment="" />
+    <list default="true" id="20dd4c49-6bd1-4932-a2f8-03ef61317f47" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/runtime/.gitignore" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\cache\ca\categorys.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed5628ff4e.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed57f94482.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed5947e19c.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed596c6099.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed59830e1b.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed59a941f6.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed69f5d3d7.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed6d855455.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed6da1722d.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550eda96ba3d3.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550eda9b537b5.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550eda9ea7d5f.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb0965f33.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb1f8b90e.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb203a46c.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb22c4633.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb260d73d.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb2a4c7b7.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb2f0f5f9.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb2f5998a.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb3174d16.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb8257106.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb8585478.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb89c4cb6.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb8ac5c8f.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edb8f0877b.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edbc6ac624.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edbcac27be.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edbcb25c03.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550edc4fb6654.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\551007e5a9827.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\551007e7ec9e2.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\551007ea627f2.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\551007ef6f2d5.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\551007f2a57fc.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\5510080c13de5.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\5510081597eec.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\55100dcf76ea8.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\5510162f9c432.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\55101633cd646.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\55101639ed369.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\551016436460f.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\551016571cdf3.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\5510165a6146b.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\5510165da0cc6.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\5510165df3cf9.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\55101660accdb.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\551016824774c.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\55101684663f4.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\5510168708c70.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\5510169227ef9.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\55102adfc1276.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\55102b75bb201.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\index.data" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\gii-2.0.3\yii-gii-generators-crud-Generator.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\gii-2.0.3\yii-gii-generators-model-Generator.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\logs\app.log" afterPath="" />
+    </list>
     <ignored path="yii2cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,16 +85,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Column.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/models/Column.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.645161" vertical-offset="357" max-vertical-offset="2090">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main-local.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/config/main-local.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,11 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hual.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hual.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/layouts/hual.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0899082" vertical-offset="264" max-vertical-offset="1210">
+            <state vertical-scroll-proportion="-19.161291" vertical-offset="264" max-vertical-offset="1210">
               <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/runtime/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="564">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -436,6 +496,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii2cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii2cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -544,6 +622,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii2cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii2cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -555,6 +651,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hualhtml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\www\yii2cms\backend\runtime" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -599,7 +700,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -664,13 +765,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yii2cms.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6075">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/console/migrations/m150307_085438_create_article_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-27.941177" vertical-offset="75" max-vertical-offset="1300">
@@ -1048,8 +1142,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/layouts/hual.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0899082" vertical-offset="264" max-vertical-offset="1210">
+        <state vertical-scroll-proportion="-19.161291" vertical-offset="264" max-vertical-offset="1210">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/runtime/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
