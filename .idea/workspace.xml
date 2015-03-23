@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20dd4c49-6bd1-4932-a2f8-03ef61317f47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/index/list.php" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed19c11f81.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed1ec18d24.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed25ec6d91.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed2673ccf7.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed2699c1b1.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed274b5ebf.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed291a32e9.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed2b367b40.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed2d532388.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed3007fd16.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed317b0512.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed410adc26.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed414a5ba3.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed4bdb9029.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed5145edaf.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed517a8e67.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed51942b96.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed51aa80ff.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed54da68e7.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed54f61f99.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed55ec84f5.data" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\yii2cms\backend\runtime\debug\550ed560e8d9f.data" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Column.php" afterPath="$PROJECT_DIR$/backend/models/Column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/IndexController.php" afterPath="$PROJECT_DIR$/frontend/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/backend/runtime/logs/app.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/co/column.bin" afterPath="$PROJECT_DIR$/cache/co/column.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/index.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/index.php" afterPath="$PROJECT_DIR$/frontend/views/index/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/main.php" afterPath="$PROJECT_DIR$/frontend/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="20dd4c49-6bd1-4932-a2f8-03ef61317f47" name="Default" comment="" />
     <ignored path="yii2cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -631,7 +599,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
