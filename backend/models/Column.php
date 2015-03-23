@@ -25,7 +25,7 @@ class Column extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'column';
+        return 'columns';
     }
 
     public function init()

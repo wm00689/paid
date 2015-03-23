@@ -8232,3 +8232,103 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1427036827.3029
     'REQUEST_TIME' => 1427036827
 ]
+2015-03-23 21:33:39 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: column' in D:\www\yii2cms\vendor\yiisoft\yii2\db\ActiveRecord.php:298
+Stack trace:
+#0 D:\www\yii2cms\vendor\yiisoft\yii2\db\ActiveRecord.php(317): yii\db\ActiveRecord::getTableSchema()
+#1 D:\www\yii2cms\vendor\yiisoft\yii2\db\ActiveRecord.php(176): yii\db\ActiveRecord::primaryKey()
+#2 D:\www\yii2cms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition('1')
+#3 D:\www\yii2cms\backend\controllers\ColumnController.php(152): yii\db\BaseActiveRecord::findOne('1')
+#4 D:\www\yii2cms\backend\controllers\ColumnController.php(118): backend\controllers\ColumnController->findModel('1')
+#5 [internal function]: backend\controllers\ColumnController->actionUpdate('1')
+#6 D:\www\yii2cms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\www\yii2cms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 D:\www\yii2cms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#9 D:\www\yii2cms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('column/update', Array)
+#10 D:\www\yii2cms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\www\yii2cms\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2015-03-23 21:33:39 [127.0.0.1][-][-][info][application] $_GET = [
+    '_url' => '/column/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'CKFinder_Path' => 'Images:/:1'
+    '_csrf' => '8eb930ff31145eb4b4a8c3e534ab02f1aad4d703e2f761884c72fc56d3a8381ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tIxhuk06rUkGm_9CEPu2Wae41xcfIIPA\";}'
+    'PHPSESSID' => 'b0p1hdsjj6s3nudv5775a09cl6'
+    '_identity' => '13ee1df7adbcebcf7d62d8078fc0fc69f914df194f465ea83e0fccaa72a09472a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"_XlvIAqRwx7SXcfQ4oiMpGQj-u3835-N\",2592000]\";}'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\wm\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'WM-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\wm'
+    'LOCALAPPDATA' => 'C:\\Users\\wm\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WM-PC'
+    'MOZ_PLUGIN_PATH' => 'D:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\BROADCOM\\BROADCOM 802.11 NETWORK ADAPTER\\DRIVER;C:\\Windows\\SYSTEM32;C:\\Windows;C:\\Windows\\SYSTEM32\\WBEM;C:\\Windows\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\OPENCL SDK\\2.0\\BIN\\X86;C:\\PROGRAM FILES (X86)\\INTEL\\OPENCL SDK\\2.0\\BIN\\X64;;C:\\PROGRAM FILES (X86)\\MYSQL\\MYSQL SERVER 5.5\\BIN;D:\\MYSERVER\\MYSQL\\BIN;D:\\server\\MySQL\\bin;D:\\server\\php-5.6.5;D:\\www\\phalcon_tools;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\Git\\bin\\;C:\\Users\\wm\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\www\\phalcon_tools;D:\\Program Files\\Git\\bin\\;C:\\Users\\wm\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\wm\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\wm\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'wm-PC'
+    'USERNAME' => 'wm'
+    'USERPROFILE' => 'C:\\Users\\wm'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'HTTP_COOKIE' => 'CKFinder_Path=Images%3A%2F%3A1; _csrf=8eb930ff31145eb4b4a8c3e534ab02f1aad4d703e2f761884c72fc56d3a8381ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tIxhuk06rUkGm_9CEPu2Wae41xcfIIPA%22%3B%7D; PHPSESSID=b0p1hdsjj6s3nudv5775a09cl6; _identity=13ee1df7adbcebcf7d62d8078fc0fc69f914df194f465ea83e0fccaa72a09472a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22_XlvIAqRwx7SXcfQ4oiMpGQj-u3835-N%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://admin.yii2.com/column/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'admin.yii2.com'
+    'SCRIPT_FILENAME' => 'd:/www/yii2cms/backend/web/index.php'
+    'PATH_TRANSLATED' => 'd:/www/yii2cms/backend/web'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'admin.yii2.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52430'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'd:/www/yii2cms/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/column/update?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_url=/column/update&id=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1427117619.8043
+    'REQUEST_TIME' => 1427117619
+]

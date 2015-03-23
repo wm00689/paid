@@ -11,10 +11,11 @@ namespace frontend\controllers;
 
 use frontend\controllers\BaseController;
 
-class IndexController extends BaseController{
+class IndexController extends HualController{
 
     public function actionIndex()
     {
+
         return $this->render('index');
     }
 
