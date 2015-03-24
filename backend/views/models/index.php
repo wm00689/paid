@@ -1,19 +1,35 @@
 <?php
+
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+/* @var $searchModel common\models\ModelsSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = '模型';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
+<div class="models-index">
 
+    <h1><?= Html::encode($this->title) ?></h1>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <div class="row">
+    <p>
+        <?= Html::a('Create Models', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
 
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
 
-    </div>
+            'id',
+            'name',
+            'ename',
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
+
 </div>

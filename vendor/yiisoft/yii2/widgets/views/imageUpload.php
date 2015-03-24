@@ -11,7 +11,7 @@ imageUploadAsset::register($this);
 
 ?>
 <div class="form-group">
-    <input id="xFilePath" name="<?= ucfirst($model->tableName())?>[<?= $name?>]" value="<?= $model->$name;?>" type="text" size="60" />
+    <input id="xFilePath" name="<?= $model->formName() ?>[<?= $name?>]" value="<?= $model->$name;?>" type="text" size="60" />
     <input type ="button" value="上传图片" onclick="BrowseServer();" />
 </div>
 <img id="img" src="<?= $model->$name;?>">

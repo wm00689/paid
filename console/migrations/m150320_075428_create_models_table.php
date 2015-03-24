@@ -13,7 +13,7 @@ class m150320_075428_create_models_table extends Migration
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=InnoDB';
         }
 
-        $this->createTable('{{%category}}', [
+        $this->createTable('{{%models}}', [
             'id' => Schema::TYPE_PK,
             'name' => Schema::TYPE_STRING . '(32) NOT NULL',
             'status' => Schema::TYPE_SMALLINT . ' NOT NULL DEFAULT 10',
@@ -32,4 +32,9 @@ class m150320_075428_create_models_table extends Migration
     {
     }
     */
+
+    public function down()
+    {
+        $this->dropTable('{{%models}}');
+    }
 }

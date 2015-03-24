@@ -51,13 +51,13 @@ use yii\helpers\Url;
             </li>
 
             <li>
-                <a href="/category/index">
-                    <i class="fa fa-th"></i> <span>分类</span> <small class="badge pull-right bg-green">new</small>
+                <a href="/template/index">
+                    <i class="fa fa-th"></i> <span>模板</span>
                 </a>
             </li>
             <li>
-                <a href="/article/index">
-                    <i class="fa fa-th"></i> <span>文章</span>
+                <a href="/column/index">
+                    <i class="fa fa-th"></i> <span>栏目</span> <small class="badge pull-right bg-green">new</small>
                 </a>
             </li>
 

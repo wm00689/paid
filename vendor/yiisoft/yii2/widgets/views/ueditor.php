@@ -5,7 +5,7 @@ use yii;
 ?>
 <div class="form-group">
     <?= $model->getAttributeLabel($name)?>
-    <script id="container" name="<?= ucfirst($model->tableName())?>[<?= $name?>]" type="text/plain">
+    <script id="container" name="<?= $model->formName()?>[<?= $name?>]" type="text/plain">
 	        <?= $model->$name;?>
     </script>
 </div>

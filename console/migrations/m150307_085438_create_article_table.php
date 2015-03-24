@@ -38,5 +38,10 @@ class m150307_085438_create_article_table extends Migration
         }
     }
 
+    public function down()
+    {
+        $this->dropTable('{{%article}}');
+    }
+
 
 }
