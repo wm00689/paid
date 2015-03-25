@@ -22,10 +22,15 @@ class HualAsset extends AssetBundle
         'css/pages.css',
     ];
     public $js = [
-        'js/map.js',
+
+       // 'js/jquery.js',
         'js/index.js',
+        'js/map.js',
+        'js/scroll.1.3.js',
+        'js/index_scrollimg.js',
+
     ];
     public $depends = [
-        'yii\web\YiiAsset',
+        //'yii\web\YiiAsset',
     ];
 }

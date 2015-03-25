@@ -26,15 +26,15 @@ function procHtml($tree)
     {
         if($t['children'] == '' and $t['parentid']==0)
         {
-            $html .= "<li><a href=''>".$t['cname']."</a><img src='/images/arrow.png' /></li>";
+            $html .= "<li><a href='/node/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' /></li>";
 
         }
         elseif($t['children'] == '' and $t['parentid'] !==0)
         {
-            $html.= "<p><a href=''>{$t['cname']}</a></p>";
+            $html.= "<p><a href='/node/{$t['id']}'>{$t['cname']}</a></p>";
         }else
         {
-            $html .= "<li><a href=''>".$t['cname']."</a><img src='/images/arrow.png' />";
+            $html .= "<li><a href='/node/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
             $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
             $html.="</li>";
         }

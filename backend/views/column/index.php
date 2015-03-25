@@ -26,7 +26,5 @@ $this->params['breadcrumbs'][] = $this->title;
         echo $columnTree;
         ?>
     </table>
-
-
 </div>
 

@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use common\models\photo;
+use backend\models\Article;
 
 /**
  * photoSearch represents the model behind the search form about `common\models\photo`.
@@ -19,7 +20,7 @@ class photoSearch extends photo
     {
         return [
             [['id', 'column_id', 'status', 'created_at', 'updated_at'], 'integer'],
-            [['title', 'url', 'description', 'place'], 'safe'],
+            [['title', 'url', 'description'], 'safe'],
         ];
     }
 
@@ -41,7 +42,9 @@ class photoSearch extends photo
      */
     public function search($params)
     {
-        $query = photo::find();
+        $articleObject = Article::findOne(Yii::$app->request->get('id'));
+        $query = $articleObject->photos;
+        //$query = photo::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -65,8 +68,7 @@ class photoSearch extends photo
 
         $query->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'url', $this->url])
-            ->andFilterWhere(['like', 'description', $this->description])
-            ->andFilterWhere(['like', 'place', $this->place]);
+            ->andFilterWhere(['like', 'description', $this->description]);
 
         return $dataProvider;
     }

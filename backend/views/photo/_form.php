@@ -18,8 +18,6 @@ use yii\widgets\ImageUpload;
 
     <?= $form->field($model, 'description')->textInput(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'place')->textInput(['maxlength' => 255]) ?>
-
     <?= $form->field($model, 'status')->textInput() ?>
 
     <?= ImageUpload::widget(['model'=>$model,'attribute'=>'url'])?>

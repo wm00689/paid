@@ -89,8 +89,7 @@ class ArticleController extends BaseController
         $model->updated_at = date('Y-m-d H:i:s');
         $model->user_id = Yii::$app->user->id;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-            //return $this->redirect(['index']);
+            return $this->redirect(['index', 'id' => $model->column_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -109,9 +108,7 @@ class ArticleController extends BaseController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-            //return $this->redirect(['index']);
-            return $this->goBack();
+            return $this->redirect(['index', 'id' => $model->column_id]);
         } else {
             return $this->render('update', [
                 'model' => $model,

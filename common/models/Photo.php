@@ -12,8 +12,7 @@ use yii\behaviors\TimestampBehavior;
  * @property string $title
  * @property string $url
  * @property string $description
- * @property string $place
- * @property integer $column_id
+ * @property integer $article_id
  * @property integer $status
  * @property integer $created_at
  * @property integer $updated_at
@@ -43,10 +42,10 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'url', 'description', 'place'], 'required'],
-            [['column_id', 'status'], 'integer'],
+            [['title', 'url', 'description'], 'required'],
+            [['column_id','article_id', 'status'], 'integer'],
             [['sort','column_id'],'safe'],
-            [['title', 'description', 'place'], 'string', 'max' => 255],
+            [['title', 'description'], 'string', 'max' => 255],
             [['url'], 'string', 'max' => 200]
         ];
     }
@@ -61,7 +60,6 @@ class Photo extends \yii\db\ActiveRecord
             'title' => 'Title',
             'url' => 'Url',
             'description' => 'Description',
-            'place' => 'Place',
             'column_id' => 'Column ID',
             'status' => 'Status',
             'created_at' => 'Created At',

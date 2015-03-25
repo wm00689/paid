@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\photo;
 use backend\models\photoSearch;
+use backend\models\Article;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -31,13 +32,19 @@ class PhotoController extends BaseController
      */
     public function actionIndex()
     {
-        $searchModel = new photoSearch();
+        $articleObject = Article::findOne(Yii::$app->request->get('id'));
+        return $this->render('index', [
+
+            'photos' =>$articleObject->photos,
+
+        ]);
+       /* $searchModel = new photoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-        ]);
+        ]);*/
     }
 
     /**
@@ -60,7 +67,7 @@ class PhotoController extends BaseController
     public function actionCreate()
     {
         $model = new photo();
-        $model->column_id = Yii::$app->request->get('id');
+        $model->article_id = Yii::$app->request->get('article_id');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {

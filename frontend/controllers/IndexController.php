@@ -8,14 +8,21 @@
 
 namespace frontend\controllers;
 
-
+use Yii;
 use frontend\controllers\BaseController;
 
 class IndexController extends HualController{
 
+    public function actionNode()
+    {
+        $id = Yii::$app->request->get('id');
+        $cache = Yii::$app->cache;
+        $column = $cache['column-'.$id];
+        return $this->render($column['tmp'],['column'=>$column]);
+    }
+
     public function actionIndex()
     {
-
         return $this->render('index');
     }
 
