@@ -37,7 +37,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <td>
             <a href="/article/view?id=<?= $v['id']?>" >查看</a> |
             <a href="/article/update?id=<?= $v['id']?>" >更新</a> |
-            <a href="/article/delete?id=<?= $v['id']?>">删除</a>
+            <a href="/article/delete?id=<?= $v['id']?>">删除</a> |
+            <a href="/photo/index?id=<?= $v['id']?>">图片管理</a>
         </td>
     </tr>
 <?php endforeach;?>

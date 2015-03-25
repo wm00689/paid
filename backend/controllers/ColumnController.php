@@ -48,7 +48,7 @@ class ColumnController extends BaseController
                 <a href='/column/update?id=\$id'>更新</a> |
                 <a href='/column/delete?id=\$id'>删除</a> |
                 <a href='/column/manage?id=\$id'>内容管理</a> |
-                <a href='/columnphoto/index?id=\$id'>栏目图片</a>
+                <a href='/photocolumn/index?column_id=\$id'>栏目图片</a>
             </td>
         </tr>
 Eof;
@@ -90,6 +90,7 @@ Eof;
 
         if ($model->load($request->post()) && $model->save()) {
             $this->cacheAction();
+            $this->cacheColumnOneAction($model->id);
            // return $this->redirect(['view', 'id' => $model->id]);
             return $this->redirect(['index']);
         } else {
@@ -108,6 +109,18 @@ Eof;
 
     }
 
+    public function cacheColumnOneAction($id)
+    {
+        $columnObject = Column::findOne($id);
+        $column_articles = $columnObject->articles;
+        $columnOne = Column::findOne($id)->toArray();
+        $column_tmp = \backend\models\Template::findOne($columnOne['template_id'])->toArray();
+        $columnOne['tmp'] = $column_tmp['ename'];
+        $cache = Yii::$app->cache;
+        $cache['column-'.$id] = $columnOne;
+        $cache['column_articles-'.$id] = $column_articles;
+    }
+
     /**
      * Updates an existing Column model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -120,6 +133,7 @@ Eof;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->cacheAction();
+            $this->cacheColumnOneAction($model->id);
             //return $this->redirect(['view', 'id' => $model->id]);
             return $this->redirect(['index']);
         } else {
@@ -182,5 +196,12 @@ Eof;
 
         return $this->redirect('/'.$forword.'/index?id='.$id);
 
+    }
+
+    public function getPhotos()
+    {
+        return $this->hasMany(\common\models\PhotoColumn::className(), ['column_id' => 'id']);
+        //return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id'])->asArray();
+        // return $this->hasMany(Article::className(), ['column_id' => 'id']);
     }
 }

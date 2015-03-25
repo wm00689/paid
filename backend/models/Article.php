@@ -77,4 +77,11 @@ class Article extends \yii\db\ActiveRecord
     {
         return $this->hasOne(column::className(), ['id' => 'column_id']);
     }
+
+    public function getPhotos()
+    {
+        return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id']);
+        return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id'])->asArray();
+        // return $this->hasMany(Article::className(), ['column_id' => 'id']);
+    }
 }

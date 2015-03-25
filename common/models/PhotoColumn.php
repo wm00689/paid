@@ -6,25 +6,28 @@ use Yii;
 use yii\behaviors\TimestampBehavior;
 
 /**
- * This is the model class for table "photo".
+ * This is the model class for table "photo_column".
  *
  * @property integer $id
  * @property string $title
  * @property string $url
+ * @property integer $column_id
  * @property string $description
- * @property integer $article_id
+ * @property integer $sort
  * @property integer $status
  * @property integer $created_at
  * @property integer $updated_at
+ *
+ * @property Columns $column
  */
-class Photo extends \yii\db\ActiveRecord
+class PhotoColumn extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'photo';
+        return 'photo_column';
     }
 
     public function behaviors()
@@ -34,8 +37,6 @@ class Photo extends \yii\db\ActiveRecord
         ];
     }
 
-
-
     /**
      * @inheritdoc
      */
@@ -43,7 +44,7 @@ class Photo extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'url', 'description'], 'required'],
-            [['column_id','article_id', 'status'], 'integer'],
+            [['column_id', 'status'], 'integer'],
             [['sort','column_id'],'safe'],
             [['title', 'description'], 'string', 'max' => 255],
             [['url'], 'string', 'max' => 200]
@@ -59,11 +60,20 @@ class Photo extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'url' => 'Url',
-            'description' => 'Description',
             'column_id' => 'Column ID',
+            'description' => 'Description',
+            'sort' => 'Sort',
             'status' => 'Status',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getColumn()
+    {
+        return $this->hasOne(Columns::className(), ['id' => 'column_id']);
     }
 }

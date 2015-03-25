@@ -5,20 +5,19 @@ use yii\widgets\ActiveForm;
 use yii\widgets\ImageUpload;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\photo */
+/* @var $model common\models\PhotoColumn */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="photo-form">
+<div class="photo-column-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => 255]) ?>
 
-
     <?= $form->field($model, 'description')->textInput(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'status')->textInput() ?>
+    <?= $form->field($model, 'sort')->textInput() ?>
 
     <?= ImageUpload::widget(['model'=>$model,'attribute'=>'url'])?>
 

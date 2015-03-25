@@ -2,6 +2,7 @@
 
 namespace backend\models;
 
+use common\models\PhotoColumn;
 use Yii;
 
 /**
@@ -76,7 +77,13 @@ class Column extends \yii\db\ActiveRecord
     public function getArticles()
     {
         return $this->hasMany(Article::className(), ['column_id' => 'id'])->asArray();
-        return $this->hasMany(Article::className(), ['column_id' => 'id']);
+
+    }
+
+    public function getPhotos()
+    {
+        return $this->hasMany(PhotoColumn::className(), ['column_id' => 'id'])->asArray();
+
     }
 
     /**

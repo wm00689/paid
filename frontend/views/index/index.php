@@ -37,4 +37,3 @@
         <div class="btimg"><img src="/images/right.png" /></div>
     </div>
 </div>
-<script type="text/javascript" src="/js/index_scrollimg.js"></script>

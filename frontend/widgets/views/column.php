@@ -34,7 +34,7 @@ function procHtml($tree)
             $html.= "<p><a href=''>{$t['cname']}</a></p>";
         }else
         {
-            $html .= "<li><a href=''>".$t['cname']."</a><img src='/images/arrow.png' />";
+            $html .= "<li><a href='/index/index?id={$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
             $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
             $html.="</li>";
         }

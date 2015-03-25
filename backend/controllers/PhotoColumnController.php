@@ -2,17 +2,17 @@
 
 namespace backend\controllers;
 
+use backend\models\Column;
 use Yii;
-use common\models\photo;
-use backend\models\photoSearch;
-use backend\models\Article;
+use common\models\PhotoColumn;
+use backend\models\photoColumnSearch;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * PhotoController implements the CRUD actions for photo model.
+ * PhotoColumnController implements the CRUD actions for PhotoColumn model.
  */
-class PhotoController extends BaseController
+class PhotoColumnController extends BaseController
 {
     public function behaviors()
     {
@@ -27,18 +27,18 @@ class PhotoController extends BaseController
     }
 
     /**
-     * Lists all photo models.
+     * Lists all PhotoColumn models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $articleObject = Article::findOne(Yii::$app->request->get('id'));
+        $articleObject = Column::findOne(Yii::$app->request->get('column_id'));
         return $this->render('index', [
 
             'photos' =>$articleObject->photos,
 
         ]);
-       /* $searchModel = new photoSearch();
+       /* $searchModel = new photoColumnSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -48,7 +48,7 @@ class PhotoController extends BaseController
     }
 
     /**
-     * Displays a single photo model.
+     * Displays a single PhotoColumn model.
      * @param integer $id
      * @return mixed
      */
@@ -60,16 +60,16 @@ class PhotoController extends BaseController
     }
 
     /**
-     * Creates a new photo model.
+     * Creates a new PhotoColumn model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new photo();
-        $model->article_id = Yii::$app->request->get('article_id');
+        $model = new PhotoColumn();
+        $model->column_id = Yii::$app->request->get('column_id');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'column_id' => $model->column_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -78,7 +78,7 @@ class PhotoController extends BaseController
     }
 
     /**
-     * Updates an existing photo model.
+     * Updates an existing PhotoColumn model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -97,7 +97,7 @@ class PhotoController extends BaseController
     }
 
     /**
-     * Deletes an existing photo model.
+     * Deletes an existing PhotoColumn model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class PhotoController extends BaseController
     }
 
     /**
-     * Finds the photo model based on its primary key value.
+     * Finds the PhotoColumn model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return photo the loaded model
+     * @return PhotoColumn the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = photo::findOne($id)) !== null) {
+        if (($model = PhotoColumn::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
