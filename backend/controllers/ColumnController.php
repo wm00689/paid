@@ -105,7 +105,7 @@ Eof;
         $searchModel = new ColumnSearch();
         $columnList = $searchModel->columnList();
         $cache = Yii::$app->cache;
-        $cache['column'] = $columnList;
+        $cache['columns'] = $columnList;
 
     }
 
