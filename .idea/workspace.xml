@@ -2,6 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0187eccf-db9e-48bd-9eba-703d4fa62224" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/15/1529bb1317db240e8604f1ab1562a753.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/web/uploads/_thumbs/Files/Koala.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/web/uploads/files/Koala.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/25/255df2c652498d3fc52c17ecfea71905.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/4a/4a05f0f21c8e68f0cf72d51a7fe38fba.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/63/633753273a8a7500ae9e615c2e715226.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/66/66c60d6089a50a1539b3b06e17fdec06.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/68/68a60b1956eed392f3931789935f97e9.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/83/838cfbb8dacbb258d9e9a74e07bdfac3.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/89/8983a55eea52d7bfa67c606c4d867d70.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/models/PhotoColumn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/controllers/PhotoColumnController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/photoColumn/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/photoColumn/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/photoColumn/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/ef/ef91a64e7c0d3dd1ea4a494168625406.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/photoColumn/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/models/photoColumnSearch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/photoColumn/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/photoColumn/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/yii2cms.iml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/index/zjhl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Article.php" afterPath="$PROJECT_DIR$/backend/models/Article.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/backend/controllers/ArticleController.php" />
@@ -15,6 +41,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/co/column.bin" afterPath="$PROJECT_DIR$/cache/co/column.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/widgets/views/column.php" afterPath="$PROJECT_DIR$/frontend/widgets/views/column.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/photo/create.php" afterPath="$PROJECT_DIR$/backend/views/photo/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hualiang.sql" afterPath="$PROJECT_DIR$/hualiang.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/article/index.php" afterPath="$PROJECT_DIR$/backend/views/article/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/photo/index.php" afterPath="$PROJECT_DIR$/backend/views/photo/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/index.php" afterPath="$PROJECT_DIR$/frontend/views/index/index.php" />
@@ -58,14 +85,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zjhl.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zjhl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/index/zjhl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7574032" vertical-offset="0" max-vertical-offset="1026">
+            <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="1026">
               <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="894">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extensions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/yiisoft/extensions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2280">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,26 +178,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="2.0357144" vertical-offset="57" max-vertical-offset="6726">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/web/ueditor/php/controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="11.607142" vertical-offset="325" max-vertical-offset="1216">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="action_upload.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/web/ueditor/php/action_upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1368">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -529,20 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/views/column/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/photoColumnSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.464286" vertical-offset="349" max-vertical-offset="1444">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/photo/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.392857" vertical-offset="305" max-vertical-offset="1159">
@@ -915,11 +928,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/index/zjhl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7574032" vertical-offset="0" max-vertical-offset="1026">
+        <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="1026">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/extensions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2280">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
