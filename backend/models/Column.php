@@ -80,10 +80,16 @@ class Column extends \yii\db\ActiveRecord
 
     }
 
+
     public function getPhotos()
     {
         return $this->hasMany(PhotoColumn::className(), ['column_id' => 'id'])->asArray();
 
+    }
+
+    public function getBrother($id)
+    {
+        return $this->find()->select(['id','cname'])->where("parentid=".$id)->asArray()->all();
     }
 
     /**

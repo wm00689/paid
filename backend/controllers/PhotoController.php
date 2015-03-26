@@ -38,13 +38,6 @@ class PhotoController extends BaseController
             'photos' =>$articleObject->photos,
 
         ]);
-       /* $searchModel = new photoSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);*/
     }
 
     /**
@@ -88,6 +81,7 @@ class PhotoController extends BaseController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->actionCache($model->article_id);
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -102,6 +96,15 @@ class PhotoController extends BaseController
      * @param integer $id
      * @return mixed
      */
+
+    public function actionCache($article_id)
+    {
+        $cache = Yii::$app->cache;
+        $article = \backend\models\Article::findOne($article_id);
+        $cache['article_photos-'.$article_id] = $article->photos;
+
+    }
+
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();

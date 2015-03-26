@@ -26,7 +26,12 @@ $this->params['breadcrumbs'][] = $this->title;
         echo $columnTree;
         ?>
     </table>
-
-
 </div>
+<?php
+echo '<pre>';
+$cache = Yii::$app->cache;
+print_r($cache['column_brother-8']);
+print_r('column_articles-1');
+echo '</pre>';
 
+?>

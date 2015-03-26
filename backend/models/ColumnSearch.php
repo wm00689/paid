@@ -38,6 +38,8 @@ class ColumnSearch extends Column
         $data = Column::find()->orderBy('sort')->asArray()->all();
         return $data;
     }
+
+
     /**
      * Creates data provider instance with search query applied
      *

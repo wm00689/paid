@@ -90,7 +90,7 @@ Eof;
 
         if ($model->load($request->post()) && $model->save()) {
             $this->cacheAction();
-            $this->cacheColumnOneAction($model->id);
+            $this->cacheColumnOneAction($model->id,$model->parentid);
            // return $this->redirect(['view', 'id' => $model->id]);
             return $this->redirect(['index']);
         } else {
@@ -109,16 +109,26 @@ Eof;
 
     }
 
-    public function cacheColumnOneAction($id)
+    public function cacheColumnOneAction($id,$pid)
     {
-        $columnObject = Column::findOne($id);
-        $column_articles = $columnObject->articles;
+
+        $cache = Yii::$app->cache;
+
         $columnOne = Column::findOne($id)->toArray();
+
         $column_tmp = \backend\models\Template::findOne($columnOne['template_id'])->toArray();
         $columnOne['tmp'] = $column_tmp['ename'];
-        $cache = Yii::$app->cache;
+
         $cache['column-'.$id] = $columnOne;
-        $cache['column_articles-'.$id] = $column_articles;
+
+        $columnObject = Column::findOne($id);
+
+        $column = new Column();
+
+        $cache['column_articles-'.$id] = $columnObject->articles;
+        $cache['column_photos-'.$id] = $columnObject->photos;
+        $cache['column_brother-'.$id] = $column->getBrother($pid);
+        $cache['column_children-'.$id] = $column->getBrother($id);
     }
 
     /**
@@ -133,7 +143,7 @@ Eof;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->cacheAction();
-            $this->cacheColumnOneAction($model->id);
+            $this->cacheColumnOneAction($model->id,$model->parentid);
             //return $this->redirect(['view', 'id' => $model->id]);
             return $this->redirect(['index']);
         } else {

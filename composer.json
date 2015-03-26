@@ -27,7 +27,8 @@
         "yiisoft/yii2-faker": "*",
 	    "yiisoft/yii2-twig": "*",
         "kartik-v/yii2-tree-manager": "dev-master",
-        "costa-rico/yii2-images": "dev-master"
+        "costa-rico/yii2-images": "dev-master",
+        "pendalf89/yii2-filemanager": "*"
     },
     "config": {
         "process-timeout": 1800

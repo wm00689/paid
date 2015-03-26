@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : bendi
-Source Server Version : 50519
+Source Server         : yii2
+Source Server Version : 50528
 Source Host           : localhost:3306
 Source Database       : hualiang
 
 Target Server Type    : MYSQL
-Target Server Version : 50519
+Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2015-03-25 17:40:24
+Date: 2015-03-25 22:55:51
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -71,17 +71,17 @@ CREATE TABLE `columns` (
   PRIMARY KEY (`id`),
   KEY `model_f` (`model_id`),
   CONSTRAINT `model_f` FOREIGN KEY (`model_id`) REFERENCES `models` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of columns
 -- ----------------------------
 INSERT INTO `columns` VALUES ('1', '0', '1', '1', '走进华粮', '1234帮不帮1123', '1', '1', '1', '<p>我们是<span style=\"margin: 0px; padding: 0px; font-size: 72px;\">谁？</span></p><p>中国华粮集团有限责任公司</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">中国华粮集团有限公司秉承“善本、归元、循道”的理念，立足三农、服务民生，致力于农林牧副渔等行业，以农业、文化、网络、金融、小镇经济为五大产业方向，是高端大农业产品“标准化”的制定者、实施者。</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">华粮使命：</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">1、让员工和家人更健康；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">2、让投资者回报更高；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">3、让农民耕种快乐、种好地，好种地，地种好；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">4、奉献“品质、环保、简约、方便、便宜”的好产品；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">5、让人们体验喜悦和生命的美好；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">6、为社会贡献一个受人尊敬的企业。</p><p><br/></p>', '/uploads/files/Koala.jpg', '10', '1426860398', '1426860398');
-INSERT INTO `columns` VALUES ('2', '0', null, '1', '耕织堂', null, '2', '1', '1', '<p>22</p>', null, '10', '1426860646', '1426860646');
+INSERT INTO `columns` VALUES ('2', '0', '3', '1', '耕织堂', '122', '2', '1', '1', '<p>22</p>', '', '10', '1426860646', '1426860646');
 INSERT INTO `columns` VALUES ('3', '0', '2', '2', '农博会', null, '3', '1', '1', '<p>222</p>', null, '10', '1426860665', '1426860665');
 INSERT INTO `columns` VALUES ('8', '1', '1', '1', '华粮溯源', '123', '1', '2', '1', '<p>aaa</p>', '', '10', '1426898856', '1426898856');
 INSERT INTO `columns` VALUES ('9', '1', '1', '1', '企业荣誉', '123', '3', '2', '1', '<p>爱爱爱</p>', '', '10', '1426898887', '1426898887');
-INSERT INTO `columns` VALUES ('10', '1', '2', '1', '团队介绍', null, '2', '1', '1', '<p>11</p>', null, '10', '1426898960', '1426898960');
+INSERT INTO `columns` VALUES ('10', '1', '4', '1', '团队介绍', '12', '2', '1', '1', '<p>11</p>', '', '10', '1426898960', '1426898960');
 INSERT INTO `columns` VALUES ('13', '1', '1', '1', '品牌理念', 'q\'q\'q', '4', '1', '1', '<p>12</p>', '', '10', '1427082642', '1427082642');
 INSERT INTO `columns` VALUES ('14', '1', null, '1', '科研创新', null, '5', '1', '1', null, null, '10', '1427082745', '1427082745');
 INSERT INTO `columns` VALUES ('15', '1', '1', '1', '集团新闻', '12', '6', '2', '1', '<p>34</p>', '', '10', '1427082784', '1427082784');
@@ -94,6 +94,26 @@ INSERT INTO `columns` VALUES ('21', '0', '1', '1', '华粮联盟', null, '5', '1
 INSERT INTO `columns` VALUES ('22', '3', '1', '1', '异地特色', null, null, '1', '1', null, null, '10', '1427098876', '1427098876');
 INSERT INTO `columns` VALUES ('23', '20', '1', '1', '官方商城', null, null, '1', '1', null, null, '10', '1427098913', '1427098913');
 INSERT INTO `columns` VALUES ('24', '21', '1', '1', '合作客户', '11', '1', '1', '1', '<p>2233</p>', '', '10', '1427266726', '1427266726');
+
+-- ----------------------------
+-- Table structure for `column_photo`
+-- ----------------------------
+DROP TABLE IF EXISTS `column_photo`;
+CREATE TABLE `column_photo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `column_id` int(11) NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `place` int(11) DEFAULT NULL,
+  `create_at` datetime DEFAULT NULL,
+  `crate_by` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `column_photo_f` (`column_id`),
+  CONSTRAINT `column_photo_f` FOREIGN KEY (`column_id`) REFERENCES `columns` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of column_photo
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `migration`
@@ -192,13 +212,15 @@ CREATE TABLE `template` (
   `name` varchar(100) NOT NULL,
   `ename` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of template
 -- ----------------------------
 INSERT INTO `template` VALUES ('1', '走进华粮', 'zjhl');
 INSERT INTO `template` VALUES ('2', '团队介绍', 'tdjs');
+INSERT INTO `template` VALUES ('3', '耕织堂', 'gzt');
+INSERT INTO `template` VALUES ('4', '团队介绍', 'tdjs');
 
 -- ----------------------------
 -- Table structure for `user`

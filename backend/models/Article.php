@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
 
 /**
  * This is the model class for table "article".
@@ -32,6 +33,13 @@ class Article extends \yii\db\ActiveRecord
     public static function tableName()
     {
         return 'article';
+    }
+
+    public function behaviors()
+    {
+        return [
+            TimestampBehavior::className(),
+        ];
     }
 
     /**
@@ -80,8 +88,8 @@ class Article extends \yii\db\ActiveRecord
 
     public function getPhotos()
     {
-        return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id']);
+        //return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id']);
         return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id'])->asArray();
-        // return $this->hasMany(Article::className(), ['column_id' => 'id']);
+
     }
 }

@@ -19,7 +19,7 @@ class TemplateController extends BaseController
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['post'],
+                    //'delete' => ['post'],
                 ],
             ],
         ];

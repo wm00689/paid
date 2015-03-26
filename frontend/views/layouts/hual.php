@@ -20,6 +20,7 @@ HualAsset::register($this);
     <meta name="description" content="" />
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <script type="text/javascript" src="/js/jquery.js"></script>
 </head>
 
 <body>

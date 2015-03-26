@@ -11,7 +11,7 @@ return [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
-                // ...
+                'node/<id:\d+>' => 'index/node',
             ],
         ],
     ],

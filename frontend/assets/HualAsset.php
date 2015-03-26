@@ -23,8 +23,10 @@ class HualAsset extends AssetBundle
     ];
     public $js = [
 
-        'js/jquery.js',
+       // 'js/jquery.js',
         'js/index.js',
+        'js/map.js',
+        'js/scroll.1.3.js',
         'js/index_scrollimg.js',
 
     ];

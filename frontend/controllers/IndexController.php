@@ -13,12 +13,35 @@ use frontend\controllers\BaseController;
 
 class IndexController extends HualController{
 
-    public function actionIndex()
+    public function actionNode()
     {
         $id = Yii::$app->request->get('id');
         $cache = Yii::$app->cache;
         $column = $cache['column-'.$id];
-        return $this->render($column['tmp'],['column'=>$column]);
+        return $this->render($column['tmp'],[
+            'cache'=>$cache,
+            'column'=>$column,
+            'id'=>Yii::$app->request->get('id'),
+            'column_child'=>$cache['column_children'.$id]
+            ]);
+    }
+
+    public function pannel()
+    {
+        $id = Yii::$app->request->get('id');
+        $cache = Yii::$app->cache;
+        $column = $cache['column-'.$id];
+        return $this->render($column['tmp'],[
+            'cache'=>$cache,
+            'column'=>$column,
+            'id'=>Yii::$app->request->get('id'),
+            'column_child'=>$cache['column_children'.$id]
+        ]);
+    }
+
+    public function actionIndex()
+    {
+        return $this->render('index');
     }
 
 }

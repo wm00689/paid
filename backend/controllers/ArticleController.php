@@ -85,8 +85,6 @@ class ArticleController extends BaseController
     {
         $model = new Article();
         $model->column_id = Yii::$app->request->get('column_id');
-        $model->created_at = date('Y-m-d H:i:s');
-        $model->updated_at = date('Y-m-d H:i:s');
         $model->user_id = Yii::$app->user->id;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index', 'id' => $model->column_id]);
