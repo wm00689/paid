@@ -9,9 +9,9 @@
 
             <div class="cont_left_list">
                 <ul>
-                    <li><a href="#">合作客户</a></li>
-                    <li class="hover"><a href="#">联系我们</a></li>
-                    <li><a href="#">加入我们</a></li>
+                    <?php foreach($cache['column_brother-'.$id] as $child):?>
+                        <li <?php if($id==$child['id']):?> class="hover" <?php endif?> ><a href="/node/<?= $child['id']?>"><?= $child['cname']?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
             <img src="../images/left_di.png" />

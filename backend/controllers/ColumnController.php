@@ -33,7 +33,7 @@ class ColumnController extends BaseController
     public function actionIndex()
     {
         $cache = Yii::$app->cache;
-        $columnList = $cache['column'];
+        $columnList = $cache['columns'];
         //$searchModel = newColumnSearch();
         //$columnList = $searchModel->columnList();
         $tree = new tree();
@@ -91,7 +91,7 @@ Eof;
         if ($model->load($request->post()) && $model->save()) {
             $this->cacheAction();
             $this->cacheColumnOneAction($model->id,$model->parentid);
-           // return $this->redirect(['view', 'id' => $model->id]);
+
             return $this->redirect(['index']);
         } else {
             return $this->render('create', [
@@ -185,7 +185,7 @@ Eof;
     public function  actionManage()
     {
         $cache = Yii::$app->cache;
-        $columnList = $cache['column'];
+        $columnList = $cache['columns'];
         $id =  Yii::$app->request->get('id');
         foreach($columnList as $key=>$column)
         {

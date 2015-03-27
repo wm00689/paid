@@ -87,6 +87,7 @@ class ArticleController extends BaseController
         $model->column_id = Yii::$app->request->get('column_id');
         $model->user_id = Yii::$app->user->id;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->actionCache($model->column_id,$model->id);
             return $this->redirect(['index', 'id' => $model->column_id]);
         } else {
             return $this->render('create', [
@@ -106,6 +107,7 @@ class ArticleController extends BaseController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->actionCache($model->column_id,$model->id);
             return $this->redirect(['index', 'id' => $model->column_id]);
         } else {
             return $this->render('update', [
@@ -141,5 +143,14 @@ class ArticleController extends BaseController
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionCache($column_id,$id)
+    {
+        $cache = Yii::$app->cache;
+        $columnObject = Column::findOne($column_id);
+        $cache['column_articles-'.$column_id] = $columnObject->articles;
+
+        $cache['column_'.$column_id.'_article_'.$id] = Article::findOne(['id'=>$id])->toArray();
     }
 }
