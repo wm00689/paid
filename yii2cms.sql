@@ -1,4 +1,4 @@
-Ôªø-- MySQL dump 10.13  Distrib 5.5.28, for Win32 (x86)
+-- MySQL dump 10.13  Distrib 5.5.28, for Win32 (x86)
 --
 -- Host: localhost    Database: yii2advanced
 -- ------------------------------------------------------
@@ -50,7 +50,7 @@ CREATE TABLE `article` (
 
 LOCK TABLES `article` WRITE;
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
-INSERT INTO `article` VALUES (1,1,1,'Áü•ËØÜ','122','<p>\r\n	&nbsp; &nbsp; &nbsp; &nbsp;3344 &nbsp; &nbsp;</p>',0,'','','','2015-03-11 17:25:38','2015-03-11 17:25:38','/uploads/images/73CC5B88789C.jpg','<p>2222</p>'),(2,1,1,'4556','6677','77888',0,'','','','2015-03-13 06:55:19','2015-03-13 06:55:19',NULL,NULL),(3,1,1,'334','5566','5777',0,'','','','2015-03-13 17:57:53','2015-03-13 17:57:53',NULL,'<p>dfgyy<img src=\"/ueditor/php/upload/image/20150313/1426246008271917.jpg\" title=\"1426246008271917.jpg\" alt=\"Penguins.jpg\"/></p>'),(4,1,1,'ÈòøËê®Âæ∑ÁöÑ','344','677889',0,'','','','2015-03-14 19:30:30','2015-03-14 19:30:30','/uploads/images/Hydrangeas.jpg','<p>ÂèçÂ§çÂêÑÁéØËäÇ<img src=\"/ueditor/php/upload/image/20150314/1426332627502482.jpg\" title=\"1426332627502482.jpg\" alt=\"Penguins.jpg\"/></p>'),(5,1,1,'123','444','rrrtt',0,'','','','2015-03-15 09:59:14','2015-03-15 09:59:14','/uploads/images/Koala.jpg','<p>ffgg</p>'),(6,1,1,'asd','ffgg','ghhh',0,'','','','2015-03-15 10:02:13','2015-03-15 10:02:13','/uploads/images/Chrysanthemum.jpg','<p>hhhj</p>'),(7,1,1,'123666','556','3344',0,'','','','2015-03-15 10:34:38','2015-03-15 10:34:38','/uploads/images/Hardware003.jpg','<p>666</p>'),(8,1,1,'adrr','tyyuu','yyyy',0,'','','','2015-03-15 10:38:49','2015-03-15 10:38:49','/uploads/images/Chrysanthemum.jpg','<p>yuuyt</p>'),(9,1,1,'asd334','fgg','ertt',0,'','','','2015-03-15 12:12:29','2015-03-15 12:12:29','/uploads/images/png-1009.png','<p>rty</p>'),(10,1,1,'ÁæéÂ•≥1','1223444','‰∏∫‰∫å‰∫∫',0,'','','','2015-03-16 12:05:47','2015-03-16 12:05:47','/uploads/images/7CA8FE0BFA0A(1).jpg','<p>2334</p>');
+INSERT INTO `article` VALUES (1,1,1,'÷™ ∂','122','<p>\r\n	&nbsp; &nbsp; &nbsp; &nbsp;3344 &nbsp; &nbsp;</p>',0,'','','','2015-03-11 17:25:38','2015-03-11 17:25:38','/uploads/images/73CC5B88789C.jpg','<p>2222</p>'),(2,1,1,'4556','6677','77888',0,'','','','2015-03-13 06:55:19','2015-03-13 06:55:19',NULL,NULL),(3,1,1,'334','5566','5777',0,'','','','2015-03-13 17:57:53','2015-03-13 17:57:53',NULL,'<p>dfgyy<img src=\"/ueditor/php/upload/image/20150313/1426246008271917.jpg\" title=\"1426246008271917.jpg\" alt=\"Penguins.jpg\"/></p>'),(4,1,1,'∞¢»¯µ¬µƒ','344','677889',0,'','','','2015-03-14 19:30:30','2015-03-14 19:30:30','/uploads/images/Hydrangeas.jpg','<p>∑¥∏¥∏˜ª∑Ω⁄<img src=\"/ueditor/php/upload/image/20150314/1426332627502482.jpg\" title=\"1426332627502482.jpg\" alt=\"Penguins.jpg\"/></p>'),(5,1,1,'123','444','rrrtt',0,'','','','2015-03-15 09:59:14','2015-03-15 09:59:14','/uploads/images/Koala.jpg','<p>ffgg</p>'),(6,1,1,'asd','ffgg','ghhh',0,'','','','2015-03-15 10:02:13','2015-03-15 10:02:13','/uploads/images/Chrysanthemum.jpg','<p>hhhj</p>'),(7,1,1,'123666','556','3344',0,'','','','2015-03-15 10:34:38','2015-03-15 10:34:38','/uploads/images/Hardware003.jpg','<p>666</p>'),(8,1,1,'adrr','tyyuu','yyyy',0,'','','','2015-03-15 10:38:49','2015-03-15 10:38:49','/uploads/images/Chrysanthemum.jpg','<p>yuuyt</p>'),(9,1,1,'asd334','fgg','ertt',0,'','','','2015-03-15 12:12:29','2015-03-15 12:12:29','/uploads/images/png-1009.png','<p>rty</p>'),(10,1,1,'√¿≈Æ1','1223444','Œ™∂˛»À',0,'','','','2015-03-16 12:05:47','2015-03-16 12:05:47','/uploads/images/7CA8FE0BFA0A(1).jpg','<p>2334</p>');
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -78,7 +78,7 @@ CREATE TABLE `category` (
 
 LOCK TABLES `category` WRITE;
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
-INSERT INTO `category` VALUES (1,0,'Áü•ËØÜ',10,122,334),(4,0,'‰ΩúÂìÅ',10,1426063868,1426063868),(5,1,'phpÊäÄÊúØ',10,1426063902,1426063902),(7,0,'Ê®°Êùø',10,1426064131,1426064131),(8,1,'ÂâçÁ´Ø',10,1426590331,1426590331);
+INSERT INTO `category` VALUES (1,0,'÷™ ∂',10,122,334),(4,0,'◊˜∆∑',10,1426063868,1426063868),(5,1,'phpºº ı',10,1426063902,1426063902),(7,0,'ƒ£∞Â',10,1426064131,1426064131),(8,1,'«∞∂À',10,1426590331,1426590331);
 /*!40000 ALTER TABLE `category` ENABLE KEYS */;
 UNLOCK TABLES;
 
