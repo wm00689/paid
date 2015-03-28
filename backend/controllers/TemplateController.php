@@ -3,8 +3,8 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\template;
-use backend\models\templateSearch;
+use backend\models\Template;
+use backend\models\TemplateSearch;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -115,7 +115,7 @@ class TemplateController extends BaseController
      */
     protected function findModel($id)
     {
-        if (($model = template::findOne($id)) !== null) {
+        if (($model = Template::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
