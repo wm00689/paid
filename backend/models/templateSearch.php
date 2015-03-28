@@ -10,7 +10,7 @@ use backend\models\Template;
 /**
  * templateSearch represents the model behind the search form about `backend\models\template`.
  */
-class templateSearch extends Template
+class TemplateSearch extends Template
 {
     /**
      * @inheritdoc
