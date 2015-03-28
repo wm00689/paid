@@ -89,8 +89,8 @@ Eof;
         $model->parentid = $request->get('id')?$request->get('id'):0;
 
         if ($model->load($request->post()) && $model->save()) {
-            $this->cacheAction();
-            $this->cacheColumnOneAction($model->id,$model->parentid);
+           // $this->actionCache();
+           // $this->cacheColumnOneAction($model->id,$model->parentid);
 
             return $this->redirect(['index']);
         } else {
@@ -100,12 +100,17 @@ Eof;
         }
     }
 
-    public function cacheAction()
+    public function actionCache()
     {
         $searchModel = new ColumnSearch();
         $columnList = $searchModel->columnList();
         $cache = Yii::$app->cache;
         $cache['columns'] = $columnList;
+        foreach($columnList as $columnOne)
+        {
+            $this->cacheColumnOneAction($columnOne['id'],$columnOne['parentid']);
+        }
+        return $this->redirect('index');
 
     }
 
@@ -119,16 +124,19 @@ Eof;
         $column_tmp = \backend\models\Template::findOne($columnOne['template_id'])->toArray();
         $columnOne['tmp'] = $column_tmp['ename'];
 
-        $cache['column-'.$id] = $columnOne;
+        $cache['column_'.$id] = $columnOne;
 
         $columnObject = Column::findOne($id);
 
         $column = new Column();
 
-        $cache['column_articles-'.$id] = $columnObject->articles;
-        $cache['column_photos-'.$id] = $columnObject->photos;
-        $cache['column_brother-'.$id] = $column->getBrother($pid);
-        $cache['column_children-'.$id] = $column->getBrother($id);
+        $cache['column_'.$id.'_articles'] = $columnObject->articles;
+
+        $cache['column_'.$id.'_photos'] = $columnObject->photos;
+
+        $cache['column_'.$id.'_brother'] = $column->getBrother($pid);
+
+        $cache['column_'.$id.'_children'] = $column->getBrother($id);
     }
 
     /**
@@ -142,8 +150,8 @@ Eof;
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->cacheAction();
-            $this->cacheColumnOneAction($model->id,$model->parentid);
+            //$this->cacheAction();
+            //$this->cacheColumnOneAction($model->id,$model->parentid);
             //return $this->redirect(['view', 'id' => $model->id]);
             return $this->redirect(['index']);
         } else {

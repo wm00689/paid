@@ -20,7 +20,7 @@ class PhotoController extends BaseController
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['post'],
+                    //'delete' => ['post'],
                 ],
             ],
         ];
@@ -32,7 +32,7 @@ class PhotoController extends BaseController
      */
     public function actionIndex()
     {
-        $articleObject = Article::findOne(Yii::$app->request->get('id'));
+        $articleObject = Article::findOne(Yii::$app->request->get('article_id'));
         return $this->render('index', [
 
             'photos' =>$articleObject->photos,
@@ -59,7 +59,9 @@ class PhotoController extends BaseController
      */
     public function actionCreate()
     {
+
         $model = new photo();
+        $model->column_id = Yii::$app->request->get('column_id');
         $model->article_id = Yii::$app->request->get('article_id');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -101,7 +103,12 @@ class PhotoController extends BaseController
     {
         $cache = Yii::$app->cache;
         $article = \backend\models\Article::findOne($article_id);
-        $cache['article_photos-'.$article_id] = $article->photos;
+        $cache['article_'.$article_id.'_photos'] = $article->photos;
+
+    }
+
+    public function actionCaheall()
+    {
 
     }
 
@@ -109,7 +116,7 @@ class PhotoController extends BaseController
     {
         $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);
+        return $this->redirect(['index?column_id='.Yii::$app->request->get('column_id').'&article_id='.Yii::$app->request->get('article_id')]);
     }
 
     /**

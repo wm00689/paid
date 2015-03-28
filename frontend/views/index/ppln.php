@@ -10,7 +10,7 @@
 
                     <div class="linian_bt">
                         <ul>
-                            <?php foreach($cache['column_articles-'.$id] as $key=>$article):?>
+                            <?php foreach($cache['column_'.$id.'_articles'] as $key=>$article):?>
                                 <li <?php if($key==0):?>class="hover" <?php endif ?> ><?= $article['title']?></li>
                             <?php endforeach?>
                         </ul>
@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="linian_nr">
-                        <?php foreach($cache['column_articles-'.$id] as $key=>$article):?>
+                        <?php foreach($cache['column_'.$id.'_articles'] as $key=>$article):?>
                         <div class="hide" <?php if($key==0):?> style="display:block" <?php endif;?> >
                             <?= $article['content']?>
                         </div>

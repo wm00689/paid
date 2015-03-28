@@ -2,13 +2,13 @@
     <div id="cont">
         <?php include '../views/index/left_l.php'?>
         <div class="cont_right">
-            <div class="cont_right_weizhi">当前位置：<span>首页</span>&gt;<span>走进华粮</span>&gt;<span><?= $cache['column-'.$id]['cname']?></span></div>
+            <div class="cont_right_weizhi">当前位置：<span>首页</span>&gt;<span>走进华粮</span>&gt;<span><?= $cache['column_'.$id]['cname']?></span></div>
             <div class="tuandui">
 
                 <div class="wc960">
                     <div id="wrapBox1" class="wrapBox">
                         <ul id="count1" class="count">
-                            <?php foreach($cache['column_articles-'.$id] as $article):?>
+                            <?php foreach($cache['column_'.$id.'_articles'] as $article):?>
 
                             <li class="yy">
 
@@ -55,7 +55,7 @@
                 </script>
 
                 <div class="renyuan">
-                    <?php foreach($cache['column_articles-'.$id] as $article):?>
+                    <?php foreach($cache['column_'.$id.'_articles'] as $article):?>
                     <?= $article['title']?>
                     <?php endforeach?>
 

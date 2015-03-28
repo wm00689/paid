@@ -17,7 +17,7 @@ class IndexController extends HualController{
     {
         $id = Yii::$app->request->get('id');
         $cache = Yii::$app->cache;
-        $column = $cache['column-'.$id];
+        $column = $cache['column_'.$id];
         return $this->render($column['tmp'],[
             'cache'=>$cache,
             'column'=>$column,

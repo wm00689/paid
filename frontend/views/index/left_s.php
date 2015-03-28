@@ -6,7 +6,7 @@
 
     <div class="cont_left_list">
         <ul>
-            <?php foreach($cache['column_brother-'.$node] as $child):?>
+            <?php foreach($cache['column_'.$node.'_brother'] as $child):?>
                 <li <?php if($node==$child['id']):?> class="hover" <?php endif?> ><a href="/node/<?= $child['id']?>"><?= $child['cname']?></a></li>
             <?php endforeach;?>
         </ul>

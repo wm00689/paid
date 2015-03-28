@@ -12,11 +12,11 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="models-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Models', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('添加模型', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('更新模型缓存', ['cache'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -28,8 +28,17 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'ename',
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template'=>'{view} {update} {delete} {manage}',
+                'buttons'=>[
+                    'manage'=>function($url, $model, $key){
+                        return '<a href="/'.$model->ename.'/cacheall">缓存数据</a>';
+                    }
+                ]
+            ],
         ],
-    ]); ?>
+    ]); ?>a
 
 </div>
+

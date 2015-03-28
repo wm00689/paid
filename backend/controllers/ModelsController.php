@@ -62,7 +62,7 @@ class ModelsController extends BaseController
         $model = new Models();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->cacheAction();
+            //$this->cacheAction();
             return $this->redirect(['index']);
 
         } else {
@@ -83,7 +83,7 @@ class ModelsController extends BaseController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->cacheAction();
+           // $this->cacheAction();
            // return $this->redirect(['view', 'id' => $model->id]);
             return $this->redirect(['index']);
         } else {
@@ -122,11 +122,12 @@ class ModelsController extends BaseController
         }
     }
 
-    protected function cacheAction()
+    public function actionCache()
     {
         $searchModel = new ModelsSearch();
         $modelList = $searchModel->modelsList();
         $cache = Yii::$app->cache;
         $cache['models'] = $modelList;
+        return $this->redirect('index');
     }
 }

@@ -9,7 +9,7 @@
 
             <div class="cont_left_list">
                 <ul>
-                    <?php foreach($cache['column_brother-'.$id] as $child):?>
+                    <?php foreach($cache['column_'.$id.'_brother'] as $child):?>
                         <li <?php if($id==$child['id']):?> class="hover" <?php endif?> ><a href="/node/<?= $child['id']?>"><?= $child['cname']?></a></li>
                     <?php endforeach;?>
                 </ul>

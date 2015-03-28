@@ -6,7 +6,7 @@
             <div class="cont_right_weizhi">当前位置：<span>首页</span>&gt;<span>走进华粮</span>&gt;<span>华粮溯源</span></div>
             <div class="new">
                 <div class="newcont">
-                    <img src="http://admin.yii2.com<?= $cache['column-'.$id]['file']?>" style="margin:30px 0px;"/>
+                    <img src="http://admin.yii2.com<?= $cache['column_'.$id]['file']?>" style="margin:30px 0px;"/>
                 </div>
 
             </div>

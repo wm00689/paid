@@ -34,20 +34,31 @@ class ArticleController extends BaseController
      */
     public function actionIndex()
     {
+        if(Yii::$app->request->get('id'))
+        {
 
-        $columnObject = Column::findOne(Yii::$app->request->get('id'));
-        return $this->render('index', [
+            $columnObject = Column::findOne(Yii::$app->request->get('id'));
+            return $this->render('index', [
 
-            'article' =>$columnObject->articles,
+                'article' =>$columnObject->articles,
 
-        ]);
-        $searchModel = new ArticleSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+            ]);
+        }else
+        {
+            $articles = Article::find()->asArray()->all();
+            return $this->render('index', [
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+                'article' =>$articles,
+
+            ]);
+            $searchModel = new ArticleSearch();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        }
     }
 
     /**
@@ -107,7 +118,7 @@ class ArticleController extends BaseController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->actionCache($model->column_id,$model->id);
+            $this->actionCacheOne($model->column_id,$model->id);
             return $this->redirect(['index', 'id' => $model->column_id]);
         } else {
             return $this->render('update', [
@@ -145,12 +156,36 @@ class ArticleController extends BaseController
         }
     }
 
-    public function actionCache($column_id,$id)
+    /**
+     * 缓存单篇文章
+     * @param $column_id
+     * @param $id
+     */
+    public function actionCacheOne($column_id,$id)
     {
         $cache = Yii::$app->cache;
-        $columnObject = Column::findOne($column_id);
-        $cache['column_articles-'.$column_id] = $columnObject->articles;
 
         $cache['column_'.$column_id.'_article_'.$id] = Article::findOne(['id'=>$id])->toArray();
+    }
+
+    /**
+     *  批量缓存文章
+     */
+    public function actionCacheall()
+    {
+        $cache = Yii::$app->cache;
+        $articles = Article::find()->asArray()->all();
+
+        foreach($articles as $article)
+        {
+            $this->actionCacheOne($article['column_id'],$article['id']);
+
+            $articleObject = \backend\models\Article::findOne($article['id']);
+
+            $cache['article_'.$article['id'].'_photos'] = $articleObject->photos;
+        }
+
+
+        return $this->redirect('/models/index');
     }
 }

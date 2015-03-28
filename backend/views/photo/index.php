@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('添加图片', ['create?article_id='.Yii::$app->request->get('id')], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('添加图片', ['create?column_id='.Yii::$app->request->get('column_id').'&article_id='.Yii::$app->request->get('article_id')], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php /*GridView::widget([
@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <td>
                 <a href="/photo/view?id=<?= $v['id']?>" >查看</a> |
                 <a href="/photo/update?id=<?= $v['id']?>" >更新</a> |
-                <a href="/photo/delete?id=<?= $v['id']?>">删除</a> |
+                <a href="/photo/delete?column_id=<?= Yii::$app->request->get('column_id')?>&article_id=<?= Yii::$app->request->get()['article_id']?>&id=<?= $v['id']?>">删除</a>
 
             </td>
         </tr>

@@ -8,7 +8,7 @@
                 <div class="rongyu_bt">企业荣誉</div>
                 <div class="rongyu_sj">
                     <ul>
-                        <?php foreach($cache['column_articles-'.$id] as $key=>$article):?>
+                        <?php foreach($cache['column_'.$id.'_articles'] as $key=>$article):?>
                         <li <?php if($key==0):?>class="hover" <?php endif ?> ><?= $article['title']?></li>
                         <?php endforeach?>
 
@@ -17,10 +17,10 @@
                 </div>
                 <div class="clear"></div>
                 <div class="rongyu_jx">
-                    <?php foreach($cache['column_articles-'.$id] as $key=>$article):?>
+                    <?php foreach($cache['column_'.$id.'_articles'] as $key=>$article):?>
                     <div class="rongyu_jx_list" <?php if($key==0):?>style="display:block" <?php endif;?> >
                         <ul>
-                            <?php foreach($cache['article_photos-'.$article['id']] as $photo):?>
+                            <?php foreach($cache['article_'.$article['id'].'_photos'] as $photo):?>
                             <li>
                                 <div class="list_img"><img src="http://admin.yii2.com<?= $photo['url']?>" width="266" /></div>
                                 <p><?= $photo['title']?></p>

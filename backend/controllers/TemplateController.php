@@ -122,12 +122,12 @@ class TemplateController extends BaseController
         }
     }
 
-    public function cacheAction()
+    public function actionCache()
     {
         $searchModel = new TemplateSearch();
         $templateList = $searchModel->templateList();
         $cache = Yii::$app->cache;
         $cache['template'] = $templateList;
-
+        return $this->redirect('index');
     }
 }
