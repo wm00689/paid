@@ -102,7 +102,7 @@ class ModelsController extends BaseController
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-        $this->cacheAction();
+        $this->actionCache();
         return $this->redirect(['index']);
     }
 

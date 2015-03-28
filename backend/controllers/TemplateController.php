@@ -83,7 +83,7 @@ class TemplateController extends BaseController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->cacheAction();
+            $this->actionCache();
             //return $this->redirect(['view', 'id' => $model->id]);
             return $this->redirect(['index']);
         } else {
@@ -102,7 +102,7 @@ class TemplateController extends BaseController
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-        $this->cacheAction();
+        $this->actionCache();
         return $this->redirect(['index']);
     }
 

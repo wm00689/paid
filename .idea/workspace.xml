@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad2eaa47-2977-47b1-bfd5-a3171fdec653" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\www\yii2cms\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\yii2cms\.idea\yii2cms.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/ModelsController.php" afterPath="$PROJECT_DIR$/backend/controllers/ModelsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/TemplateController.php" afterPath="$PROJECT_DIR$/backend/controllers/TemplateController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,16 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Template.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/models/Template.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1144">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="templateSearch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/models/templateSearch.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,16 +42,6 @@
               <folding>
                 <element signature="e#34#42#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="column.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/widgets/views/column.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="550" max-vertical-offset="1166">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -102,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TemplateController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TemplateController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/controllers/TemplateController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53246754" vertical-offset="2" max-vertical-offset="3058">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state vertical-scroll-proportion="-11.354838" vertical-offset="1518" max-vertical-offset="3058">
+              <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
               <folding>
                 <element signature="e#39#47#0#PHP" expanded="true" />
               </folding>
@@ -114,21 +100,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Column.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/widgets/Column.php">
+      <file leaf-file-name="PhotoColumnController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/PhotoColumnController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
+            <state vertical-scroll-proportion="28.387096" vertical-offset="880" max-vertical-offset="2816">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ColumnSearch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/models/ColumnSearch.php">
+      <file leaf-file-name="ModelsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/ModelsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1804">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-73.80645" vertical-offset="0" max-vertical-offset="3058">
+              <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+              <folding>
+                <element signature="e#39#47#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColumnController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/ColumnController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.645162" vertical-offset="2376" max-vertical-offset="4972">
+              <caret line="128" column="21" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/ArticleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="4.2646103" vertical-offset="1157" max-vertical-offset="4180">
+              <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -152,7 +160,6 @@
         <option value="$PROJECT_DIR$/backend/views/models/update.php" />
         <option value="$PROJECT_DIR$/backend/views/models/view.php" />
         <option value="$PROJECT_DIR$/backend/views/column/index.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/ModelsController.php" />
         <option value="$PROJECT_DIR$/common/config/main.php" />
         <option value="$PROJECT_DIR$/common/models/ArticleSearch.php" />
         <option value="$PROJECT_DIR$/common/widgets/selectTree.php" />
@@ -182,6 +189,7 @@
         <option value="$PROJECT_DIR$/backend/models/templateSearch.php" />
         <option value="$PROJECT_DIR$/frontend/views/layouts/hual.php" />
         <option value="$PROJECT_DIR$/backend/controllers/TemplateController.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/ModelsController.php" />
       </list>
     </option>
   </component>
@@ -221,7 +229,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -498,6 +505,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -590,24 +598,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/controllers/PhotoColumnController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="45.419353" vertical-offset="1408" max-vertical-offset="2816">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/template/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="902">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/ModelsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.225806" vertical-offset="2354" max-vertical-offset="2970">
-          <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -835,13 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/ColumnController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.387097" vertical-offset="2508" max-vertical-offset="4972">
-          <caret line="128" column="21" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/models/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="51.096775" vertical-offset="1584" max-vertical-offset="2200">
@@ -860,13 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.612904" vertical-offset="0" max-vertical-offset="616">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.096774" vertical-offset="3564" max-vertical-offset="4180">
-          <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -955,11 +935,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/TemplateController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53246754" vertical-offset="2" max-vertical-offset="3058">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state vertical-scroll-proportion="-11.354838" vertical-offset="1518" max-vertical-offset="3058">
+          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
           <folding>
             <element signature="e#39#47#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/PhotoColumnController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="28.387096" vertical-offset="880" max-vertical-offset="2816">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ModelsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-73.80645" vertical-offset="0" max-vertical-offset="3058">
+          <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+          <folding>
+            <element signature="e#39#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ColumnController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.645162" vertical-offset="2376" max-vertical-offset="4972">
+          <caret line="128" column="21" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.2646103" vertical-offset="1157" max-vertical-offset="4180">
+          <caret line="179" column="9" selection-start-line="179" selection-start-column="9" selection-end-line="179" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
