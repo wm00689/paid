@@ -41,26 +41,26 @@ CREATE TABLE `article` (
 -- ----------------------------
 -- Records of article
 -- ----------------------------
-INSERT INTO `article` VALUES ('11', '1', '0', '1', '技术1111', null, '<p>334各国护航军舰aaa</p>', '0', '', '', '', '/uploads/images/746E8324F73A.jpg', null, null, '1427529889');
-INSERT INTO `article` VALUES ('16', '8', null, '1', '华粮溯源', null, '<p><img src=\"http://localhost:63342/hlhtml/images/suyuan.jpg\"/></p>', '0', '', '', '', '', null, null, null);
-INSERT INTO `article` VALUES ('17', '8', null, '1', '华粮溯源2', null, '<p>1234</p>', '0', '', '', '', '/uploads/files/Desert.jpg', null, null, null);
-INSERT INTO `article` VALUES ('18', '9', null, '1', '一九八五', null, '', '0', '', '', '', '', null, null, '1427461869');
-INSERT INTO `article` VALUES ('20', '9', null, '1', '一九九二', null, null, '0', '', '', '', '', null, null, '1427461877');
-INSERT INTO `article` VALUES ('21', '9', null, '1', '二零一零', null, null, '0', '', '', '', '/uploads/files/Desert.jpg', null, null, '1427461886');
-INSERT INTO `article` VALUES ('23', '10', null, '1', '董事长 张原野', null, '<p>央视网消息（新闻联播）：中共中央政治局3月24日下午就深化司法体制改革、保证司法公正进行第二十一次集体学习。中共中央总书记习近平在主持学习时强调，深化司法体制改革，建设公正高效权威的社会主义司法制度，是推进国家治理体系和治理能力现代化的重要举措。公正司法事关人民切身利益，事关社会公平正义，事关全面推进依法治国。要坚持司法体制改革的正确政治方向，坚持以提高司法公信力为根本尺度，坚持符合国情和遵循司法规律相结合，坚持问题导向、勇于攻坚克难，坚定信心，凝聚共识，锐意进取，破解难题，坚定不移深化司法体制改革，不断促进社会公平正义。。</p>', '0', '', '', '', '/uploads/files/rw1.jpg', null, null, null);
-INSERT INTO `article` VALUES ('24', '10', null, '1', '总书记：习近平', null, '<p>969－1975年 陕西省<a target=\"_blank\" href=\"http://baike.baidu.com/view/975612.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">延川县</a>文安驿公社梁家河大队知青、党支部书记</p><p><br/><span class=\"description\" style=\"display: block; color: rgb(85, 85, 85); font-size: 12px; font-family: 宋体; word-wrap: break-word; word-break: break-all; line-height: 15px; padding: 8px 7px; min-height: 12px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(224, 224, 224);\">习近平</span></p><p>1975－1979年&nbsp;<a target=\"_blank\" href=\"http://baike.baidu.com/view/1563.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">清华大学</a>化工系基本有机合成专业学习</p><p>1979－1982年&nbsp;<a target=\"_blank\" href=\"http://baike.baidu.com/view/24640.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">国务院办公厅</a>、中央军委办公厅秘书（现役）</p><p>1982－1983年 河北省<a target=\"_blank\" href=\"http://baike.baidu.com/view/132969.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">正定县</a>委副书记</p><p>1983－1985年&nbsp;<a target=\"_blank\" href=\"http://baike.baidu.com/view/4112.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">河北省</a>正定县委书记，正定县武装部第一政委、党委第一书记</p><p><br/></p>', '0', '', '', '', '/uploads/files/rw1.jpg', null, null, null);
-INSERT INTO `article` VALUES ('25', '13', null, '1', '华粮定位', null, '<p>新华网仰光3月26日电 （记者张云飞）缅甸执政党报《联邦日报》26日报道说，经过一月有余的战事，缅甸军方已经控制整个果敢地区。\r\n\r\n报道说，缅甸军方已经在果敢地区发出通令，敦促地方武装放下武器，并承诺保证其安全。\r\n\r\n老街军管当局在电话中告诉新华社记者，截至24日晚，果敢地区所有主要战略高地都已被军队控制，老街局势相对稳定，一些商店已经开门营业。\r\n\r\n2月9日，缅甸政府军与地方武装在果敢地区爆发战事。持续至今的战事严重影响边境地区安全稳定。缅甸官方统计，交战双方有400余人伤亡</p>', '0', '', '', '', '', null, '1427375172', '1427375172');
-INSERT INTO `article` VALUES ('26', '13', null, '1', '华粮宗旨', null, '<p>22222222222222新华网仰光3月26日电 （记者张云飞）缅甸执政党报《联邦日报》26日报道说，经过一月有余的战事，缅甸军方已经控制整个果敢地区。 报道说，缅甸军方已经在果敢地区发出通令，敦促地方武装放下武器，并承诺保证其安全。 老街军管当局在电话中告诉新华社记者，截至24日晚，果敢地区所有主要战略高地都已被军队控制，老街局势相对稳定，一些商店已经开门营业。 2月9日，缅甸政府军与地方武装在果敢地区爆发战事。持续至今的战事严重影响边境地区安全稳定。缅甸官方统计，交战双方有400余人伤亡</p>', '0', '', '', '', '', null, '1427375211', '1427378376');
-INSERT INTO `article` VALUES ('27', '13', null, '1', '华粮使命', null, '<p>333333333333333新华网仰光3月26日电 （记者张云飞）缅甸执政党报《联邦日报》26日报道说，经过一月有余的战事，缅甸军方已经控制整个果敢地区。 报道说，缅甸军方已经在果敢地区发出通令，敦促地方武装放下武器，并承诺保证其安全。 老街军管当局在电话中告诉新华社记者，截至24日晚，果敢地区所有主要战略高地都已被军队控制，老街局势相对稳定，一些商店已经开门营业。 2月9日，缅甸政府军与地方武装在果敢地区爆发战事。持续至今的战事严重影响边境地区安全稳定。缅甸官方统计，交战双方有400余人伤亡</p>', '0', '', '', '', '', null, '1427375232', '1427378383');
-INSERT INTO `article` VALUES ('28', '15', null, '1', 'UC九游完成阿里手游业务整合 将发布新战略', null, '<p>越位<br/>　　Ö1.凡进攻队员较球更接近于对方球门线者，即为处于越位位置。下列情况除外：　<br/>　　·a.该队员在本方半场内。<br/>　　·b.至少有对方队员两人比该队员更接近于对方的球门线。<br/>　　Ö2.当队员踢或触及球的一瞬间，同队队员处于越位位置时，裁判员认为该队员有下列行为，则应判为越位：<br/>　　·a.在干扰比赛或干扰对方；<br/>　　·b.企图从越位位置获得利益。<br/>　　Ö3.下列情况，队员不应被判为越位：<br/>　　·a.队员仅仅处在越位位置；<br/>　　·b.队员直接接得球门球、角球或界外掷球。<br/>　</p>', '0', '', '', '', '', null, '1427380010', '1427447726');
-INSERT INTO `article` VALUES ('29', '15', null, '1', 'UC九游完成阿里手游业务整合222222222', null, '<p>22222222222222新浪科技讯 3月11日下午消息，新浪科技从接近九游的消息人士获悉，九游与阿里游戏的整合已经初步完成，即将下周一宣布新的移动游戏平台战略2014年初，阿里巴巴宣布推出手机游戏平台，除了利用手机淘宝、支付宝钱包等阿里旗下用户过亿的超级App入口开展游戏分发业务，同时独家代理运营《暖暖环游世界》、《愤怒的小鸟斯黛拉》等多款手游。</p><p>6月，阿里巴巴集团与UC优视联合宣布，UC优视全资融入阿里巴巴集团，并组建阿里移动事业群，新任事业群总裁俞永福表示，阿里移动事业群在成功整合阿里集团的浏览器和搜索业务之后，未来还将整合阿里集团其他相关业务和团队。</p><p>这些团队包括地图、移动游戏、移动阅读、应用分发等。一个月后，俞永福即出任高德移动互联网事业部总经理，正式接管互联网地图业务。在此之前，UC曾先后整合一搜团队推出神马搜索，整合淘宝浏览器推出UC浏览器PC版</p><p>2014年11月，阿里游戏官方宣布，将手游业务交由阿里移动事业群负责。据了解，九游已经登录手机淘宝和支付宝钱包，位置类似于京东和大众点评在微信的推广入口。</p><p>与360、91等渠道相比，九游以重度游戏用户集中、ARUP值高著称。据记者了解，2014年，九游为《天龙八部》、《全民奇迹》、《征途》等多款手游大作贡献的收入，在全渠道占比中都名列第一，《卧虎藏龙》首测当日，九游收入更是超全盘的60%。阿里集团在搜索、游戏这些垂直互联网业务上的路线逐渐清晰，就是向俞永福领衔的阿里巴巴移动事业群集中。(张楠)</p><p>与360、91等渠道相比，九游以重度游戏用户集中、ARUP值高著称。据记者了解，2014年，九游为《天龙八部》、《全民奇迹》、《征途》等多款手游大作贡献的收入，在全渠道占比中都名列第一，《卧虎藏龙》首测当日，九游收入更是超全盘的60%。阿里集团在搜索、游戏这些垂直互联网业务上的路线逐渐清晰，就是向俞永福领衔的阿里巴巴移动事业群集中。(张楠)</p>', '0', '', '', '', '', null, '1427380062', '1427439893');
+INSERT INTO `article` VALUES ('11', '1', '0', '1', '����1111', null, '<p>334������������aaa</p>', '0', '', '', '', '/uploads/images/746E8324F73A.jpg', null, null, '1427529889');
+INSERT INTO `article` VALUES ('16', '8', null, '1', '������Դ', null, '<p><img src=\"http://localhost:63342/hlhtml/images/suyuan.jpg\"/></p>', '0', '', '', '', '', null, null, null);
+INSERT INTO `article` VALUES ('17', '8', null, '1', '������Դ2', null, '<p>1234</p>', '0', '', '', '', '/uploads/files/Desert.jpg', null, null, null);
+INSERT INTO `article` VALUES ('18', '9', null, '1', 'һ�Ű���', null, '', '0', '', '', '', '', null, null, '1427461869');
+INSERT INTO `article` VALUES ('20', '9', null, '1', 'һ�žŶ�', null, null, '0', '', '', '', '', null, null, '1427461877');
+INSERT INTO `article` VALUES ('21', '9', null, '1', '����һ��', null, null, '0', '', '', '', '/uploads/files/Desert.jpg', null, null, '1427461886');
+INSERT INTO `article` VALUES ('23', '10', null, '1', '���³� ��ԭҰ', null, '<p>��������Ϣ���������������й��������ξ�3��24��������˾�����Ƹĸ��֤˾���������еڶ�ʮһ�μ���ѧϰ���й����������ϰ��ƽ������ѧϰʱǿ�����˾�����Ƹĸ���蹫����ЧȨ�����������˾���ƶȣ����ƽ�����������ϵ�����������ִ�������Ҫ�ٴ롣����˾���¹������������棬�¹���ṫƽ���壬�¹�ȫ���ƽ������ι���Ҫ���˾�����Ƹĸ����ȷ���η��򣬼�������˾��������Ϊ�����߶ȣ���ַ��Ϲ������ѭ˾���������ϣ�������⵼�����ڹ�����ѣ��ᶨ���ģ����۹�ʶ�������ȡ���ƽ����⣬�ᶨ�����˾�����Ƹĸ���ϴٽ���ṫƽ���塣��</p>', '0', '', '', '', '/uploads/files/rw1.jpg', null, null, null);
+INSERT INTO `article` VALUES ('24', '10', null, '1', '����ǣ�ϰ��ƽ', null, '<p>969��1975�� ����ʡ<a target=\"_blank\" href=\"http://baike.baidu.com/view/975612.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">�Ӵ���</a>�İ��乫�����ҺӴ��֪�ࡢ��֧�����</p><p><br/><span class=\"description\" style=\"display: block; color: rgb(85, 85, 85); font-size: 12px; font-family: ����; word-wrap: break-word; word-break: break-all; line-height: 15px; padding: 8px 7px; min-height: 12px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(224, 224, 224);\">ϰ��ƽ</span></p><p>1975��1979��&nbsp;<a target=\"_blank\" href=\"http://baike.baidu.com/view/1563.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">�廪��ѧ</a>����ϵ�����л��ϳ�רҵѧϰ</p><p>1979��1982��&nbsp;<a target=\"_blank\" href=\"http://baike.baidu.com/view/24640.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">����Ժ�칫��</a>�������ί�칫�����飨���ۣ�</p><p>1982��1983�� �ӱ�ʡ<a target=\"_blank\" href=\"http://baike.baidu.com/view/132969.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">������</a>ί�����</p><p>1983��1985��&nbsp;<a target=\"_blank\" href=\"http://baike.baidu.com/view/4112.htm\" style=\"text-decoration: none; color: rgb(19, 110, 194);\">�ӱ�ʡ</a>������ί��ǣ���������װ����һ��ί����ί��һ���</p><p><br/></p>', '0', '', '', '', '/uploads/files/rw1.jpg', null, null, null);
+INSERT INTO `article` VALUES ('25', '13', null, '1', '������λ', null, '<p>�»�������3��26�յ� ���������Ʒɣ����ִ�������������ձ���26�ձ���˵������һ�������ս�£��������Ѿ������������ҵ�����\r\n\r\n����˵���������Ѿ��ڹ��ҵ�������ͨ��شٵط���װ��������������ŵ��֤�䰲ȫ��\r\n\r\n�Ͻ־��ܵ����ڵ绰�и����»�����ߣ�����24���������ҵ���������Ҫս�Ըߵض��ѱ����ӿ��ƣ��Ͻ־�������ȶ���һЩ�̵��Ѿ�����Ӫҵ��\r\n\r\n2��9�գ������������ط���װ�ڹ��ҵ�������ս�¡����������ս������Ӱ��߾�������ȫ�ȶ������ٷ�ͳ�ƣ���ս˫����400��������</p>', '0', '', '', '', '', null, '1427375172', '1427375172');
+INSERT INTO `article` VALUES ('26', '13', null, '1', '������ּ', null, '<p>22222222222222�»�������3��26�յ� ���������Ʒɣ����ִ�������������ձ���26�ձ���˵������һ�������ս�£��������Ѿ������������ҵ����� ����˵���������Ѿ��ڹ��ҵ�������ͨ��شٵط���װ��������������ŵ��֤�䰲ȫ�� �Ͻ־��ܵ����ڵ绰�и����»�����ߣ�����24���������ҵ���������Ҫս�Ըߵض��ѱ����ӿ��ƣ��Ͻ־�������ȶ���һЩ�̵��Ѿ�����Ӫҵ�� 2��9�գ������������ط���װ�ڹ��ҵ�������ս�¡����������ս������Ӱ��߾�������ȫ�ȶ������ٷ�ͳ�ƣ���ս˫����400��������</p>', '0', '', '', '', '', null, '1427375211', '1427378376');
+INSERT INTO `article` VALUES ('27', '13', null, '1', '����ʹ��', null, '<p>333333333333333�»�������3��26�յ� ���������Ʒɣ����ִ�������������ձ���26�ձ���˵������һ�������ս�£��������Ѿ������������ҵ����� ����˵���������Ѿ��ڹ��ҵ�������ͨ��شٵط���װ��������������ŵ��֤�䰲ȫ�� �Ͻ־��ܵ����ڵ绰�и����»�����ߣ�����24���������ҵ���������Ҫս�Ըߵض��ѱ����ӿ��ƣ��Ͻ־�������ȶ���һЩ�̵��Ѿ�����Ӫҵ�� 2��9�գ������������ط���װ�ڹ��ҵ�������ս�¡����������ս������Ӱ��߾�������ȫ�ȶ������ٷ�ͳ�ƣ���ս˫����400��������</p>', '0', '', '', '', '', null, '1427375232', '1427378383');
+INSERT INTO `article` VALUES ('28', '15', null, '1', 'UC������ɰ�������ҵ������ ��������ս��', null, '<p>Խλ<br/>����?1.��������Ա������ӽ��ڶԷ��������ߣ���Ϊ����Խλλ�á�����������⣺��<br/>������a.�ö�Ա�ڱ����볡�ڡ�<br/>������b.�����жԷ���Ա���˱ȸö�Ա���ӽ��ڶԷ��������ߡ�<br/>����?2.����Ա�߻򴥼����һ˲�䣬ͬ�Ӷ�Ա����Խλλ��ʱ������Ա��Ϊ�ö�Ա��������Ϊ����Ӧ��ΪԽλ��<br/>������a.�ڸ��ű�������ŶԷ���<br/>������b.��ͼ��Խλλ�û�����档<br/>����?3.�����������Ա��Ӧ����ΪԽλ��<br/>������a.��Ա��������Խλλ�ã�<br/>������b.��Աֱ�ӽӵ������򡢽�����������<br/>��</p>', '0', '', '', '', '', null, '1427380010', '1427447726');
+INSERT INTO `article` VALUES ('29', '15', null, '1', 'UC������ɰ�������ҵ������222222222', null, '<p>22222222222222���˿Ƽ�Ѷ 3��11��������Ϣ�����˿Ƽ��ӽӽ����ε���Ϣ��ʿ��Ϥ�������밢����Ϸ�������Ѿ�������ɣ���������һ�����µ��ƶ���Ϸƽ̨ս��2014���������Ͱ������Ƴ��ֻ���Ϸƽ̨�����������ֻ��Ա���֧����Ǯ���Ȱ��������û����ڵĳ���App��ڿ�չ��Ϸ�ַ�ҵ��ͬʱ���Ҵ�����Ӫ��ůů�������硷������ŭ��С��˹�������ȶ�����Ρ�</p><p>6�£�����Ͱͼ�����UC��������������UC����ȫ�����밢��Ͱͼ��ţ����齨�����ƶ���ҵȺ��������ҵȺ�ܲ���������ʾ�������ƶ���ҵȺ�ڳɹ����ϰ��Ｏ�ŵ������������ҵ��֮��δ���������ϰ��Ｏ���������ҵ����Ŷӡ�</p><p>��Щ�ŶӰ�����ͼ���ƶ���Ϸ���ƶ��Ķ���Ӧ�÷ַ��ȡ�һ���º������������θߵ��ƶ���������ҵ���ܾ�������ʽ�ӹܻ�������ͼҵ���ڴ�֮ǰ��UC���Ⱥ�����һ���Ŷ��Ƴ����������������Ա�������Ƴ�UC�����PC��</p><p>2014��11�£�������Ϸ�ٷ�������������ҵ���ɰ����ƶ���ҵȺ���𡣾��˽⣬�����Ѿ���¼�ֻ��Ա���֧����Ǯ����λ�������ھ����ʹ��ڵ�����΢�ŵ��ƹ���ڡ�</p><p>��360��91��������ȣ��������ض���Ϸ�û����С�ARUPֵ�����ơ��ݼ����˽⣬2014�꣬����Ϊ�������˲�������ȫ���漣��������;���ȶ�����δ������׵����룬��ȫ����ռ���ж����е�һ�����Ի��������ײ⵱�գ�����������ǳ�ȫ�̵�60%�����Ｏ������������Ϸ��Щ��ֱ������ҵ���ϵ�·�������������������������εİ���Ͱ��ƶ���ҵȺ���С�(���)</p><p>��360��91��������ȣ��������ض���Ϸ�û����С�ARUPֵ�����ơ��ݼ����˽⣬2014�꣬����Ϊ�������˲�������ȫ���漣��������;���ȶ�����δ������׵����룬��ȫ����ռ���ж����е�һ�����Ի��������ײ⵱�գ�����������ǳ�ȫ�̵�60%�����Ｏ������������Ϸ��Щ��ֱ������ҵ���ϵ�·�������������������������εİ���Ͱ��ƶ���ҵȺ���С�(���)</p>', '0', '', '', '', '', null, '1427380062', '1427439893');
 INSERT INTO `article` VALUES ('30', '15', null, '1', '123', null, '<p>34567</p>', '0', '', '', '', '', null, '1427423223', '1427439908');
 INSERT INTO `article` VALUES ('31', '15', null, '1', '444', null, '<p>5678</p>', '0', '', '', '', '', null, '1427423272', '1427439920');
 INSERT INTO `article` VALUES ('32', '15', null, '1', '555', null, '<p>t56666</p>', '0', '', '', '', '', null, '1427426462', '1427426462');
 INSERT INTO `article` VALUES ('33', '15', null, '1', '666', null, '<p>666677</p>', '0', '', '', '', '', null, '1427438150', '1427438772');
-INSERT INTO `article` VALUES ('34', '3', null, '1', '2015上海农博会', null, '<p>111111111111111<br/></p>', '0', '', '', '', '/uploads/files/nbh1.jpg', null, '1427441675', '1427448908');
-INSERT INTO `article` VALUES ('35', '3', null, '1', '2015上海第二十六届农博会>', null, '<p>222222222222222</p>', '0', '', '', '', '/uploads/files/nbh2.jpg', null, '1427441753', '1427448938');
-INSERT INTO `article` VALUES ('36', '3', null, '1', '上海第二十六届农博会>333', null, '<p>3333333333333333</p>', '0', '', '', '', '/uploads/files/nbh3.jpg', null, '1427441786', '1427442660');
+INSERT INTO `article` VALUES ('34', '3', null, '1', '2015�Ϻ�ũ����', null, '<p>111111111111111<br/></p>', '0', '', '', '', '/uploads/files/nbh1.jpg', null, '1427441675', '1427448908');
+INSERT INTO `article` VALUES ('35', '3', null, '1', '2015�Ϻ��ڶ�ʮ����ũ����>', null, '<p>222222222222222</p>', '0', '', '', '', '/uploads/files/nbh2.jpg', null, '1427441753', '1427448938');
+INSERT INTO `article` VALUES ('36', '3', null, '1', '�Ϻ��ڶ�ʮ����ũ����>333', null, '<p>3333333333333333</p>', '0', '', '', '', '/uploads/files/nbh3.jpg', null, '1427441786', '1427442660');
 INSERT INTO `article` VALUES ('37', '16', null, '1', '11111111', null, '<p>3332234111</p>', '0', '', '', '', '', null, '1427447051', '1427447051');
 
 -- ----------------------------
@@ -90,26 +90,26 @@ CREATE TABLE `columns` (
 -- ----------------------------
 -- Records of columns
 -- ----------------------------
-INSERT INTO `columns` VALUES ('1', '0', '1', '1', '走进华粮', '1234帮不帮1123', '1', '1', '1', '<p>我们是<span style=\"margin: 0px; padding: 0px; font-size: 72px;\">谁？</span></p><p>中国华粮集团有限责任公司</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">中国华粮集团有限公司秉承“善本、归元、循道”的理念，立足三农、服务民生，致力于农林牧副渔等行业，以农业、文化、网络、金融、小镇经济为五大产业方向，是高端大农业产品“标准化”的制定者、实施者。</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">华粮使命：</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">1、让员工和家人更健康；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">2、让投资者回报更高；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">3、让农民耕种快乐、种好地，好种地，地种好；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">4、奉献“品质、环保、简约、方便、便宜”的好产品；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">5、让人们体验喜悦和生命的美好；</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">6、为社会贡献一个受人尊敬的企业。</p><p><br/></p>', '/uploads/files/Koala.jpg', '10', '1426860398', '1426860398');
-INSERT INTO `columns` VALUES ('2', '0', '3', '1', '耕织堂', '122', '2', '1', '1', '<p>22</p>', '', '10', '1426860646', '1426860646');
-INSERT INTO `columns` VALUES ('3', '0', '4', '1', '农博会', 'aa', '3', '2', '1', '<p>222</p>', '', '10', '1426860665', '1426860665');
-INSERT INTO `columns` VALUES ('8', '1', '14', '1', '华粮溯源', '123', '1', '2', '1', '<p>aaa</p>', '/uploads/files/suyuan.jpg', '10', '1426898856', '1426898856');
-INSERT INTO `columns` VALUES ('9', '1', '9', '1', '企业荣誉', '123', '3', '2', '1', '<p>爱爱爱</p>', '', '10', '1426898887', '1426898887');
-INSERT INTO `columns` VALUES ('10', '1', '2', '1', '团队介绍', '12', '2', '1', '1', '<p>11</p>', '', '10', '1426898960', '1426898960');
-INSERT INTO `columns` VALUES ('13', '1', '10', '1', '品牌理念', 'q\'q\'q', '4', '1', '1', '<p>12</p>', '', '10', '1427082642', '1427082642');
-INSERT INTO `columns` VALUES ('14', '1', '11', '1', '科研创新', '122', '5', '1', '1', '<p>123</p>', '', '10', '1427082745', '1427082745');
-INSERT INTO `columns` VALUES ('15', '1', '6', '1', '集团新闻', '12', '6', '2', '1', '<p>34</p>', '', '10', '1427082784', '1427082784');
-INSERT INTO `columns` VALUES ('16', '1', '6', '1', '媒体报道', '11', '7', '2', '1', '<p>12</p>', '', '10', '1427082803', '1427082803');
-INSERT INTO `columns` VALUES ('17', '2', '1', '1', '国家政策', '1', '1', '2', '1', '<p>11</p>', '', '10', '1427082914', '1427082914');
-INSERT INTO `columns` VALUES ('18', '2', '1', '1', '世界趋势', '11', '2', '2', '1', '<p>11</p>', '', '10', '1427082950', '1427082950');
-INSERT INTO `columns` VALUES ('19', '2', '1', '1', '心灵鸡汤', '11', '3', '2', '1', '<p>11</p>', '', '10', '1427082980', '1427082980');
-INSERT INTO `columns` VALUES ('20', '0', '1', '1', '华粮商道', '11', '4', '1', '1', '<p>11</p>', '', '10', '1427093555', '1427093555');
-INSERT INTO `columns` VALUES ('21', '0', '13', '1', '华粮联盟', 'AA', '5', '1', '1', '<p style=\"text-align: center;\"><strong><br/></strong></p><p style=\"text-align: center;\"><strong>11222</strong></p><p><strong>AAAAAAAAAAAA</strong></p>', '', '10', '1427093599', '1427093599');
-INSERT INTO `columns` VALUES ('22', '3', '5', '1', '异地特色', 'aa', null, '1', '1', '<p>11</p>', '', '10', '1427098876', '1427098876');
-INSERT INTO `columns` VALUES ('23', '20', '1', '1', '官方商城', '11', null, '1', '1', '<p>1</p>', '', '10', '1427098913', '1427098913');
-INSERT INTO `columns` VALUES ('24', '21', '7', '1', '合作客户', '11', '1', '1', '1', '<p>2233</p>', '', '10', '1427266726', '1427266726');
-INSERT INTO `columns` VALUES ('29', '21', '8', '1', '联系我们', '11', '1', '1', '1', '<p>12</p>', '', '10', '1427443264', '1427443264');
-INSERT INTO `columns` VALUES ('30', '21', '12', '1', '加入我们', '111', '3', '1', '1', '<p>234</p>', '', '10', '1427443329', '1427443329');
+INSERT INTO `columns` VALUES ('1', '0', '1', '1', '�߽�����', '1234�ﲻ��1123', '1', '1', '1', '<p>������<span style=\"margin: 0px; padding: 0px; font-size: 72px;\">˭��</span></p><p>�й����������������ι�˾</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">�й������������޹�˾���С��Ʊ�����Ԫ��ѭ���������������ũ������������������ũ�����������ҵ����ũҵ���Ļ������硢���ڡ�С�򾭼�Ϊ����ҵ�����Ǹ߶˴�ũҵ��Ʒ����׼�������ƶ��ߡ�ʵʩ�ߡ�</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">����ʹ����</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">1����Ա���ͼ��˸�������</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">2����Ͷ���߻ر����ߣ�</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">3����ũ����ֿ��֡��ֺõأ����ֵأ����ֺã�</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">4�����ס�Ʒ�ʡ���������Լ�����㡢���ˡ��ĺò�Ʒ��</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">5������������ϲ�ú����������ã�</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(255, 255, 255); line-height: 25px; font-family: &#39;microsoft yahei&#39;; font-size: 12px; white-space: normal; background-color: rgb(85, 186, 100);\">6��Ϊ��ṱ��һ�������𾴵���ҵ��</p><p><br/></p>', '/uploads/files/Koala.jpg', '10', '1426860398', '1426860398');
+INSERT INTO `columns` VALUES ('2', '0', '3', '1', '��֯��', '122', '2', '1', '1', '<p>22</p>', '', '10', '1426860646', '1426860646');
+INSERT INTO `columns` VALUES ('3', '0', '4', '1', 'ũ����', 'aa', '3', '2', '1', '<p>222</p>', '', '10', '1426860665', '1426860665');
+INSERT INTO `columns` VALUES ('8', '1', '14', '1', '������Դ', '123', '1', '2', '1', '<p>aaa</p>', '/uploads/files/suyuan.jpg', '10', '1426898856', '1426898856');
+INSERT INTO `columns` VALUES ('9', '1', '9', '1', '��ҵ����', '123', '3', '2', '1', '<p>������</p>', '', '10', '1426898887', '1426898887');
+INSERT INTO `columns` VALUES ('10', '1', '2', '1', '�Ŷӽ���', '12', '2', '1', '1', '<p>11</p>', '', '10', '1426898960', '1426898960');
+INSERT INTO `columns` VALUES ('13', '1', '10', '1', 'Ʒ������', 'q\'q\'q', '4', '1', '1', '<p>12</p>', '', '10', '1427082642', '1427082642');
+INSERT INTO `columns` VALUES ('14', '1', '11', '1', '���д���', '122', '5', '1', '1', '<p>123</p>', '', '10', '1427082745', '1427082745');
+INSERT INTO `columns` VALUES ('15', '1', '6', '1', '��������', '12', '6', '2', '1', '<p>34</p>', '', '10', '1427082784', '1427082784');
+INSERT INTO `columns` VALUES ('16', '1', '6', '1', 'ý�屨��', '11', '7', '2', '1', '<p>12</p>', '', '10', '1427082803', '1427082803');
+INSERT INTO `columns` VALUES ('17', '2', '1', '1', '��������', '1', '1', '2', '1', '<p>11</p>', '', '10', '1427082914', '1427082914');
+INSERT INTO `columns` VALUES ('18', '2', '1', '1', '��������', '11', '2', '2', '1', '<p>11</p>', '', '10', '1427082950', '1427082950');
+INSERT INTO `columns` VALUES ('19', '2', '1', '1', '���鼦��', '11', '3', '2', '1', '<p>11</p>', '', '10', '1427082980', '1427082980');
+INSERT INTO `columns` VALUES ('20', '0', '1', '1', '�����̵�', '11', '4', '1', '1', '<p>11</p>', '', '10', '1427093555', '1427093555');
+INSERT INTO `columns` VALUES ('21', '0', '13', '1', '��������', 'AA', '5', '1', '1', '<p style=\"text-align: center;\"><strong><br/></strong></p><p style=\"text-align: center;\"><strong>11222</strong></p><p><strong>AAAAAAAAAAAA</strong></p>', '', '10', '1427093599', '1427093599');
+INSERT INTO `columns` VALUES ('22', '3', '5', '1', '�����ɫ', 'aa', null, '1', '1', '<p>11</p>', '', '10', '1427098876', '1427098876');
+INSERT INTO `columns` VALUES ('23', '20', '1', '1', '�ٷ��̳�', '11', null, '1', '1', '<p>1</p>', '', '10', '1427098913', '1427098913');
+INSERT INTO `columns` VALUES ('24', '21', '7', '1', '�����ͻ�', '11', '1', '1', '1', '<p>2233</p>', '', '10', '1427266726', '1427266726');
+INSERT INTO `columns` VALUES ('29', '21', '8', '1', '��ϵ����', '11', '1', '1', '1', '<p>12</p>', '', '10', '1427443264', '1427443264');
+INSERT INTO `columns` VALUES ('30', '21', '12', '1', '��������', '111', '3', '1', '1', '<p>234</p>', '', '10', '1427443329', '1427443329');
 
 -- ----------------------------
 -- Table structure for `column_photo`
@@ -155,7 +155,7 @@ INSERT INTO `migration` VALUES ('m150307_084149_create_category_table', '1426859
 DROP TABLE IF EXISTS `models`;
 CREATE TABLE `models` (
   `id` smallint(3) NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) NOT NULL COMMENT '模型名称',
+  `name` varchar(30) NOT NULL COMMENT 'ģ������',
   `ename` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -163,9 +163,9 @@ CREATE TABLE `models` (
 -- ----------------------------
 -- Records of models
 -- ----------------------------
-INSERT INTO `models` VALUES ('1', '文章', 'article');
-INSERT INTO `models` VALUES ('2', '图片', 'photo');
-INSERT INTO `models` VALUES ('3', '企业荣誉', 'rongyu');
+INSERT INTO `models` VALUES ('1', '����', 'article');
+INSERT INTO `models` VALUES ('2', 'ͼƬ', 'photo');
+INSERT INTO `models` VALUES ('3', '��ҵ����', 'rongyu');
 
 -- ----------------------------
 -- Table structure for `photo`
@@ -188,10 +188,10 @@ CREATE TABLE `photo` (
 -- ----------------------------
 -- Records of photo
 -- ----------------------------
-INSERT INTO `photo` VALUES ('4', '奖牌一', '/uploads/files/ry1.jpg', '18', '9', '123', null, '12', '1427356201', '1427532818');
-INSERT INTO `photo` VALUES ('5', '奖牌2', '/uploads/files/ry1.jpg', '18', '9', '2', null, '1', '1427356233', '1427532856');
-INSERT INTO `photo` VALUES ('6', '奖牌3', '/uploads/files/ry2.jpg', '20', '9', '44', null, '1', '1427362882', '1427532837');
-INSERT INTO `photo` VALUES ('7', '奖牌4', '/uploads/files/ry1.jpg', '21', null, '1', null, '2', '1427362916', '1427532847');
+INSERT INTO `photo` VALUES ('4', '����һ', '/uploads/files/ry1.jpg', '18', '9', '123', null, '12', '1427356201', '1427532818');
+INSERT INTO `photo` VALUES ('5', '����2', '/uploads/files/ry1.jpg', '18', '9', '2', null, '1', '1427356233', '1427532856');
+INSERT INTO `photo` VALUES ('6', '����3', '/uploads/files/ry2.jpg', '20', '9', '44', null, '1', '1427362882', '1427532837');
+INSERT INTO `photo` VALUES ('7', '����4', '/uploads/files/ry1.jpg', '21', null, '1', null, '2', '1427362916', '1427532847');
 
 -- ----------------------------
 -- Table structure for `photo_column`
@@ -215,8 +215,8 @@ CREATE TABLE `photo_column` (
 -- ----------------------------
 -- Records of photo_column
 -- ----------------------------
-INSERT INTO `photo_column` VALUES ('1', '啊飒飒的', '/uploads/files/Desert.jpg', null, '1234', null, '1', '1427250372', '1427250372');
-INSERT INTO `photo_column` VALUES ('2', '皮草2', '/uploads/files/Desert.jpg', null, '123', null, '345', '1427250601', '1427250601');
+INSERT INTO `photo_column` VALUES ('1', '���쪵�', '/uploads/files/Desert.jpg', null, '1234', null, '1', '1427250372', '1427250372');
+INSERT INTO `photo_column` VALUES ('2', 'Ƥ��2', '/uploads/files/Desert.jpg', null, '123', null, '345', '1427250601', '1427250601');
 INSERT INTO `photo_column` VALUES ('3', '123', '/uploads/files/Desert.jpg', '1', '34', '1', null, '1427259833', '1427259833');
 INSERT INTO `photo_column` VALUES ('4', '23', '/uploads/files/Desert.jpg', '1', '4455', '2', null, '1427260123', '1427260123');
 INSERT INTO `photo_column` VALUES ('5', '1', '/uploads/files/hezuo%20(1).jpg', '24', '12', null, null, '1427446405', '1427446405');
@@ -237,20 +237,20 @@ CREATE TABLE `template` (
 -- ----------------------------
 -- Records of template
 -- ----------------------------
-INSERT INTO `template` VALUES ('1', '走进华粮', 'zjhl');
-INSERT INTO `template` VALUES ('2', '团队介绍', 'tdjs');
-INSERT INTO `template` VALUES ('3', '耕织堂', 'gzt');
-INSERT INTO `template` VALUES ('4', '农博会', 'nbh');
-INSERT INTO `template` VALUES ('5', '农博会-下级', 'nbh_list');
-INSERT INTO `template` VALUES ('6', '集团新闻', 'jtxw');
-INSERT INTO `template` VALUES ('7', '合作客户', 'hzkh');
-INSERT INTO `template` VALUES ('8', '联系我们', 'lxwm');
-INSERT INTO `template` VALUES ('9', '企业荣誉', 'qyry');
-INSERT INTO `template` VALUES ('10', '品牌理念', 'ppln');
-INSERT INTO `template` VALUES ('11', '科研创新', 'kycx');
-INSERT INTO `template` VALUES ('12', '加入我们', 'jrwm');
-INSERT INTO `template` VALUES ('13', '华粮联盟', 'hllm');
-INSERT INTO `template` VALUES ('14', '华粮溯源', 'hlsy');
+INSERT INTO `template` VALUES ('1', '�߽�����', 'zjhl');
+INSERT INTO `template` VALUES ('2', '�Ŷӽ���', 'tdjs');
+INSERT INTO `template` VALUES ('3', '��֯��', 'gzt');
+INSERT INTO `template` VALUES ('4', 'ũ����', 'nbh');
+INSERT INTO `template` VALUES ('5', 'ũ����-�¼�', 'nbh_list');
+INSERT INTO `template` VALUES ('6', '��������', 'jtxw');
+INSERT INTO `template` VALUES ('7', '�����ͻ�', 'hzkh');
+INSERT INTO `template` VALUES ('8', '��ϵ����', 'lxwm');
+INSERT INTO `template` VALUES ('9', '��ҵ����', 'qyry');
+INSERT INTO `template` VALUES ('10', 'Ʒ������', 'ppln');
+INSERT INTO `template` VALUES ('11', '���д���', 'kycx');
+INSERT INTO `template` VALUES ('12', '��������', 'jrwm');
+INSERT INTO `template` VALUES ('13', '��������', 'hllm');
+INSERT INTO `template` VALUES ('14', '������Դ', 'hlsy');
 
 -- ----------------------------
 -- Table structure for `user`
