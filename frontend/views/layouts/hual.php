@@ -4,7 +4,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\HualAsset;
-use frontend\widgets\column;
+use frontend\widgets\Column;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
