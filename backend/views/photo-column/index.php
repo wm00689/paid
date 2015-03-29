@@ -29,9 +29,9 @@ $this->params['breadcrumbs'][] = $this->title;
             <tr>
                 <td><?= $v['id']?></td><td><?= $v['column_id']?></td><td><?= $v['title']?></td><td><?= $v['id']?></td><td><?= $v['created_at']?></td>
                 <td>
-                    <a href="/photo/view?id=<?= $v['id']?>" >查看</a> |
-                    <a href="/photo/update?id=<?= $v['id']?>" >更新</a> |
-                    <a href="/photo/delete?id=<?= $v['id']?>">删除</a>
+                    <a href="/photo-column/view?id=<?= $v['id']?>" >查看</a> |
+                    <a href="/photo-column/update?id=<?= $v['id']?>" >更新</a> |
+                    <a href="/photo-column/delete?id=<?= $v['id']?>&column_id=<?= Yii::$app->request->get('column_id')?>">删除</a>
 
                 </td>
             </tr>

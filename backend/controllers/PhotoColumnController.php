@@ -20,7 +20,7 @@ class PhotoColumnController extends BaseController
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['post'],
+                   // 'delete' => ['post'],
                 ],
             ],
         ];
@@ -106,7 +106,7 @@ class PhotoColumnController extends BaseController
     {
         $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);
+        return $this->redirect(['index?column_id='.Yii::$app->request->get('column_id')]);
     }
 
     /**
