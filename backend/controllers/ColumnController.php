@@ -48,7 +48,7 @@ class ColumnController extends BaseController
                 <a href='/column/update?id=\$id'>更新</a> |
                 <a href='/column/delete?id=\$id'>删除</a> |
                 <a href='/column/manage?id=\$id'>内容管理</a> |
-                <a href='/photocolumn/index?column_id=\$id'>栏目图片</a>
+                <a href='/photo-column/index?column_id=\$id'>栏目图片</a>
             </td>
         </tr>
 Eof;
