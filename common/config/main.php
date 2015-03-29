@@ -13,7 +13,6 @@ return [
             'rules' => [
                 'node/<id:\d+>' => 'index/node',
                 'page/<id:\d+>' => 'index/page',
-                'nbh/<id:\d+>' => 'index/nbh',
             ],
         ],
     ],

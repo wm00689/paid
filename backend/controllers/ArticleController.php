@@ -166,6 +166,10 @@ class ArticleController extends BaseController
         $cache = Yii::$app->cache;
 
         $cache['column_'.$column_id.'_article_'.$id] = Article::findOne(['id'=>$id])->toArray();
+
+        $cache['column_'.$column_id.'_article_'.$id.'_pages'] = explode('_ueditor_page_break_tag_',$cache['column_'.$column_id.'_article_'.$id]['content']);
+
+
     }
 
     /**

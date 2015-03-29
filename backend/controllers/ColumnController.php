@@ -130,6 +130,8 @@ Eof;
 
         $column = new Column();
 
+        $cache['column_'.$id.'_parent'] = $column->getParent($pid);
+
         $cache['column_'.$id.'_articles'] = $columnObject->articles;
 
         $cache['column_'.$id.'_photos'] = $columnObject->photos;

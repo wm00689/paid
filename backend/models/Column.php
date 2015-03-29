@@ -92,6 +92,13 @@ class Column extends \yii\db\ActiveRecord
         return $this->find()->select(['id','cname'])->where("parentid=".$id)->asArray()->all();
     }
 
+    public function getParent($pid)
+    {
+       if($pid)
+            return $this->findOne($pid)->toArray();
+        else
+           return '';
+    }
     /**
      * @return \yii\db\ActiveQuery
      */

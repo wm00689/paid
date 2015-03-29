@@ -24,3 +24,8 @@
         </div>
     </div>
 </div>
+<?php
+echo '<pre>';
+print_r( $cache['column_'.$node.'_article_'.$id.'_pages']);
+echo '<pre>';
+?>

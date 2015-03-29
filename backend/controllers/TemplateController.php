@@ -62,7 +62,7 @@ class TemplateController extends BaseController
         $model = new template();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->cacheAction();
+            $this->actionCache();
             //return $this->redirect(['view', 'id' => $model->id]);
             return $this->redirect(['index']);
         } else {

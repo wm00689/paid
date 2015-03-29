@@ -10,9 +10,9 @@ $array = Yii::$app->request->get('page')?array_slice($cache['column_'.$id.'_arti
     <div id="cont">
         <?php include '../views/index/left_l.php'?>
         <div class="cont_right">
-            <div class="cont_right_weizhi">当前位置：<span>首页</span>&gt;<span>走进华粮</span>&gt;<span><?= $cache['column-'.$id]['cname']?></span></div>
+            <div class="cont_right_weizhi">当前位置：<span>首页</span>&gt;<span><?= $cache['column_'.$id.'_parent']['cname']?></span>&gt;<span><?= $cache['column-'.$id]['cname']?></span></div>
             <div class="zoujin">
-                <div class="zoujin_bt"><?= $cache['column-'.$id]['cname']?></div>
+                <div class="zoujin_bt"><?= $cache['column_'.$id]['cname']?></div>
                 <div class="zoujin_nr">
 
                     <div class="new_iconimg"><img src="../images/newicon.jpg"  /></div>

@@ -1,6 +1,6 @@
 <div class="cont_left">
     <div class="cont_left_bt">
-        <span>走进华粮</span><br />
+        <span><?= $cache['column_'.$id.'_parent']['cname']?></span><br />
         Walk into us
     </div>
 

@@ -31,62 +31,7 @@
                     </div>
                     <?php endforeach;?>
 
-                    <div class="rongyu_jx_list">
-                        <ul>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌二</p>
-                            </li>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌二</p>
-                            </li>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌二</p>
-                            </li>
 
-                        </ul>
-                        <div class="clear"></div>
-                    </div>
-
-                    <div class="rongyu_jx_list">
-                        <ul>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌三</p>
-                            </li>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌三</p>
-                            </li>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌三</p>
-                            </li>
-
-                        </ul>
-                        <div class="clear"></div>
-                    </div>
-
-                    <div class="rongyu_jx_list">
-                        <ul>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌四</p>
-                            </li>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌四</p>
-                            </li>
-                            <li>
-                                <div class="list_img"><img src="../images/ry1.jpg" width="266" /></div>
-                                <p>荣誉奖牌四</p>
-                            </li>
-
-                        </ul>
-                        <div class="clear"></div>
-                    </div>
                 </div>
                 <div style="height:100px;"><p></p></div>
 
