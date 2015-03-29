@@ -3,7 +3,7 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\photo;
+use common\models\Photo;
 use backend\models\photoSearch;
 use backend\models\Article;
 use yii\web\NotFoundHttpException;
@@ -60,7 +60,7 @@ class PhotoController extends BaseController
     public function actionCreate()
     {
 
-        $model = new photo();
+        $model = new Photo();
         $model->column_id = Yii::$app->request->get('column_id');
         $model->article_id = Yii::$app->request->get('article_id');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -128,7 +128,7 @@ class PhotoController extends BaseController
      */
     protected function findModel($id)
     {
-        if (($model = photo::findOne($id)) !== null) {
+        if (($model = Photo::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
