@@ -5,7 +5,7 @@ namespace yii\widgets;
 use yii;
 use yii\base\Widget;
 
-class Template2 extends Widget
+class Template extends Widget
 {
     public $form;
     public $model;
