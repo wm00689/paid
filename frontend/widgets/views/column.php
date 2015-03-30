@@ -38,12 +38,21 @@ function procHtml($tree)
             $html.= "<p><a href='/column/{$t['id']}'>{$t['cname']}</a></p>";
         }else
         {
-            if(in_array($t['id'],$cache['column_'.Yii::$app->request->get('column').'_parents']))
+            if(Yii::$app->request->get('column'))
             {
 
-                $html .= "<li class='style hover'><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
-                $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
-                $html.="</li>";
+                if(in_array($t['id'],$cache['column_'.Yii::$app->request->get('column').'_parents']))
+                {
+
+                    $html .= "<li class='style hover'><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
+                    $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
+                    $html.="</li>";
+                }else
+                {
+                    $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
+                    $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
+                    $html.="</li>";
+                }
             }else
             {
                 $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
