@@ -13,15 +13,15 @@ use frontend\controllers\BaseController;
 
 class IndexController extends HualController{
 
-    public function actionNode()
+    public function actionColumn()
     {
-        $id = Yii::$app->request->get('id');
+        $id = Yii::$app->request->get('column');
         $cache = Yii::$app->cache;
         $column = $cache['column_'.$id];
         return $this->render($column['tmp'],[
             'cache'=>$cache,
             'column'=>$column,
-            'id'=>Yii::$app->request->get('id'),
+            'id'=>Yii::$app->request->get('column'),
             //'column_child'=>$cache['column_children'.$id]
             ]);
     }
@@ -37,7 +37,7 @@ class IndexController extends HualController{
         $cache = Yii::$app->cache;
         return $this->render('show_xinwen',[
             'id'=>Yii::$app->request->get('id'),
-            'node'=>Yii::$app->request->getQueryParam('node'),
+            'node'=>Yii::$app->request->getQueryParam('column'),
             'cache'=>$cache
         ]);
     }

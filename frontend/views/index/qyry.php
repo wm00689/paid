@@ -22,7 +22,8 @@
                         <ul>
                             <?php foreach($cache['article_'.$article['id'].'_photos'] as $photo):?>
                             <li>
-                                <div class="list_img"><img src="http://admin.yii2.com<?= $photo['url']?>" width="266" /></div>
+
+                                <div class="list_img"><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" width="266" /></div>
                                 <p><?= $photo['title']?></p>
                             </li>
                             <?php endforeach;?>

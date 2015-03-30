@@ -1,3 +1,7 @@
+<?php
+use frontend\widgets\Articlepager;
+$page = Yii::$app->request->getQueryParam('page')? Yii::$app->request->getQueryParam('page')-1:0;
+?>
 <!--内容区-->
 <div id="content">
     <div id="cont">
@@ -12,7 +16,9 @@
                     </div>
 
                     <div class="newcont_nr">
-                        <?= $cache['column_'.$node.'_article_'.$id]['content'] ?>
+
+                    <?= $cache['column_'.$node.'_article_'.$id.'_pages'][$page] ?>
+
                     </div>
                 </div>
 
@@ -20,12 +26,12 @@
             <div class="clear"></div>
             <div class="biaozhi"><img src="../images/jiao2.png" /></div>
 
-            <div class="fenye">&lt<a href="#">上一页</a><a href="#">下一页</a>&gt;</div>
+            <div class="fenye">
+                <?= Articlepager::widget([
+                    'data'=>$cache['column_'.$node.'_article_'.$id.'_pages'],
+                    'page_size'=>1
+                ])?>
+            </div>
         </div>
     </div>
 </div>
-<?php
-echo '<pre>';
-print_r( $cache['column_'.$node.'_article_'.$id.'_pages']);
-echo '<pre>';
-?>

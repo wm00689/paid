@@ -22,7 +22,7 @@ $array = Yii::$app->request->get('page')?array_slice($cache['column_'.$id.'_arti
                             <?php foreach($array as $key=>$article):?>
                             <li>
                                 <div class="styleone">华粮动态<br />OUR NEW</div>
-                                <div class="styletwo"><a href="/page/<?= $article['id']?>?node=<?= Yii::$app->request->get('id')?>" ><?= $article['title']?></a></div>
+                                <div class="styletwo"><a href="/page/<?= $article['id']?>?column=<?= Yii::$app->request->get('column')?>" ><?= $article['title']?></a></div>
                                 <div class="stylethree"><?= date('Y-m-d',$article['created_at'])?></div>
                             </li>
                             <?php endforeach;?>
@@ -38,7 +38,7 @@ $array = Yii::$app->request->get('page')?array_slice($cache['column_'.$id.'_arti
 
             <div class="fenye">
                 <?= Pager::widget([
-                    'data'=>$cache['column_articles-'.$id],
+                    'data'=>$cache['column_'.$id.'_articles'],
                     'page_size'=>$page_size
                 ])?>
             </div>

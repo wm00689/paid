@@ -21,22 +21,36 @@ function getTree($data, $pId)
 
 function procHtml($tree)
 {
+    $cache = Yii::$app->cache;
     $html = '';
     foreach($tree as $t)
     {
         if($t['children'] == '' and $t['parentid']==0)
         {
-            $html .= "<li><a href='/node/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' /></li>";
+
+            $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' /></li>";
+
+            $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' /></li>";
 
         }
         elseif($t['children'] == '' and $t['parentid'] !==0)
         {
-            $html.= "<p><a href='/node/{$t['id']}'>{$t['cname']}</a></p>";
+            $html.= "<p><a href='/column/{$t['id']}'>{$t['cname']}</a></p>";
         }else
         {
-            $html .= "<li><a href='/node/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
-            $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
-            $html.="</li>";
+            if(in_array($t['id'],$cache['column_'.Yii::$app->request->get('column').'_parents']))
+            {
+
+                $html .= "<li class='style hover'><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
+                $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
+                $html.="</li>";
+            }else
+            {
+                $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
+                $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
+                $html.="</li>";
+            }
+
         }
     }
     return $html;

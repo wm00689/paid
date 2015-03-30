@@ -99,6 +99,21 @@ class Column extends \yii\db\ActiveRecord
         else
            return '';
     }
+
+    public function getParents($id)
+    {
+
+        $pid_row = $this->findOne($id)->toArray();
+        $pid=$a=$pid_row['parentid'];
+        if($pid_row['parentid'])
+        {
+            $pid.= ','.$this->getParents($pid_row['parentid']);
+        }
+
+        return $id.','.$pid;
+    }
+
+
     /**
      * @return \yii\db\ActiveQuery
      */

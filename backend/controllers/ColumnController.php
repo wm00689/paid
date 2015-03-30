@@ -89,8 +89,6 @@ Eof;
         $model->parentid = $request->get('id')?$request->get('id'):0;
 
         if ($model->load($request->post()) && $model->save()) {
-           // $this->actionCache();
-           // $this->cacheColumnOneAction($model->id,$model->parentid);
 
             return $this->redirect(['index']);
         } else {
@@ -114,6 +112,7 @@ Eof;
 
     }
 
+
     public function cacheColumnOneAction($id,$pid)
     {
 
@@ -131,6 +130,8 @@ Eof;
         $column = new Column();
 
         $cache['column_'.$id.'_parent'] = $column->getParent($pid);
+
+        $cache['column_'.$id.'_parents'] = explode(',',$column->getParents($id));
 
         $cache['column_'.$id.'_articles'] = $columnObject->articles;
 
@@ -172,7 +173,7 @@ Eof;
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-        $this->cacheAction();
+        $this->actionCache();
         return $this->redirect(['index']);
     }
 
