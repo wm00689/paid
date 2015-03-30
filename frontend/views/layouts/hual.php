@@ -32,7 +32,7 @@ HualAsset::register($this);
         <div class="topcont_nav">
 
             <ul>
-                <li><a href="/">网站首页</a><img src="/images/arrow.png" /></li>
+                <li <?php if(Yii::$app->request->get('_url')==''):?> class="style hover" <?php endif?>><a href="/">网站首页</a><img src="/images/arrow.png" /></li>
                 <?= Column::widget()?>
             </ul>
         </div>

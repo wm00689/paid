@@ -1,3 +1,6 @@
+<script>
+    window.location.href = "http://test.yii2.com/column/17"
+</script>
 <div id="content">
     <div id="cont">
         <div class="cont_left">
