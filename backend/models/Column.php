@@ -15,7 +15,6 @@ use Yii;
  * @property integer $created_at
  * @property integer $updated_at
  * @property integer $isChild
- *
  * @property Article[] $articles
  * @property Article $id0
  */
@@ -43,10 +42,9 @@ class Column extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['parentid', 'cname','isArticle','isShow','model_id','url','content'], 'required'],
-            [['sort','template_id','file'],'safe'],
-            [['parentid', 'status'], 'integer'],
-            [['cname'], 'string', 'max' => 32]
+            [['parentid', 'cname','model_id'], 'required'],
+            [['sort','template_id','file','isArticle','url','isShow','ename','content'],'safe'],
+            [['parentid', 'status'], 'integer']
         ];
     }
 
@@ -59,8 +57,10 @@ class Column extends \yii\db\ActiveRecord
             'id' => 'ID',
             'parentid' => 'Pid',
             'sort' => '排序',
-            'cname' => '分类名称',
+            'cname' => '栏目名称',
+            'ename' => '英文名称',
             'model_id' => '选择模型',
+            'template_id' => '选择模板',
             'isArticle' => '是否单网页',
             'isChild' => '是否有子类',
             'isShow' => '是否在导航栏显示',
@@ -94,10 +94,10 @@ class Column extends \yii\db\ActiveRecord
 
     public function getParent($pid)
     {
-       if($pid)
+        if($pid)
             return $this->findOne($pid)->toArray();
         else
-           return '';
+            return '';
     }
 
     public function getParents($id)
@@ -112,8 +112,6 @@ class Column extends \yii\db\ActiveRecord
 
         return $id.','.$pid;
     }
-
-
     /**
      * @return \yii\db\ActiveQuery
      */

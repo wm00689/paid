@@ -11,7 +11,7 @@ namespace frontend\controllers;
 use Yii;
 use frontend\controllers\BaseController;
 
-class IndexController extends HualController{
+class IndexController extends FrontController{
 
     public function actionColumn()
     {
@@ -22,6 +22,7 @@ class IndexController extends HualController{
             'cache'=>$cache,
             'column'=>$column,
             'id'=>Yii::$app->request->get('column'),
+            'page_size'=>3
             //'column_child'=>$cache['column_children'.$id]
             ]);
     }
@@ -29,6 +30,7 @@ class IndexController extends HualController{
 
     public function actionIndex()
     {
+        $this->layout = false;
         return $this->render('index');
     }
 

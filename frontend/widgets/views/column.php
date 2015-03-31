@@ -25,42 +25,26 @@ function procHtml($tree)
     $html = '';
     foreach($tree as $t)
     {
-        if($t['children'] == '' and $t['parentid']==0)
+        if(Yii::$app->request->get('column'))
         {
 
-            $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' /></li>";
-
-            $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' /></li>";
-
-        }
-        elseif($t['children'] == '' and $t['parentid'] !==0)
-        {
-            $html.= "<p><a href='/column/{$t['id']}'>{$t['cname']}</a></p>";
-        }else
-        {
-            if(Yii::$app->request->get('column'))
+            if($t['parentid']==0)
             {
-
                 if(in_array($t['id'],$cache['column_'.Yii::$app->request->get('column').'_parents']))
                 {
-
-                    $html .= "<li class='style hover'><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
-                    $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
-                    $html.="</li>";
+                    $html .= "<li class='hover'><a href='/column/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
                 }else
                 {
-                    $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
-                    $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
-                    $html.="</li>";
-                }
-            }else
-            {
-                $html .= "<li><a href='/column/{$t['id']}'>".$t['cname']."</a><img src='/images/arrow.png' />";
-                $html.= '<div class="menu">'.procHtml($t['children']).'</div>';
-                $html.="</li>";
-            }
 
+                    $html .= "<li><a href='/column/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
+                }
+
+            }
+        }else
+        {
+            $html .= "<li><a href='/column/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
         }
+
     }
     return $html;
 }

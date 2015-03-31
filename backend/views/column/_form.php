@@ -18,13 +18,10 @@ use yii\widgets\Template;
 
     <?= $form->field($model, 'cname')->textInput(['maxlength' => 32]) ?>
 
-    <?= $form->field($model, 'url')->textInput(['maxlength' => 32]) ?>
 
     <?= Models::widget(['model'=>$model,'form'=>$form])?>
 
     <?= Template::widget(['model'=>$model,'form'=>$form])?>
-
-    <?= $form->field($model,'isArticle')->radioList(['1'=>'是','2'=>'否'])?>
 
     <?= $form->field($model,'isShow')->radioList(['1'=>'是','2'=>'否'],[])?>
 
