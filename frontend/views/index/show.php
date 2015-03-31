@@ -1,7 +1,38 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: wm
- * Date: 2015/3/31
- * Time: 17:27
- */ 
+<!--产品展示-->
+<div id="product">
+    <div id="pro">
+        <div class="pro_left" style="height:57px">
+            <div class="pro_left_bt">产品展示<span>SHOW</span></div>
+        </div>
+        <div class="pro_right" style="height:57px">
+            <div class="pro_right_weizhi">当前位置：首页<span>&gt;</span>产品展示<span>&gt;</span>展览展示</div>
+        </div>
+        <div class="clear"></div>
+
+        <!--产品详情页面图片轮播效果--->
+        <!--效果开始-->
+        <div class="bd_con4">
+
+            <div class="bd_c4r">
+                <div class="bd_c4top">
+                    <div class="bd_lbtn"></div>
+                    <div class="bd_chgBox">
+                        <div class="bd_long">
+                            <ul>
+                                <?php foreach($cache['article_'.$id.'_photos'] as $photo):?>
+                                <li><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" />				  </li>
+                                <?php endforeach?>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bd_rbtn"></div>  </div>
+            </div>
+        </div>
+        <!--End-->
+
+        <div class="pro_name">公交站牌</div>
+
+    </div>
+</div>
+

@@ -1,7 +1,8 @@
 <?php
 use yii\widgets\LinkPager;
 
-$array = Yii::$app->request->get('page')?array_slice($cache['column_'.$id.'_photos'],$page_size*(Yii::$app->request->get('page')-1),$page_size):array_slice($cache['column_'.$id.'_photos'],0,$page_size);
+$array = Yii::$app->request->get('page')?array_slice($cache['column_'.$id.'_articles'],$page_size*(Yii::$app->request->get('page')-1),$page_size):array_slice($cache['column_'.$id.'_articles'],0,$page_size);
+print_r($array);
 ?>
 <!--产品展示-->
 <div id="product">
@@ -22,10 +23,10 @@ $array = Yii::$app->request->get('page')?array_slice($cache['column_'.$id.'_phot
             <div class="pro_right_weizhi">当前位置：首页<span>&gt;</span><?= $cache['column_'.$id.'_parent']['cname']?><span>&gt;</span><?= $cache['column_'.$id]['cname']?></div>
             <div class="pro_right_list">
                 <ul>
-                    <?php foreach($array as $photo):?>
+                    <?php foreach($array as $article):?>
                         <li>
-                            <div class="listimg"><a href="#"><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" width="224" /></a></div>
-                            <p><a href="#"><?= $photo['title']?></a></p>
+                            <div class="listimg"><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><img src="http://yiipic.xiuyun99.com/<?= basename($article['file'])?>" width="224" /></a></div>
+                            <p><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><?= $article['title']?></a></p>
                         </li>
                     <?php endforeach?>
 

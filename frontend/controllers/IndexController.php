@@ -34,12 +34,12 @@ class IndexController extends FrontController{
         return $this->render('index');
     }
 
-    public function actionPage()
+    public function actionShow()
     {
         $cache = Yii::$app->cache;
-        return $this->render('show_xinwen',[
+        return $this->render('show',[
             'id'=>Yii::$app->request->get('id'),
-            'node'=>Yii::$app->request->getQueryParam('column'),
+            'column_id'=>Yii::$app->request->getQueryParam('column'),
             'cache'=>$cache
         ]);
     }

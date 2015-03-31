@@ -12,7 +12,7 @@ return [
             'enableStrictParsing' => false,
             'rules' => [
                 'column/<column:\d+>' => 'index/column',
-                'page/<id:\d+>' => 'index/page',
+                'show/<id:\d+>' => 'index/show',
             ],
         ],
     ],

@@ -98,8 +98,9 @@ class ArticleController extends BaseController
         $model->column_id = Yii::$app->request->get('column_id');
         $model->user_id = Yii::$app->user->id;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->actionCache($model->column_id,$model->id);
+            $this->actionCacheOne($model->column_id,$model->id);
             return $this->redirect(['index', 'id' => $model->column_id]);
+
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -119,7 +120,8 @@ class ArticleController extends BaseController
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->actionCacheOne($model->column_id,$model->id);
-            return $this->redirect(['index', 'id' => $model->column_id]);
+            return $this->redirect(['index?column_id='.Yii::$app->request->get('column_id').'&article_id='.Yii::$app->request->get('article_id'), 'id' => $model->column_id]);
+
         } else {
             return $this->render('update', [
                 'model' => $model,
