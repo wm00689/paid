@@ -21,7 +21,7 @@ class IndexController extends FrontController{
         return $this->render($column['tmp'],[
             'cache'=>$cache,
             'column'=>$column,
-            'id'=>Yii::$app->request->get('column'),
+            'id'=>$id,
             'page_size'=>3
             //'column_child'=>$cache['column_children'.$id]
             ]);

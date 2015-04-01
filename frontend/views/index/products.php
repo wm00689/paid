@@ -2,9 +2,9 @@
 use yii\widgets\LinkPager;
 foreach($cache['column_'.$id.'_children'] as $child)
 {
-    foreach($cache['column_'.$child['id'].'_photos'] as $photo)
+    foreach($cache['column_'.$child['id'].'_articles'] as $article)
     {
-        $arr[] = $photo;
+        $arr[] = $article;
     }
 }
 
@@ -31,7 +31,7 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
                 <ul>
                     <?php foreach($array as $article):?>
                         <li>
-                            <div class="listimg"><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" width="224" /></a></div>
+                            <div class="listimg"><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><img src="http://yiipic.xiuyun99.com/<?= basename($article['file'])?>" width="224" /></a></div>
                             <p><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><?= $article['title']?></a></p>
                         </li>
                     <?php endforeach?>

@@ -31,7 +31,7 @@
         </div>
         <!--End-->
 
-        <div class="pro_name">公交站牌</div>
+        <div class="pro_name"><?= $cache['column_'.$column_id.'_article_'.$id]['title'] ?></div>
 
     </div>
 </div>
