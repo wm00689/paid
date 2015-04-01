@@ -174,8 +174,10 @@ class ArticleController extends BaseController
 
     }
 
+
     /**
-     *  批量缓存文章
+     * 批量缓存文章
+     * @return \yii\web\Response
      */
     public function actionCacheall()
     {

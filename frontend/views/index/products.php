@@ -29,10 +29,10 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
             <div class="pro_right_weizhi">当前位置：首页<span>&gt;</span>产品展示<span></div>
             <div class="pro_right_list">
                 <ul>
-                    <?php foreach($array as $photo):?>
+                    <?php foreach($array as $article):?>
                         <li>
-                            <div class="listimg"><a href="#"><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" width="224" /></a></div>
-                            <p><a href="#"><?= $photo['title']?></a></p>
+                            <div class="listimg"><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" width="224" /></a></div>
+                            <p><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><?= $photo['title']?></a></p>
                         </li>
                     <?php endforeach?>
                 </ul>
