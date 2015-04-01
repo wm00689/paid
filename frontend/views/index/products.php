@@ -32,7 +32,7 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
                     <?php foreach($array as $article):?>
                         <li>
                             <div class="listimg"><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" width="224" /></a></div>
-                            <p><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><?= $photo['title']?></a></p>
+                            <p><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><?= $article['title']?></a></p>
                         </li>
                     <?php endforeach?>
                 </ul>

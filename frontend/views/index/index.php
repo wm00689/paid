@@ -35,7 +35,7 @@ use frontend\widgets\Column;
     </div>
     <div id="banner">
         <div class="style1"><img src="/images/leftziti.png"></div>
-       
+
         <div class="style3"><img src="/images/rightimg.png"></div>
     </div>
 </div>
