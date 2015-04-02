@@ -34,11 +34,19 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons'=>[
                     'manage'=>function($url, $model, $key){
                         return '<a href="/'.$model->ename.'/cacheall">缓存数据</a>';
+                    },
+                    'delete'=>function ($url, $model, $key) {
+                        return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                            'title' => Yii::t('yii', 'Delete'),
+                            'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
+                           // 'data-method' => 'post',
+                            'data-pjax' => '0',
+                        ]);
                     }
                 ]
             ],
         ],
-    ]); ?>a
+    ]); ?>
 
 </div>
 
