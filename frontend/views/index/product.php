@@ -2,7 +2,7 @@
 use yii\widgets\LinkPager;
 
 $array = Yii::$app->request->get('page')?array_slice($cache['column_'.$id.'_articles'],$page_size*(Yii::$app->request->get('page')-1),$page_size):array_slice($cache['column_'.$id.'_articles'],0,$page_size);
-print_r($array);
+
 ?>
 <!--产品展示-->
 <div id="product">
