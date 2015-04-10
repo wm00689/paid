@@ -2,20 +2,25 @@
 /**
  * Created by PhpStorm.
  * User: wm
- * Date: 2015/3/14
- * Time: 19:51
+ * Date: 2015/4/5
+ * Time: 18:45
  */
 
-namespace backend\controllers;
-use \Aliyun\OSS\OSSClient;
-use yii\base\Controller;
-use Yii;
+namespace common\even;
 
-class FileController extends Controller{
+use yii\base\Component;
 
-    public function actionUpload(){
-        $post = Yii::$app->request->post('src');
-       /* $ext = pathinfo($post)['extension'];
+class cache extends Component{
+
+    const EVEN_HOLLE = 'holle';
+
+    public function cacheSave()
+    {
+        $this->trigger(self::EVEN_HOLLE);
+    }
+
+    function hello($post){
+        $ext = pathinfo($post)['extension'];
         $key = pathinfo($post)['basename'];
         require_once Yii::getAlias('@vendor/aliyun/aliyun.php');
         $client = OSSClient::factory(array(
@@ -27,9 +32,9 @@ class FileController extends Controller{
             'Key'=>pathinfo($post)['basename'],
             'Content' => fopen('.'.$post, 'r'),
             'ContentLength'=> filesize('.'.$post),
-
+            //'ContentType'=>'image/jpeg'
         ));
-        return 'http://yiipic.xiuyun99.com/'.$key.'@100w_100h_90Q.'.$ext;*/
+        return 'http://yiipic.xiuyun99.com/'.$key.'@100w_100h_90Q.'.$ext;
     }
 
 }

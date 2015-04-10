@@ -14,8 +14,11 @@ use \Aliyun\OSS\OSSClient;
 /**
  * ArticleController implements the CRUD actions for Article model.
  */
+
 class ArticleController extends BaseController
 {
+
+    public $a;
     public function behaviors()
     {
         return [
@@ -34,7 +37,7 @@ class ArticleController extends BaseController
      */
     public function actionIndex()
     {
-        if(Yii::$app->request->get('id'))
+       if(Yii::$app->request->get('id'))
         {
 
             $columnObject = Column::findOne(Yii::$app->request->get('id'));
@@ -45,19 +48,15 @@ class ArticleController extends BaseController
             ]);
         }else
         {
-            $articles = Article::find()->asArray()->all();
+            $a = new Article();
+            //$articles = Article::find()->asArray()->all();
+            $articles = $a->article;
             return $this->render('index', [
 
                 'article' =>$articles,
 
             ]);
-            $searchModel = new ArticleSearch();
-            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-            return $this->render('index', [
-                'searchModel' => $searchModel,
-                'dataProvider' => $dataProvider,
-            ]);
         }
     }
 
@@ -99,6 +98,7 @@ class ArticleController extends BaseController
         $model->user_id = Yii::$app->user->id;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->actionCacheOne($model->column_id,$model->id);
+
             return $this->redirect(['index', 'id' => $model->column_id]);
 
         } else {
@@ -106,6 +106,8 @@ class ArticleController extends BaseController
                 'model' => $model,
             ]);
         }
+
+
     }
 
     /**
