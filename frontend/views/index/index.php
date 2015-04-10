@@ -88,7 +88,7 @@ foreach($cache['column_19_photos'] as $photo)
 <!--最底部--->
 <div id="foot">
     <div class="foot_cont">
-        <div class="foot_contleft"><p><img src="<?= Yii::$app->params['adminUrl'].$t1['url']?>" /></p><img src="<?= Yii::$app->params['adminUrl'].$t2['url']?>" /></div>
+        <div class="foot_contleft"><p></p><img src="<?= Yii::$app->params['adminUrl'].$t2['url']?>" /></div>
         <div class="foot_contcenter">
             <div class="weixinimg"><img src="<?= Yii::$app->params['adminUrl'].$t3['url']?>" /></div>
             <div class="weixinnr">
