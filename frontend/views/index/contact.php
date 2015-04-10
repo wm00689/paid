@@ -2,15 +2,11 @@
 <div id="product">
     <div id="pro">
         <div class="lianxi_weizhi">当前位置：首页<span>&gt;</span>联系我们</div>
-        <div class="lianxi_img"><img src="/images/about2.jpg" /></div>
+        <div class="lianxi_img"><img src="<?= Yii::$app->params['adminUrl'].$cache['column_'.$id]['file']?>" /></div>
         <div class="lianxi_nr">
             <div class="lianxi_nr_logo"><img src="/images/lianxi.png" /></div>
             <div class="lianxi_nr_js">
-                <p class="te">谢您的光临！我们的客服时间是每天：9:00-22:00</p>
-                <p>电话：021-62790806</p>
-                <p>传真：021-62792035</p>
-                <p>手机：18621137775</p>
-                <p>地址：上海静安区江宁路631号2楼整层</p>
+                <?= $cache['column_'.$id]['content']?>
             </div>
         </div>
         <div class="clear"></div>
@@ -20,7 +16,7 @@
                 <p>内部环境</p>
                 <ul>
                     <?php foreach($cache['column_'.$id.'_photos'] as $photo):?>
-                    <li><img src="/images/hj1.jpg" /></li>
+                    <li><img src="<?= Yii::$app->params['adminUrl'].$photo['url']?>" /></li>
                     <?php endforeach;?>
                 </ul>
             </div>
