@@ -19,9 +19,9 @@
             <div class="lianxi_hj_neibu">
                 <p>内部环境</p>
                 <ul>
+                    <?php foreach($cache['column_'.$id.'_photos'] as $photo):?>
                     <li><img src="/images/hj1.jpg" /></li>
-                    <li><img src="/images/hj2.jpg" /></li>
-                    <li><img src="/images/hj3.jpg" /></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
             <div class="lianxi_hj_weizhi">
