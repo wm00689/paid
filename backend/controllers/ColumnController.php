@@ -32,10 +32,10 @@ class ColumnController extends BaseController
      */
     public function actionIndex()
     {
-        $cache = Yii::$app->cache;
-        $columnList = $cache['columns'];
-        //$searchModel = newColumnSearch();
-        //$columnList = $searchModel->columnList();
+      /*  $cache = Yii::$app->cache;
+        $columnList = $cache['columns'];*/
+        $searchModel = new ColumnSearch();
+        $columnList = $searchModel->columnList();
         $tree = new tree();
         $tree->init($columnList);
 

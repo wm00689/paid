@@ -1,5 +1,36 @@
 <?php
 use frontend\widgets\Column;
+//print_r($cache['column_19_photos']);
+foreach($cache['column_19_photos'] as $photo)
+{
+    if($photo['place']=='购买')
+    {
+        $goumai[]=$photo;
+    }
+
+    if($photo['place']=='t1')
+    {
+        $t1=$photo;
+    }
+    if($photo['place']=='t2')
+    {
+        $t2=$photo;
+    }
+    if($photo['place']=='t3')
+    {
+        $t3=$photo;
+    }
+    if($photo['place']=='p1')
+    {
+        $p1=$photo;
+    }
+    if($photo['place']=='p2')
+    {
+        $p2=$photo;
+    }
+}
+
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -34,18 +65,22 @@ use frontend\widgets\Column;
         </div>
     </div>
     <div id="banner">
-        <div class="style1"><img src="/images/leftziti.png"></div>
+        <div class="style1"><img src="<?= Yii::$app->params['adminUrl'].$p1['url']?>"></div>
 
-        <div class="style3"><img src="/images/rightimg.png"></div>
+        <div class="style3"><img src="<?= Yii::$app->params['adminUrl'].$p2['url']?>"></div>
     </div>
 </div>
 <!--购买方式-->
 <div id="shop">
     <div class="shop_cont">
         <ul class="shop_contlist">
-            <li><a href="#"><img src="/images/shop1.png" /><p>购买方式一</p></a></li>
-            <li><a href="#"><img src="/images/shop2.png" /><p>购买方式一</p></a></li>
-            <li><a href="#"><img src="/images/shop3.png" /><p>购买方式一</p></a></li>
+            <?php if($goumai):?>
+                <?php foreach($goumai as $photo):?>
+
+                        <li><a href="#"><img src="<?= Yii::$app->params['adminUrl'].$photo['url']?>" /><p>购买方式一</p></a></li>
+
+                <?php endforeach;?>
+            <?php endif;?>
         </ul>
     </div>
 </div>
@@ -53,9 +88,9 @@ use frontend\widgets\Column;
 <!--最底部--->
 <div id="foot">
     <div class="foot_cont">
-        <div class="foot_contleft"><p><img src="/images/pinpai.png" /></p><img src="/images/dianhua.png" /></div>
+        <div class="foot_contleft"><p><img src="<?= Yii::$app->params['adminUrl'].$t1['url']?>" /></p><img src="<?= Yii::$app->params['adminUrl'].$t2['url']?>" /></div>
         <div class="foot_contcenter">
-            <div class="weixinimg"><img src="/images/weixin.jpg" /></div>
+            <div class="weixinimg"><img src="<?= Yii::$app->params['adminUrl'].$t3['url']?>" /></div>
             <div class="weixinnr">
                 <p>扫描二维码</p>
                 <p>关注官方微信</p>

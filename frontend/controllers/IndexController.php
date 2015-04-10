@@ -31,7 +31,11 @@ class IndexController extends FrontController{
     public function actionIndex()
     {
         $this->layout = false;
-        return $this->render('index');
+        $cache = Yii::$app->cache;
+
+        return $this->render('index',[
+            'cache'=>$cache
+        ]);
     }
 
     public function actionShow()

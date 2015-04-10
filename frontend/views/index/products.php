@@ -54,4 +54,9 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
         <div class="clear"></div>
     </div>
 </div>
+<?php
+echo '<pre>';
+print_r($cache['columns']);
+echo '</pre>';
+?>
 
