@@ -19,7 +19,7 @@ class photoColumnSearch extends PhotoColumn
     {
         return [
             [['id', 'column_id', 'sort', 'status', 'created_at', 'updated_at'], 'integer'],
-            [['title', 'url', 'description'], 'safe'],
+            [['title', 'url', 'description','place'], 'safe'],
         ];
     }
 

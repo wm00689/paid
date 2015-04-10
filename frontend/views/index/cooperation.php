@@ -1,6 +1,6 @@
 <?php
 use yii\widgets\LinkPager;
-$page_size=5;
+$page_size=20;
 $array = Yii::$app->request->get('page')?array_slice($cache['column_'.$id.'_photos'],$page_size*(Yii::$app->request->get('page')-1),$page_size):array_slice($cache['column_'.$id.'_photos'],0,$page_size);
 ?>
 <!--合作企业-->

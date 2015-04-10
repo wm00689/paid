@@ -35,7 +35,7 @@ class ColumnSearch extends Column
 
     public function columnList()
     {
-        $data = Column::find()->orderBy('sort')->asArray()->all();
+        $data = Column::find()->where("id !=100")->orderBy('sort')->asArray()->all();
         return $data;
     }
 

@@ -19,6 +19,8 @@ use yii\widgets\ImageUpload;
 
     <?= $form->field($model, 'sort')->textInput() ?>
 
+    <?= $form->field($model, 'place')->textInput() ?>
+
     <?= ImageUpload::widget(['model'=>$model,'attribute'=>'url'])?>
 
 

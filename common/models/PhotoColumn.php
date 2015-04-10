@@ -43,11 +43,8 @@ class PhotoColumn extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'url', 'description'], 'required'],
-            [['column_id', 'status'], 'integer'],
-            [['sort','column_id'],'safe'],
-            [['title', 'description'], 'string', 'max' => 255],
-            [['url'], 'string', 'max' => 200]
+            [['title', 'url'], 'required'],
+            [['sort','column_id','place','description'],'safe'],
         ];
     }
 
