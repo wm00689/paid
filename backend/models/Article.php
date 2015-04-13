@@ -39,6 +39,7 @@ class Article extends \yii\db\ActiveRecord
     {
         return [
             TimestampBehavior::className(),
+            \yii\behaviors\BlameableBehavior::className()
         ];
     }
 
@@ -53,6 +54,16 @@ class Article extends \yii\db\ActiveRecord
             [['created_at', 'updated_at','slug','file','content'], 'safe'],
             [['title', 'slug', 'meta_title', 'meta_description', 'meta_keywords'], 'string', 'max' => 255],
         ];
+    }
+
+    public function fields()
+    {
+        return [
+            'id',
+            'created_ats'=>'created_at'
+
+        ];
+
     }
 
     /**
@@ -91,5 +102,10 @@ class Article extends \yii\db\ActiveRecord
         //return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id']);
         return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id'])->asArray();
 
+    }
+
+    public function getArticle()
+    {
+        return $this->find()->asArray()->all();
     }
 }

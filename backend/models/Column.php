@@ -28,6 +28,14 @@ class Column extends \yii\db\ActiveRecord
         return 'columns';
     }
 
+    public function behaviors()
+    {
+        return [
+            \yii\behaviors\TimestampBehavior::className(),
+            \yii\behaviors\BlameableBehavior::className()
+        ];
+    }
+
     public function init()
     {
         parent::init();

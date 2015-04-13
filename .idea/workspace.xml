@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c6af48d-f6b2-49fa-8377-28ad0db7f5fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/about.php" afterPath="$PROJECT_DIR$/frontend/views/index/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/abouts.php" afterPath="$PROJECT_DIR$/frontend/views/index/abouts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/models/Role.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/controllers/RoleController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/models/RoleSearch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/role/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/role/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/even/cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/role/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/role/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/role/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/role/view.php" />
+      <change type="DELETED" beforePath="D:\www\paid\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Article.php" afterPath="$PROJECT_DIR$/backend/models/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/backend/controllers/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Column.php" afterPath="$PROJECT_DIR$/backend/models/Column.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/FileController.php" afterPath="$PROJECT_DIR$/backend/controllers/FileController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/layouts/left.php" afterPath="$PROJECT_DIR$/backend/views/layouts/left.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="paid.iws" />

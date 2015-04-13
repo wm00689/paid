@@ -60,6 +60,11 @@ use yii\helpers\Url;
                     <i class="fa fa-th"></i> <span>栏目</span> <small class="badge pull-right bg-green">new</small>
                 </a>
             </li>
+            <li>
+                <a href="/role/index">
+                    <i class="fa fa-th"></i> <span>用户组</span> <small class="badge pull-right bg-green">new</small>
+                </a>
+            </li>
 
 
         </ul>
