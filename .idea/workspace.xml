@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c6af48d-f6b2-49fa-8377-28ad0db7f5fd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/contact.php" afterPath="$PROJECT_DIR$/frontend/views/index/contact.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/index.php" afterPath="$PROJECT_DIR$/frontend/views/index/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/main-local.php" afterPath="$PROJECT_DIR$/common/config/main-local.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/js/map.js" afterPath="$PROJECT_DIR$/frontend/web/js/map.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/layouts/pages.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="paid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,8 +62,8 @@
       <file leaf-file-name="pages.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/layouts/pages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.678572" vertical-offset="870" max-vertical-offset="1862">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="89" selection-end-column="17" />
+            <state vertical-scroll-proportion="-25.928572" vertical-offset="984" max-vertical-offset="1881">
+              <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#DIV#0;n#DIV#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -73,24 +71,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1298405" vertical-offset="1402" max-vertical-offset="2679">
-              <caret line="126" column="14" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
+            <state vertical-scroll-proportion="-4.892857" vertical-offset="1839" max-vertical-offset="2717">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="133" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#DIV#0;n#DIV#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flqq.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/web/js/flqq.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="1007">
-              <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -110,6 +98,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="3996" max-vertical-offset="4902">
               <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/views/index/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8507295" vertical-offset="2" max-vertical-offset="1045">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -159,7 +157,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/frontend/widgets/views/column.php" />
         <option value="$PROJECT_DIR$/common/config/params.php" />
-        <option value="$PROJECT_DIR$/frontend/views/index/contact.php" />
         <option value="$PROJECT_DIR$/common/config/main.php" />
         <option value="$PROJECT_DIR$/backend/models/photoColumnSearch.php" />
         <option value="$PROJECT_DIR$/common/models/PhotoColumn.php" />
@@ -175,13 +172,14 @@
         <option value="$PROJECT_DIR$/frontend/views/index/about.php" />
         <option value="$PROJECT_DIR$/frontend/views/index/abouts.php" />
         <option value="$PROJECT_DIR$/backend/models/Column.php" />
-        <option value="$PROJECT_DIR$/frontend/views/layouts/pages.php" />
-        <option value="$PROJECT_DIR$/frontend/views/index/index.php" />
         <option value="$PROJECT_DIR$/frontend/web/js/flqq.js" />
         <option value="$PROJECT_DIR$/frontend/web/js/jquery.cookies.2.2.0.min.js" />
         <option value="$PROJECT_DIR$/frontend/web/js/jquery.scrollfollow.js" />
         <option value="$PROJECT_DIR$/frontend/web/js/map.js" />
         <option value="$PROJECT_DIR$/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/frontend/views/index/index.php" />
+        <option value="$PROJECT_DIR$/frontend/views/layouts/pages.php" />
+        <option value="$PROJECT_DIR$/frontend/views/index/contact.php" />
       </list>
     </option>
   </component>
@@ -903,14 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/index/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="855">
-          <caret line="18" column="81" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/index/product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="1102">
@@ -974,16 +964,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="2584">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/pages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.678572" vertical-offset="870" max-vertical-offset="1862">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="89" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#DIV#0;n#DIV#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,11 +1035,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1298405" vertical-offset="1402" max-vertical-offset="2679">
-          <caret line="126" column="14" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
+        <state vertical-scroll-proportion="-4.892857" vertical-offset="1839" max-vertical-offset="2717">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="133" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#DIV#0;n#DIV#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.928572" vertical-offset="984" max-vertical-offset="1881">
+          <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#DIV#0;n#DIV#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/index/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8507295" vertical-offset="2" max-vertical-offset="1045">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

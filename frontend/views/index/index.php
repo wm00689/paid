@@ -103,6 +103,8 @@ foreach($cache['column_19_photos'] as $photo)
     </div>
 </div>
 <script type="text/javascript" src="/js/jquery.js"></script>
+<SCRIPT type=text/javascript src="/js/jquery.cookies.2.2.0.min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="/js/jquery.scrollfollow.js"></SCRIPT>
 <script type="text/javascript" src="/js/index.js"></script>
 <!--在线客服QQ start-->
 
