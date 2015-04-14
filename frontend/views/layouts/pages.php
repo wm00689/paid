@@ -68,7 +68,7 @@ use frontend\widgets\Column;
 <!--在线客服QQ start-->
 
 <DIV id=newkefu_right class=newkefu>
-    <IMG id=newkefu_bar class=newkefu_bar border=0 src="images/qq/kefu-right.png" width=33 height=168>
+    <IMG id=newkefu_bar class=newkefu_bar border=0 src="/images/qq/kefu-right.png" width=33 height=168>
     <DIV style="DISPLAY: none" id=group_pad class=newkefu_group>
         <DIV class=qq_top><IMG src="/images/qq/kefu-top.png" width=140 height=28></DIV>
         <div class="shouqian_mid">
