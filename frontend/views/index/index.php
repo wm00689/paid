@@ -40,6 +40,7 @@ foreach($cache['column_19_photos'] as $photo)
     <meta name="keywords" content=""  />
     <title>派登</title>
     <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main_qq.css">
 </head>
 
 <body>

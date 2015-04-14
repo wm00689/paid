@@ -8,8 +8,9 @@ use frontend\widgets\Column;
     <meta name="description" content=""  />
     <meta name="keywords" content=""  />
     <title>派登</title>
-    <link type="text/css" rel="stylesheet" href="/css/index.css" />
+
     <link type="text/css" rel="stylesheet" href="/css/pages.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main_qq.css">
 </head>
 
 <body>
