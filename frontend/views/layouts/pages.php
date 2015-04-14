@@ -12,6 +12,7 @@ use frontend\widgets\Column;
     <link type="text/css" rel="stylesheet" href="/css/index.css" />
     <link type="text/css" rel="stylesheet" href="/css/pages.css" />
     <link rel="stylesheet" type="text/css" href="/css/main_qq.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
 </head>
 
 <body>

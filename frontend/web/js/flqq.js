@@ -30,17 +30,17 @@ $(function(){
     $("#newkefu_bar").hover(
         function()/* 鼠标移入 */{
             $("#group_pad").show("slow");
-            $("#newkefu_bar").attr("src","images/qq/kefu-left.png");
+            $("#newkefu_bar").attr("src","/images/qq/kefu-left.png");
         },
         function()/* 鼠标移出 */{
             $("#newkefu_right").hover(
                 function()/* 鼠标移入 */{
                     $("#group_pad").show("slow");
-                    $("#newkefu_bar").attr("src","images/qq/kefu-left.png");
+                    $("#newkefu_bar").attr("src","/images/qq/kefu-left.png");
                 },
                 function()/* 鼠标移出 */{
                     $("#group_pad").hide("slow");
-                    $("#newkefu_bar").attr("src","images/qq/kefu-right.png");
+                    $("#newkefu_bar").attr("src","/images/qq/kefu-right.png");
                 }
             );
         }
