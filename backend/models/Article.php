@@ -39,7 +39,7 @@ class Article extends \yii\db\ActiveRecord
     {
         return [
             TimestampBehavior::className(),
-            \yii\behaviors\BlameableBehavior::className()
+           // \yii\behaviors\BlameableBehavior::className()
         ];
     }
 
@@ -56,15 +56,15 @@ class Article extends \yii\db\ActiveRecord
         ];
     }
 
-    public function fields()
+   /* public function fields()
     {
         return [
             'id',
-            'created_ats'=>'created_at'
+            'created_at'=>'created_at'
 
         ];
 
-    }
+    }*/
 
     /**
      * @inheritdoc
