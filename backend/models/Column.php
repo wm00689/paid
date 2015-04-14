@@ -39,6 +39,7 @@ class Column extends \yii\db\ActiveRecord
     public function init()
     {
         parent::init();
+
     }
 
 
