@@ -17,7 +17,7 @@
             <div class="pro_right_weizhi">当前位置：首页<span>&gt;</span>关于我们<span>&gt;</span>企业简介</div>
             <div class="pro_right_list">
                 <div class="aboutus">
-                    <img src="<?= Yii::$app->request->getQueryParam('adminUrl').$cache['column_'.$id]['file']?>" />
+                    <img src="<?= Yii::$app->params['adminUrl'].$cache['column_'.$id]['file']?>" />
                     <?= $cache['column_'.$id]['content']?>
 
                 </div>
