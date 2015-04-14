@@ -104,5 +104,32 @@ foreach($cache['column_19_photos'] as $photo)
 </div>
 <script type="text/javascript" src="/js/jquery.js"></script>
 <script type="text/javascript" src="/js/index.js"></script>
+<!--在线客服QQ start-->
+
+<DIV id=newkefu_right class=newkefu>
+    <IMG id=newkefu_bar class=newkefu_bar border=0 src="images/qq/kefu-right.png" width=33 height=168>
+    <DIV style="DISPLAY: none" id=group_pad class=newkefu_group>
+        <DIV class=qq_top><IMG src="/images/qq/kefu-top.png" width=140 height=28></DIV>
+        <div class="shouqian_mid">
+            <ul>
+                <li>
+                    <script src="http://static.b.qq.com/account/bizqq/js/wpa.js?type=1&kfuin=4008828611&ws=www.lanrenzhijia.com.com&btn1=企业QQ=2&a=8" type="text/javascript"></script>
+                </li>
+
+
+            </ul>
+        </div>
+        <DIV class=midtop><IMG src="/images/qq/kefu-midtop.png" width=140 height=24></DIV>
+        <DIV class=shouhou_mid>
+            <DIV class=line><SPAN>24小时客服热线：<BR>
+          <STRONG>4006-000-000</STRONG></SPAN> <SPAN>企业QQ：<BR>
+          <STRONG>4008828611</STRONG></SPAN> </DIV>
+        </DIV>
+        <DIV class=bottom><IMG src="/images/qq/kefu-bottom.png" width=140 height=7></DIV>
+    </DIV>
+</DIV>
+
+<SCRIPT type=text/javascript src="/js/flqq.js"></SCRIPT>
+<!--在线客服QQ end-->
 </body>
 </html>
