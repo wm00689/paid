@@ -1,5 +1,36 @@
 <?php
 use frontend\widgets\Column;
+foreach($cache['column_19_photos'] as $photo)
+{
+    if($photo['place']=='购买')
+    {
+        $goumai[]=$photo;
+    }
+
+    if($photo['place']=='t1')
+    {
+        $t1=$photo;
+    }
+    if($photo['place']=='t2')
+    {
+        $t2=$photo;
+    }
+    if($photo['place']=='t3')
+    {
+        $t3=$photo;
+    }
+    if($photo['place']=='p1')
+    {
+        $p1=$photo;
+    }
+    if($photo['place']=='p2')
+    {
+        $p2=$photo;
+    }
+}
+
+
+?>
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -48,16 +79,16 @@ use frontend\widgets\Column;
 <!--最底部--->
 <div id="foot">
     <div class="foot_cont">
-        <div class="foot_contleft"><p><img src="/images/pinpai.png" /></p><img src="/images/dianhua.png" /></div>
+        <div class="foot_contleft"><p></p><img src="<?= Yii::$app->params['adminUrl'].$t2['url']?>" /></div>
         <div class="foot_contcenter">
-            <div class="weixinimg"><img src="/images/weixin.jpg" /></div>
+            <div class="weixinimg"><img src="<?= Yii::$app->params['adminUrl'].$t3['url']?>" /></div>
             <div class="weixinnr">
                 <p>扫描二维码</p>
                 <p>关注官方微信</p>
                 <p>更多惊喜等着您</p>
             </div>
         </div>
-        <!--<div class="foot_contright"><img src="images/logo2.png" /></div>-->
+        <!--<div class="foot_contright"><img src="/images/logo2.png" /></div>-->
         <div class="clear"></div>
         <div class="foot_xiangxi"><span class="xiangxistyle1">021-62790806</span><span class="xiangxistyle2">979821262@qq.com</span>版权所有@上海派登图文制作有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：上海静安区江宁路631号2楼整层&nbsp;&nbsp;<span class="fontmin">(灿知科技提供技术支持）</span></div>
     </div>
