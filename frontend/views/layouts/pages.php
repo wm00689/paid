@@ -1,5 +1,6 @@
 <?php
 use frontend\widgets\Column;
+$cache = yii::$app->cache;
 foreach($cache['column_19_photos'] as $photo)
 {
     if($photo['place']=='购买')
