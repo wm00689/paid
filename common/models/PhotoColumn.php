@@ -44,7 +44,7 @@ class PhotoColumn extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'url'], 'required'],
-            [['sort','column_id','place','description'],'safe'],
+            [['sort','menu_id','place','description'],'safe'],
         ];
     }
 
@@ -57,7 +57,7 @@ class PhotoColumn extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'url' => 'Url',
-            'column_id' => 'Column ID',
+            'menu_id' => 'Menu ID',
             'description' => 'Description',
             'sort' => 'Sort',
             'status' => 'Status',

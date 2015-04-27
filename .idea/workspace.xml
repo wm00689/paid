@@ -2,103 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c6af48d-f6b2-49fa-8377-28ad0db7f5fd" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\www\paid\backend\controllers\ColumnController.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\controllers\ColumnPhotoController.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\controllers\PhotoColumnController.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\controllers\RoleController.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\models\Column.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\models\ColumnSearch.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\models\Role.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\models\RoleSearch.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\models\photoColumnSearch.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\columnPhoto\_form.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\columnPhoto\_search.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\columnPhoto\create.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\columnPhoto\index.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\columnPhoto\update.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\columnPhoto\view.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\column\_form.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\column\_search.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\column\create.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\column\index.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\column\index1.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\column\manage.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\column\update.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\column\view.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\photo-column\_form.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\photo-column\_search.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\photo-column\create.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\photo-column\index.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\photo-column\update.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\photo-column\view.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\role\_form.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\role\_search.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\role\create.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\role\index.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\role\update.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\views\role\view.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\1-1406201259430-L.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\2015320_03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\2015320_04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\2015320_05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\Tulips.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\chanpin.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\hz1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\hz2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\hz3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\hz4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\hz5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\hz6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\_thumbs\Files\hz7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\2015320_03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\2015320_04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\2015320_05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\Tulips.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\chanpin.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\hz1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\hz2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\hz3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\hz4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\hz5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\hz6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\backend\web\uploads\files\hz7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\hualiang.sql" afterPath="" />
-      <change type="DELETED" beforePath="D:\www\paid\hualiang2.sql" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/assets/AdminAsset.php" afterPath="$PROJECT_DIR$/backend/assets/AdminAsset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Article.php" afterPath="$PROJECT_DIR$/backend/models/Article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/backend/controllers/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/widgets/Column.php" afterPath="$PROJECT_DIR$/frontend/widgets/Column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/FileController.php" afterPath="$PROJECT_DIR$/backend/controllers/FileController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/IndexController.php" afterPath="$PROJECT_DIR$/frontend/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/PhotoController.php" afterPath="$PROJECT_DIR$/backend/controllers/PhotoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/article/_form.php" afterPath="$PROJECT_DIR$/backend/views/article/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/models/_form.php" afterPath="$PROJECT_DIR$/backend/views/models/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/photo/_form.php" afterPath="$PROJECT_DIR$/backend/views/photo/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/template/_form.php" afterPath="$PROJECT_DIR$/backend/views/template/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/photo/_search.php" afterPath="$PROJECT_DIR$/backend/views/photo/_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/template/_search.php" afterPath="$PROJECT_DIR$/backend/views/template/_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/about.php" afterPath="$PROJECT_DIR$/frontend/views/index/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/abouts.php" afterPath="$PROJECT_DIR$/frontend/views/index/abouts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/layouts/admin.php" afterPath="$PROJECT_DIR$/backend/views/layouts/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/widgets/views/column.php" afterPath="$PROJECT_DIR$/frontend/widgets/views/column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/contact.php" afterPath="$PROJECT_DIR$/frontend/views/index/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/cooperation.php" afterPath="$PROJECT_DIR$/frontend/views/index/cooperation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/article/index.php" afterPath="$PROJECT_DIR$/backend/views/article/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/models/index.php" afterPath="$PROJECT_DIR$/backend/views/models/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/photo/index.php" afterPath="$PROJECT_DIR$/backend/views/photo/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/template/index.php" afterPath="$PROJECT_DIR$/backend/views/template/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/index.php" afterPath="$PROJECT_DIR$/frontend/views/index/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/layouts/left.php" afterPath="$PROJECT_DIR$/backend/views/layouts/left.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/config/main.php" afterPath="$PROJECT_DIR$/backend/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/main.php" afterPath="$PROJECT_DIR$/common/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/layouts/pages.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/photoSearch.php" afterPath="$PROJECT_DIR$/backend/models/photoSearch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/product.php" afterPath="$PROJECT_DIR$/frontend/views/index/product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/products.php" afterPath="$PROJECT_DIR$/frontend/views/index/products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/index/show.php" afterPath="$PROJECT_DIR$/frontend/views/index/show.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/article/view.php" afterPath="$PROJECT_DIR$/backend/views/article/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/photo/view.php" afterPath="$PROJECT_DIR$/backend/views/photo/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/Photo.php" afterPath="$PROJECT_DIR$/common/models/Photo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/PhotoColumn.php" afterPath="$PROJECT_DIR$/common/models/PhotoColumn.php" />
     </list>
     <ignored path="paid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,53 +28,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428" vertical-offset="38" max-vertical-offset="1254">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-              <folding>
-                <element signature="e#6#82#0#PHP" expanded="true" />
-                <element signature="e#117#125#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cooperation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/index/cooperation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.418605" vertical-offset="0" max-vertical-offset="703">
-              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="product.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/index/product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-19.142857" vertical-offset="224" max-vertical-offset="1102">
               <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="abouts.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/index/abouts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9418604" vertical-offset="41" max-vertical-offset="874">
-              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -233,15 +97,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/index/show.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7037037" vertical-offset="0" max-vertical-offset="891">
-              <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+            <state vertical-scroll-proportion="-22.392857" vertical-offset="0" max-vertical-offset="836">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoColumn.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/PhotoColumn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.5" vertical-offset="449" max-vertical-offset="1539">
+              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/Photo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1976743" vertical-offset="559" max-vertical-offset="1425">
+              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+              <folding>
+                <element signature="e#33#41#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoMenu.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/models/PhotoMenu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7676768" vertical-offset="684" max-vertical-offset="1596">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -268,7 +164,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/common/config/params.php" />
         <option value="$PROJECT_DIR$/backend/models/photoColumnSearch.php" />
-        <option value="$PROJECT_DIR$/common/models/PhotoColumn.php" />
         <option value="$PROJECT_DIR$/backend/views/photo-column/_form.php" />
         <option value="$PROJECT_DIR$/backend/controllers/ColumnController.php" />
         <option value="$PROJECT_DIR$/backend/models/ColumnSearch.php" />
@@ -298,6 +193,8 @@
         <option value="$PROJECT_DIR$/frontend/views/index/product.php" />
         <option value="$PROJECT_DIR$/frontend/views/index/products.php" />
         <option value="$PROJECT_DIR$/frontend/views/index/show.php" />
+        <option value="$PROJECT_DIR$/common/models/PhotoColumn.php" />
+        <option value="$PROJECT_DIR$/common/models/Photo.php" />
       </list>
     </option>
   </component>
@@ -535,6 +432,24 @@
               <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -623,7 +538,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -659,20 +574,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/models/PhotoColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.392857" vertical-offset="648" max-vertical-offset="1539">
-          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/widgets/views/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/widgets/selectTree.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.214286" vertical-offset="0" max-vertical-offset="456">
@@ -1057,12 +958,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/index/show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7037037" vertical-offset="0" max-vertical-offset="891">
-          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        <state vertical-scroll-proportion="-22.392857" vertical-offset="0" max-vertical-offset="836">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/PhotoColumn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.5" vertical-offset="449" max-vertical-offset="1539">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1976743" vertical-offset="559" max-vertical-offset="1425">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+          <folding>
+            <element signature="e#33#41#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/PhotoMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7676768" vertical-offset="684" max-vertical-offset="1596">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

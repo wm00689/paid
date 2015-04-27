@@ -43,8 +43,8 @@ class Photo extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'url', 'description'], 'required'],
-            [['column_id','article_id', 'status'], 'integer'],
-            [['sort','column_id'],'safe'],
+            [['menu_id','article_id', 'status'], 'integer'],
+            [['sort','menu_id'],'safe'],
             [['title', 'description'], 'string', 'max' => 255],
             [['url'], 'string', 'max' => 200]
         ];
@@ -60,7 +60,7 @@ class Photo extends \yii\db\ActiveRecord
             'title' => 'Title',
             'url' => 'Url',
             'description' => 'Description',
-            'column_id' => 'Column ID',
+            'menu_id' => 'Menu ID',
             'status' => 'Status',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
