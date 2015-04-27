@@ -48,14 +48,6 @@ class IndexController extends FrontController{
         ]);
     }
 
-    public function actionNbh()
-    {
-        $cache = Yii::$app->cache;
-        return $this->render('show_nbh',[
-            'id'=>Yii::$app->request->get('id'),
-            'node'=>Yii::$app->request->getQueryParam('node'),
-            'cache'=>$cache
-        ]);
-    }
+
 
 }

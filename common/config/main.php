@@ -12,7 +12,7 @@ return [
             'enableStrictParsing' => false,
             'rules' => [
                 'menu/<menu:\d+>' => 'index/menu',
-                'page/<id:\d+>' => 'index/page',
+                'show/<id:\d+>' => 'index/show',
             ],
         ],
     ],
