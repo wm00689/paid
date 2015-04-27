@@ -11,8 +11,8 @@ return [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
-                'column/<column:\d+>' => 'index/column',
-                'show/<id:\d+>' => 'index/show',
+                'menu/<menu:\d+>' => 'index/menu',
+                'page/<id:\d+>' => 'index/page',
             ],
         ],
     ],

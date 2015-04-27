@@ -32,12 +32,27 @@ class PhotoController extends BaseController
      */
     public function actionIndex()
     {
-        $articleObject = Article::findOne(Yii::$app->request->get('article_id'));
+        $provider = new \yii\data\ActiveDataProvider([
+            'query' => Photo::find()->where(['article_id'=>Yii::$app->request->get('article_id')]),
+            'pagination' => [
+                'pageSize' => 20,
+            ],
+
+        ]);
+
+        $searchModel = new PhotoSearch();
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $provider,
+        ]);
+
+       /* $articleObject = Article::findOne(Yii::$app->request->get('article_id'));
         return $this->render('index', [
 
             'photos' =>$articleObject->photos,
 
-        ]);
+        ]);*/
     }
 
     /**
@@ -61,11 +76,17 @@ class PhotoController extends BaseController
     {
 
         $model = new Photo();
-        $model->column_id = Yii::$app->request->get('column_id');
+        $model->menu_id = Yii::$app->request->get('menu_id');
         $model->article_id = Yii::$app->request->get('article_id');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
            // return $this->redirect(['index', 'id' => $model->id]);
-            return $this->redirect(['index?column_id='.Yii::$app->request->get('column_id').'&article_id='.Yii::$app->request->get('article_id'), 'id' => $model->column_id]);
+            return $this->redirect(
+                [
+                    'index',
+                    'menu_id'=>Yii::$app->request->get('menu_id'),
+                    'article_id'=>Yii::$app->request->get('article_id')
+                ]
+            );
 
         } else {
             return $this->render('create', [
@@ -87,7 +108,11 @@ class PhotoController extends BaseController
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->actionCache($model->article_id);
             //return $this->redirect(['index', 'id' => $model->id]);
-            return $this->redirect(['index?column_id='.Yii::$app->request->get('column_id').'&article_id='.Yii::$app->request->get('article_id'), 'id' => $model->column_id]);
+            return $this->redirect([
+                'index',
+                'menu_id'=>$model->menu_id,
+                'article_id'=>$model->article_id
+            ]);
 
         } else {
             return $this->render('update', [
@@ -118,9 +143,15 @@ class PhotoController extends BaseController
 
     public function actionDelete($id)
     {
+        $model = $this->findModel($id);
+        $menu_id = $model->menu_id;
+        $article_id = $model->article_id;
         $this->findModel($id)->delete();
-
-        return $this->redirect(['index?column_id='.Yii::$app->request->get('column_id').'&article_id='.Yii::$app->request->get('article_id')]);
+        return $this->redirect([
+            'index',
+            'menu_id'=>$menu_id,
+            'article_id'=>$article_id
+        ]);
     }
 
     /**

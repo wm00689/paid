@@ -8,8 +8,6 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="photo-search">
-
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
         'method' => 'get',
@@ -25,14 +23,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'place') ?>
 
-    <?php // echo $form->field($model, 'column_id') ?>
-
-    <?php // echo $form->field($model, 'status') ?>
-
-    <?php // echo $form->field($model, 'created_at') ?>
-
-    <?php // echo $form->field($model, 'updated_at') ?>
-
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
         <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
@@ -40,4 +30,3 @@ use yii\widgets\ActiveForm;
 
     <?php ActiveForm::end(); ?>
 
-</div>

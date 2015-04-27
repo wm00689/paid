@@ -4,11 +4,11 @@
         <div class="pro_left" style="height:670px">
             <div class="pro_left_bt">关于我们<span>ABOUT</span></div>
             <ul class="pro_left_nav">
-                <?php foreach($cache['column_'.$id.'_children'] as $brother):?>
-                    <?php if(Yii::$app->request->get('column')==$brother['id']):?>
-                        <li class="hover"><a href="/column/<?= $brother['id']?>"><?= $brother['cname']?></a></li>
+                <?php foreach($cache['menu_'.$id.'_children'] as $brother):?>
+                    <?php if(Yii::$app->request->get('menu')==$brother['id']):?>
+                        <li class="hover"><a href="/menu/<?= $brother['id']?>"><?= $brother['cname']?></a></li>
                     <?php else:?>
-                        <li><a href="/column/<?= $brother['id']?>"><?= $brother['cname']?></a></li>
+                        <li><a href="/menu/<?= $brother['id']?>"><?= $brother['cname']?></a></li>
                     <?php endif;?>
                 <?php endforeach;?>
             </ul>
@@ -17,8 +17,8 @@
             <div class="pro_right_weizhi">当前位置：首页<span>&gt;</span>关于我们<span>&gt;</span>企业简介</div>
             <div class="pro_right_list">
                 <div class="aboutus">
-                    <img src="<?= Yii::$app->params['adminUrl'].$cache['column_'.$id]['file']?>" />
-                    <?= $cache['column_'.$id]['content']?>
+                    <img src="<?= Yii::$app->params['adminUrl'].$cache['menu_'.$id]['file']?>" />
+                    <?= $cache['menu_'.$id]['content']?>
 
                 </div>
             </div>

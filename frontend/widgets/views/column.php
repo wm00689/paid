@@ -25,30 +25,30 @@ function procHtml($tree)
     $html = '';
     foreach($tree as $t)
     {
-        if(Yii::$app->request->get('column'))
+        if(Yii::$app->request->get('menu'))
         {
 
             if($t['parentid']==0)
             {
-                if(in_array($t['id'],$cache['column_'.Yii::$app->request->get('column').'_parents']))
+                if(in_array($t['id'],$cache['menu_'.Yii::$app->request->get('menu').'_parents']))
                 {
-                    $html .= "<li class='hover'><a href='/column/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
+                    $html .= "<li class='hover'><a href='/menu/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
                 }else
                 {
 
-                    $html .= "<li><a href='/column/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
+                    $html .= "<li><a href='/menu/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
                 }
 
             }
         }else
         {
-            $html .= "<li><a href='/column/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
+            $html .= "<li><a href='/menu/{$t['id']}'><p>".$t['cname']."</p><span>".$t['ename']."</span></a></li>";
         }
 
     }
     return $html;
 }
 
-$tree = getTree($columns, 0);
+$tree = getTree($menu, 0);
 echo procHtml($tree);
 ?>

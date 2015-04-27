@@ -57,7 +57,18 @@ AdminAsset::register($this);
 
         <!-- Main content -->
         <section class="content">
-            <?= $content ?>
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <div class="box">
+
+                        <div class="box-body">
+                            <?= $content ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </section><!-- /.content -->
     </aside><!-- /.right-side -->

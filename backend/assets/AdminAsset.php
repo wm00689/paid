@@ -18,7 +18,7 @@ class AdminAsset extends AssetBundle
     public $js = [
         'static/js/bootstrap.min.js',
         'static/js/AdminLTE/app.js',
-        'static/js/AdminLTE/demo.js',
+        //'static/js/AdminLTE/demo.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

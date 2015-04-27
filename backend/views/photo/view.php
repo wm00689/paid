@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'url:url',
             'description',
 
-            'column_id',
+            'menu_id',
             'status',
             'created_at',
             'updated_at',

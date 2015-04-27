@@ -13,17 +13,17 @@ use frontend\controllers\BaseController;
 
 class IndexController extends FrontController{
 
-    public function actionColumn()
+    public function actionMenu()
     {
-        $id = Yii::$app->request->get('column');
+        $id = Yii::$app->request->get('menu');
         $cache = Yii::$app->cache;
-        $column = $cache['column_'.$id];
-        return $this->render($column['tmp'],[
+        $menu = $cache['menu_'.$id];
+        return $this->render($menu['tmp'],[
             'cache'=>$cache,
-            'column'=>$column,
+            'menu'=>$menu,
             'id'=>$id,
             'page_size'=>3
-            //'column_child'=>$cache['column_children'.$id]
+            //'menu_child'=>$cache['menu_children'.$id]
             ]);
     }
 
@@ -43,7 +43,7 @@ class IndexController extends FrontController{
         $cache = Yii::$app->cache;
         return $this->render('show',[
             'id'=>Yii::$app->request->get('id'),
-            'column_id'=>Yii::$app->request->getQueryParam('column'),
+            'menu_id'=>Yii::$app->request->getQueryParam('menu'),
             'cache'=>$cache
         ]);
     }

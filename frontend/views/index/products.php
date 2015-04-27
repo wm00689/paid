@@ -1,8 +1,8 @@
 <?php
 use yii\widgets\LinkPager;
-foreach($cache['column_'.$id.'_children'] as $child)
+foreach($cache['menu_'.$id.'_children'] as $child)
 {
-    foreach($cache['column_'.$child['id'].'_articles'] as $article)
+    foreach($cache['menu_'.$child['id'].'_articles'] as $article)
     {
         $arr[] = $article;
     }
@@ -16,11 +16,11 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
         <div class="pro_left">
             <div class="pro_left_bt">产品展示<span>SHOW</span></div>
             <ul class="pro_left_nav">
-                <?php foreach($cache['column_'.$id.'_children'] as $brother):?>
-                    <?php if(Yii::$app->request->get('column')==$brother['id']):?>
-                        <li class="hover"><a href="/column/<?= $brother['id']?>"><?= $brother['cname']?></a></li>
+                <?php foreach($cache['menu_'.$id.'_children'] as $brother):?>
+                    <?php if(Yii::$app->request->get('menu')==$brother['id']):?>
+                        <li class="hover"><a href="/menu/<?= $brother['id']?>"><?= $brother['cname']?></a></li>
                     <?php else:?>
-                        <li><a href="/column/<?= $brother['id']?>"><?= $brother['cname']?></a></li>
+                        <li><a href="/menu/<?= $brother['id']?>"><?= $brother['cname']?></a></li>
                     <?php endif;?>
                 <?php endforeach;?>
             </ul>
@@ -31,8 +31,8 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
                 <ul>
                     <?php foreach($array as $article):?>
                         <li>
-                            <div class="listimg"><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><img src="http://yiipic.xiuyun99.com/<?= basename($article['file'])?>" width="224" /></a></div>
-                            <p><a href="/show/<?= $article['id']?>?column=<?= $article['column_id']?>" ><?= $article['title']?></a></p>
+                            <div class="listimg"><a href="/show/<?= $article['id']?>?menu=<?= $article['menu_id']?>" ><img src="http://yiipic.xiuyun99.com/<?= basename($article['file'])?>" width="224" /></a></div>
+                            <p><a href="/show/<?= $article['id']?>?menu=<?= $article['menu_id']?>" ><?= $article['title']?></a></p>
                         </li>
                     <?php endforeach?>
                 </ul>

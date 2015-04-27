@@ -19,7 +19,7 @@ class photoSearch extends photo
     public function rules()
     {
         return [
-            [['id', 'column_id', 'status', 'created_at', 'updated_at'], 'integer'],
+            [['id', 'menu_id', 'status', 'created_at', 'updated_at'], 'integer'],
             [['title', 'url', 'description'], 'safe'],
         ];
     }
@@ -60,7 +60,7 @@ class photoSearch extends photo
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'column_id' => $this->column_id,
+            'menu_id' => $this->menu_id,
             'status' => $this->status,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
