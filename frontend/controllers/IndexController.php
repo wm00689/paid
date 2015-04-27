@@ -22,7 +22,7 @@ class IndexController extends FrontController{
             'cache'=>$cache,
             'menu'=>$menu,
             'id'=>$id,
-            'page_size'=>3
+            'page_size'=>9
             //'menu_child'=>$cache['menu_children'.$id]
             ]);
     }
