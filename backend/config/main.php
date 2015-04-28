@@ -12,7 +12,7 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-        'file' => [
+        'files' => [
             'class' => 'modules\filemanage\Module',
         ],
         'filemanager' => [
