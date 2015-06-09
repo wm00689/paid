@@ -19,7 +19,7 @@ class article
 
     static function menuSeo($menu_id,$key)
     {
-        $model = \backend\models\menu::findOne(['id'=>$menu_id]);
+        $model = \backend\models\Menu::findOne(['id'=>$menu_id]);
         return $model->$key;
     }
 } 
