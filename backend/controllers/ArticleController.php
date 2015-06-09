@@ -10,6 +10,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use Aliyun\OSS\OSSClient;
+use yii\helpers\Url;
 
 /**
  * ArticleController implements the CRUD actions for Article model.
@@ -34,6 +35,7 @@ class ArticleController extends BaseController
      */
     public function actionIndex()
     {
+        Url::remember();
         $provider = new \yii\data\ActiveDataProvider([
             'query' => Article::find()->where(['menu_id'=>Yii::$app->request->get('id')]),
             'pagination' => [
@@ -87,15 +89,41 @@ class ArticleController extends BaseController
         $model = new Article();
         $model->menu_id = Yii::$app->request->get('menu_id');
         $model->user_id = Yii::$app->user->id;
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->actionCacheOne($model->menu_id,$model->id);
-            return $this->redirect(['index', 'id' => $model->menu_id]);
+        if ($model->load(Yii::$app->request->post())) {
+            if($model->keywords=='')
+            {
 
+                $model->keywords = \common\helps\article::menuSeo($model->menu_id,'keywords');
+            }
+
+            if($model->meta_title=='')
+            {
+                $model->meta_title = $model->title;
+            }
+
+            if($model->description=='')
+            {
+                $model->description = \common\helps\article::menuSeo($model->menu_id,'description');
+            }
+
+            if($model->save())
+            {
+                $this->actionCacheOne($model->menu_id,$model->id);
+                return $this->redirect(Url::previous());
+            }else{
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
+            // return $this->redirect(['index']);
         } else {
+
             return $this->render('create', [
                 'model' => $model,
             ]);
         }
+
+
     }
 
     /**
@@ -108,15 +136,41 @@ class ArticleController extends BaseController
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->actionCacheOne($model->menu_id,$model->id);
-            return $this->redirect(['index?id='.$model->menu_id]);
+        if ($model->load(Yii::$app->request->post())) {
+            if($model->keywords=='')
+            {
 
+                $model->keywords = \common\helps\article::menuSeo($model->menu_id,'keywords');
+            }
+
+            if($model->meta_title=='')
+            {
+                $model->meta_title = $model->title;
+            }
+
+            if($model->description=='')
+            {
+                $model->description = \common\helps\article::menuSeo($model->menu_id,'description');
+            }
+
+            if($model->save())
+            {
+                $this->actionCacheOne($model->menu_id,$model->id);
+                return $this->redirect(Url::previous());
+            }else{
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
+            // return $this->redirect(['index']);
         } else {
-            return $this->render('update', [
+
+            return $this->render('create', [
                 'model' => $model,
             ]);
         }
+
+
     }
 
     /**

@@ -51,7 +51,7 @@ class Article extends \yii\db\ActiveRecord
             [['menu_id', 'user_id'], 'integer'],
             [['user_id', 'title'], 'required'],
             [['created_at', 'updated_at','slug','file','content'], 'safe'],
-            [['title', 'slug', 'meta_title', 'meta_description', 'meta_keywords'], 'string', 'max' => 255],
+            [['title', 'slug', 'meta_title', 'description', 'keywords'], 'string', 'max' => 255],
         ];
     }
 
@@ -88,8 +88,8 @@ class Article extends \yii\db\ActiveRecord
             'content' => Yii::t('app', 'Content'),
             'comments_count' => Yii::t('app', 'Comments Count'),
             'meta_title' => Yii::t('app', 'Meta Title'),
-            'meta_description' => Yii::t('app', 'Meta Description'),
-            'meta_keywords' => Yii::t('app', 'Meta Keywords'),
+            'description' => Yii::t('app', 'Meta Description'),
+            'keywords' => Yii::t('app', 'Meta Keywords'),
             'created_at' => Yii::t('app', 'Created At'),
             'updated_at' => Yii::t('app', 'Updated At'),
 

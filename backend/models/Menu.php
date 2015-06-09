@@ -4,6 +4,7 @@ namespace backend\models;
 
 use common\models\PhotoMenu;
 use yii\behaviors\TimestampBehavior;
+
 use Yii;
 
 /**
@@ -53,7 +54,7 @@ class menu extends \yii\db\ActiveRecord
     {
         return [
             [['parentid', 'cname','model_id'], 'required'],
-            [['sort','template_id','file','isArticle','url','isShow','content'],'safe'],
+            [['sort','template_id','file','isArticle','url','isShow','content','title','keywords','description'],'safe'],
             [['parentid', 'status'], 'integer']
         ];
     }
@@ -130,5 +131,27 @@ class menu extends \yii\db\ActiveRecord
     public function getId()
     {
         return $this->hasOne(Article::className(), ['menu_id' => 'id']);
+    }
+
+    public function beforeSave2($insert)
+    {
+        parent::beforeSave($insert);
+        if($this->keywords=='')
+        {
+
+            $this->keywords = Article::siteSeo('keywords');
+        }
+
+        if($this->title=='')
+        {
+            $this->title = Article::siteSeo('title');
+        }
+
+        if($this->description=='')
+        {
+            $this->description=Article::siteSeo('description');
+        }
+
+        return true;
     }
 }

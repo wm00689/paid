@@ -8,6 +8,8 @@ use backend\models\MenuSearch;
 use common\lib\tree;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\helps\article;
+use yii\helpers\Url;
 
 /**
  *menuController implements the CRUD actions formenu model.
@@ -32,8 +34,7 @@ class MenuController extends BaseController
      */
     public function actionIndex()
     {
-        // $cache = Yii::$app->cache;
-        //$menuList = $cache['menus'];
+        Url::remember();
         $searchModel = new MenuSearch();
         $menuList = $searchModel->menuList();
         $tree = new tree();
@@ -82,10 +83,43 @@ Eof;
      */
     public function actionCreate()
     {
+
         $request = Yii::$app->request;
         $model = new Menu();
-
         $model->parentid = $request->get('id')?$request->get('id'):0;
+        if ($model->load(Yii::$app->request->post())) {
+            if($model->keywords=='')
+            {
+
+                $model->keywords = Article::siteSeo('keywords');
+            }
+
+            if($model->title=='')
+            {
+                $model->title = $model->cname;
+            }
+
+            if($model->description=='')
+            {
+                $model->description=Article::siteSeo('description');
+            }
+
+            if($model->save())
+            {
+                return $this->redirect(Url::previous());
+            }else{
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
+            // return $this->redirect(['index']);
+        } else{
+            return $this->render('create', [
+                'model' => $model,
+            ]);
+        }
+
+       /* $model->parentid = $request->get('id')?$request->get('id'):0;
 
         if ($model->load($request->post()) && $model->save()) {
 
@@ -94,7 +128,7 @@ Eof;
             return $this->render('create', [
                 'model' => $model,
             ]);
-        }
+        }*/
     }
 
     public function actionCache()
@@ -155,9 +189,34 @@ Eof;
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['index']);
+        if ($model->load(Yii::$app->request->post())) {
+            if($model->keywords=='')
+            {
+
+                $model->keywords = Article::siteSeo('keywords');
+            }
+
+            if($model->title=='')
+            {
+                $model->title = $model->cname;
+            }
+
+            if($model->description=='')
+            {
+                $model->description=Article::siteSeo('description');
+            }
+
+            if($model->save())
+            {
+                return $this->redirect(Url::previous());
+            }else{
+                return $this->render('update', [
+                    'model' => $model,
+                ]);
+            }
+           // return $this->redirect(['index']);
         } else {
+
             return $this->render('update', [
                 'model' => $model,
             ]);
@@ -174,7 +233,7 @@ Eof;
     {
         $this->findModel($id)->delete();
         $this->actionCache();
-        return $this->redirect(['index']);
+        return $this->redirect(Url::previous());
     }
 
     /**

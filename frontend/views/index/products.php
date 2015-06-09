@@ -1,4 +1,9 @@
 <?php
+$this->title = $cache['menu_'.$id]['title'];
+$this->params['keywords'] = $cache['menu_'.$id]['keywords'];
+$this->params['description'] = $cache['menu_'.$id]['description'];
+?>
+<?php
 use yii\widgets\LinkPager;
 foreach($cache['menu_'.$id.'_children'] as $child)
 {

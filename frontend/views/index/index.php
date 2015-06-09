@@ -1,5 +1,6 @@
 <?php
 use frontend\widgets\Column;
+use yii\widgets\ActiveForm;
 //print_r($cache['column_19_photos']);
 foreach($cache['menu_19_photos'] as $photo)
 {
@@ -36,9 +37,10 @@ foreach($cache['menu_19_photos'] as $photo)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <meta name="description" content=""  />
-    <meta name="keywords" content=""  />
-    <title>派登</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta name="description" content="<?= $cache['menu_19']['description']?>"  />
+    <meta name="keywords" content="<?= $cache['menu_19']['keywords']?>"  />
+    <title><?= $cache['menu_19']['title'] ?></title>
     <link type="text/css" rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="/css/main_qq.css">
 </head>
@@ -47,6 +49,12 @@ foreach($cache['menu_19_photos'] as $photo)
 <!--logo顶部-->
 <div id="top">
     <div class="topleft"><img src="/images/logo.png" /></div>
+    <div class="znsearch">
+        <?php $form = ActiveForm::begin(['action'=>'/search','method'=>'get']); ?>
+            <input type="text"  name='title' value="需要什么服务？" class="txt"/>
+            <input type="submit" value="搜索"  class="but"/>
+        <?php ActiveForm::end(); ?>
+    </div>
     <div class="topright"><img src="/images/iphone.png" /></div>
 </div>
 

@@ -13,6 +13,7 @@ return [
             'rules' => [
                 'menu/<menu:\d+>' => 'index/menu',
                 'show/<id:\d+>' => 'index/show',
+                'search'=>'index/search'
             ],
         ],
     ],

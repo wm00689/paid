@@ -38,9 +38,9 @@ use common\widgets\Ueditor;
 
                     <?= $form->field($model, 'meta_title')->textInput(['maxlength' => 255]) ?>
 
-                    <?= $form->field($model, 'meta_description')->textInput(['maxlength' => 255]) ?>
+                    <?= $form->field($model, 'description')->textInput(['maxlength' => 255]) ?>
 
-                    <?= $form->field($model, 'meta_keywords')->textInput(['maxlength' => 255]) ?>
+                    <?= $form->field($model, 'keywords')->textInput(['maxlength' => 255]) ?>
 
                 </div><!-- /.tab-pane -->
             </div><!-- /.tab-content -->

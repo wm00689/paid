@@ -1,11 +1,30 @@
 // JavaScript Document
 
+
+//首页搜索框的效果
+	var d_Value=$(".znsearch input.txt").val();//获取到他的默认的值
+	//获取焦点时
+	$(".znsearch input.txt").focus(function(){
+	//$(this)同等于我们的 $(".search input.txt")
+		if($(this).val()==d_Value){
+			$(this).val("");//当前输入框的值设置为空
+			//$(this).css("border","1px solid red");
+		}
+	});
+	//失去焦点
+	$(".znsearch input.txt").blur(function(){
+		if($(this).val()==""){
+			$(this).val(d_Value);//给他赋他的初始值
+		}
+	});
+	
+
 //banner分层效果
 
 $(document).ready(function(){
-		$("#banner .style1").css({top:"50px",opacity:"0"}).stop(false,true).animate({top:"200px",opacity:"1"},500);
+		$("#banner .style1").css({top:"100px",opacity:"0"}).stop(false,true).animate({top:"240px",opacity:"1"},600);
 		$("#banner .style2").css({right:"0",opacity:"0"}).stop(false,true).animate({right:"50px",opacity:"1"},500)
-		$("#banner .style3").css({right:"0",opacity:"0"}).stop(false,true).animate({right:"50px",opacity:"1"},500)
+		$("#banner .style3").css({right:"-40px",opacity:"0"}).stop(false,true).animate({right:"15px",opacity:"1"},600)
 	
 })
 

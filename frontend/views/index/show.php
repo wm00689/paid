@@ -1,3 +1,8 @@
+<?php
+$this->title = $cache['article_'.$id]['meta_title'];
+$this->params['keywords'] = $cache['article_'.$id]['keywords'];
+$this->params['description'] = $cache['article_'.$id]['description'];
+?>
 <!--产品展示-->
 <div id="product">
     <div id="pro">

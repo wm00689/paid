@@ -60,7 +60,12 @@ class SysController extends BaseController
 
     public function actionSet()
     {
-        return $this->render('set');
+        $model = \backend\models\site::findOne(['id'=>1]);
+        if($model->load(Yii::$app->request->post()))
+        {
+            $model->save();
+        }
+        return $this->render('set',['model'=>$model]);
     }
 
     public function actionLogin()

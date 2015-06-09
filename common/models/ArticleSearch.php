@@ -20,7 +20,7 @@ class ArticleSearch extends Article
     {
         return [
             [['id', 'column_id', 'user_id', 'comments_count'], 'integer'],
-            [['title', 'slug', 'content', 'meta_title', 'meta_description', 'meta_keywords', 'created_at', 'updated_at'], 'safe'],
+            [['title', 'slug', 'content', 'meta_title', 'description', '_keywords', 'created_at', 'updated_at'], 'safe'],
         ];
     }
 
@@ -69,8 +69,8 @@ class ArticleSearch extends Article
             ->andFilterWhere(['like', 'slug', $this->slug])
             ->andFilterWhere(['like', 'content', $this->content])
             ->andFilterWhere(['like', 'meta_title', $this->meta_title])
-            ->andFilterWhere(['like', 'meta_description', $this->meta_description])
-            ->andFilterWhere(['like', 'meta_keywords', $this->meta_keywords]);
+            ->andFilterWhere(['like', 'description', $this->meta_description])
+            ->andFilterWhere(['like', 'keywords', $this->meta_keywords]);
 
         return $dataProvider;
     }

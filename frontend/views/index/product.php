@@ -1,9 +1,15 @@
 <?php
+$this->title = $cache['menu_'.$id]['title'];
+$this->params['keywords'] = $cache['menu_'.$id]['keywords'];
+$this->params['description'] = $cache['menu_'.$id]['description'];
+?>
+<?php
 use yii\widgets\LinkPager;
 
 $array = Yii::$app->request->get('page')?array_slice($cache['menu_'.$id.'_articles'],$page_size*(Yii::$app->request->get('page')-1),$page_size):array_slice($cache['menu_'.$id.'_articles'],0,$page_size);
 
 ?>
+
 <!--产品展示-->
 <div id="product">
     <div id="pro">

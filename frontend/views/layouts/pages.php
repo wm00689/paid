@@ -1,5 +1,6 @@
 <?php
 use frontend\widgets\Column;
+use yii\widgets\ActiveForm;
 $cache = yii::$app->cache;
 foreach($cache['menu_19_photos'] as $photo)
 {
@@ -32,19 +33,20 @@ foreach($cache['menu_19_photos'] as $photo)
 
 
 ?>
-?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <meta name="description" content=""  />
-    <meta name="keywords" content=""  />
-    <title>派登</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta name="description" content="<?= $this->params['description']?>"  />
+    <meta name="keywords" content="<?= $this->params['keywords']?>"  />
+    <title><?= $this->title ?></title>
 
     <link type="text/css" rel="stylesheet" href="/css/index.css" />
     <link type="text/css" rel="stylesheet" href="/css/pages.css" />
     <link rel="stylesheet" type="text/css" href="/css/main_qq.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
+    <?= $this->head()?>
 </head>
 
 <body>
@@ -52,6 +54,12 @@ foreach($cache['menu_19_photos'] as $photo)
 <div id="fentop">
     <div id="top">
         <div class="topleft"><img src="/images/logo.png" /></div>
+        <div class="znsearch">
+            <?php $form = ActiveForm::begin(['action'=>'/search','method'=>'get']); ?>
+            <input type="text"  name='title' value="需要什么服务？" class="txt"/>
+            <input type="submit" value="搜索"  class="but"/>
+            <?php ActiveForm::end(); ?>
+        </div>
         <div class="topright"><img src="/images/iphone.png" /></div>
     </div>
 </div>

@@ -10,6 +10,7 @@ namespace frontend\controllers;
 
 use Yii;
 use frontend\controllers\BaseController;
+use yii\data\Pagination;
 
 class IndexController extends FrontController{
 
@@ -46,6 +47,17 @@ class IndexController extends FrontController{
             'menu_id'=>Yii::$app->request->getQueryParam('menu'),
             'cache'=>$cache
         ]);
+    }
+
+    public function actionSearch()
+    {
+        $g = Yii::$app->request->get('title');
+        $query = \backend\models\Article::find()->filterWhere(['like','title',$g]);
+        $pages = new Pagination(['totalCount'=>$query->count(),'pageSize'=>15]);
+        $r = $query->offset($pages->offset)->limit($pages->limit)->all();
+
+
+        return $this->render('search',['r'=>$r,'pages'=>$pages,'g'=>$g]);
     }
 
 
