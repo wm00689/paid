@@ -56,7 +56,7 @@ foreach($cache['menu_19_photos'] as $photo)
         <div class="topleft"><img src="/images/logo.png" /></div>
         <div class="znsearch">
             <?php $form = ActiveForm::begin(['action'=>'/search','method'=>'get']); ?>
-            <input type="text"  name='title' value="需要什么服务？" class="txt"/>
+            <input type="text"  name='title' value="需要什么产品和服务？" class="txt"/>
             <input type="submit" value="搜索"  class="but"/>
             <?php ActiveForm::end(); ?>
         </div>
