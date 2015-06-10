@@ -66,6 +66,9 @@ class Article extends \yii\db\ActiveRecord
         return [
             'id',
             'title',
+            'meta_title',
+            'keywords',
+            'description',
             'created_at'=>function($this)
             {
                 return date('Y-m-d',$this->created_at);
