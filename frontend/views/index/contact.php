@@ -1,7 +1,7 @@
 <?php
 $this->title = $cache['menu_'.$id]['cname'].'_'.$cache['set']['title'];
-$this->registerMetaTag(['name' => 'keywords', 'content' => $cache['set']['keywords']]);
-$this->registerMetaTag(['name' => 'description', 'content' => $cache['set']['description']]);
+$this->registerMetaTag(['name' => 'keywords', 'content' => $cache['menu_'.$id]['keywords']]);
+$this->registerMetaTag(['name' => 'description', 'content' => $cache['menu_'.$id]['description']]);
 ?>
 
 <!--联系我们-->
