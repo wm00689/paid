@@ -40,7 +40,7 @@ foreach($cache['menu_19_photos'] as $photo)
     <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
     <meta name="description" content="<?= $cache['menu_19']['description']?>"  />
     <meta name="keywords" content="<?= $cache['menu_19']['keywords']?>"  />
-    <title><?= $cache['menu_19']['title'] ?></title>
+    <title>$cache['set']['title'];</title>
     <link type="text/css" rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="/css/main_qq.css">
 </head>

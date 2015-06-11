@@ -1,7 +1,5 @@
 <?php
-$this->title = $cache['menu_'.$menu_id.'_article_'.$id]['meta_title'];
-$this->params['keywords'] = $cache['menu_'.$menu_id.'_article_'.$id]['keywords'];
-$this->params['description'] = $cache['menu_'.$menu_id.'_article_'.$id]['description'];
+$this->title = $cache['article_'.$id]['title'].'_'.$cache['menu_'.$cache['article_'.$id]['menu_id']]['cname'].'_'.$cache['set']['title'];
 ?>
 <!--产品展示-->
 <div id="product">

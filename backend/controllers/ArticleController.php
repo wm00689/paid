@@ -143,11 +143,6 @@ class ArticleController extends BaseController
                 $model->keywords = \common\helps\article::menuSeo($model->menu_id,'keywords');
             }
 
-            if($model->meta_title=='')
-            {
-                $model->meta_title = $model->title;
-            }
-
             if($model->description=='')
             {
                 $model->description = \common\helps\article::menuSeo($model->menu_id,'description');
@@ -211,7 +206,7 @@ class ArticleController extends BaseController
     public function actionCacheOne($menu_id,$id)
     {
         $cache = Yii::$app->cache;
-
+        $cache['article_'.$id] = Article::findOne(['id'=>$id])->toArray();
         $cache['menu_'.$menu_id.'_article_'.$id] = Article::findOne(['id'=>$id])->toArray();
 
         $cache['menu_'.$menu_id.'_article_'.$id.'_pages'] = explode('_ueditor_page_break_tag_',$cache['menu_'.$menu_id.'_article_'.$id]['content']);

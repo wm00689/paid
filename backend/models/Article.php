@@ -68,6 +68,7 @@ class Article extends \yii\db\ActiveRecord
             'title',
             'meta_title',
             'keywords',
+            'menu_id',
             'description',
             'created_at'=>function($this)
             {
@@ -112,6 +113,11 @@ class Article extends \yii\db\ActiveRecord
     {
         //return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id']);
         return $this->hasMany(\common\models\Photo::className(), ['article_id' => 'id'])->asArray();
+
+    }
+
+    public function beforeSave($insert)
+    {
 
     }
 }

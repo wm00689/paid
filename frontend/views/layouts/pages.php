@@ -38,15 +38,14 @@ foreach($cache['menu_19_photos'] as $photo)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-    <meta name="description" content="<?= $this->params['description']?>"  />
-    <meta name="keywords" content="<?= $this->params['keywords']?>"  />
-    <title><?= $this->title ?></title>
 
+    <title><?= $this->title ?></title>
+    <?= $this->head()?>
     <link type="text/css" rel="stylesheet" href="/css/index.css" />
     <link type="text/css" rel="stylesheet" href="/css/pages.css" />
     <link rel="stylesheet" type="text/css" href="/css/main_qq.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
-    <?= $this->head()?>
+
 </head>
 
 <body>

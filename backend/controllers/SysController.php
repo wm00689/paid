@@ -65,6 +65,9 @@ class SysController extends BaseController
         {
             $model->save();
         }
+
+        $cache = Yii::$app->cache;
+        $cache['set'] = \backend\models\site::findOne(['id'=>1])->toArray();
         return $this->render('set',['model'=>$model]);
     }
 

@@ -19,7 +19,7 @@ use common\widgets\Ueditor;
         <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab_1" data-toggle="tab">基本信息</a></li>
-                <li><a href="#tab_2" data-toggle="tab">seo</a></li>
+
                 <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
             </ul>
             <div class="tab-content">
@@ -34,15 +34,7 @@ use common\widgets\Ueditor;
 
 
                 </div><!-- /.tab-pane -->
-                <div class="tab-pane" id="tab_2">
 
-                    <?= $form->field($model, 'meta_title')->textInput(['maxlength' => 255]) ?>
-
-                    <?= $form->field($model, 'description')->textInput(['maxlength' => 255]) ?>
-
-                    <?= $form->field($model, 'keywords')->textInput(['maxlength' => 255]) ?>
-
-                </div><!-- /.tab-pane -->
             </div><!-- /.tab-content -->
         </div><!-- nav-tabs-custom -->
         <div class="form-group">

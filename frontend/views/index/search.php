@@ -2,8 +2,7 @@
 use yii\widgets\LinkPager;
 $this->params['g'] = $g;
 $this->title='搜索结果';
-$this->params['keywords'] = '';
-$this->params['description'] = '';
+
 ?>
 <!--产品展示-->
 <div id="product">
