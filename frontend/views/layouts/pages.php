@@ -33,7 +33,7 @@ foreach($cache['menu_19_photos'] as $photo)
 
 
 ?>
-
+<?php $this->beginPage() ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -49,6 +49,7 @@ foreach($cache['menu_19_photos'] as $photo)
 </head>
 
 <body>
+<?php $this->beginBody() ?>
 <!--logo顶部-->
 <div id="fentop">
     <div id="top">
@@ -131,5 +132,7 @@ foreach($cache['menu_19_photos'] as $photo)
 </DIV>
 
 <SCRIPT type=text/javascript src="/js/flqq.js"></SCRIPT>
+<?php $this->endBody() ?>
 </body>
 </html>
+<?php $this->endPage() ?>

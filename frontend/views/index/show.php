@@ -1,5 +1,7 @@
 <?php
 $this->title = $cache['article_'.$id]['title'].'_'.$cache['menu_'.$cache['article_'.$id]['menu_id']]['cname'].'_'.$cache['set']['title'];
+$this->registerMetaTag(['name' => 'keywords', 'content' => $cache['set']['keywords']]);
+$this->registerMetaTag(['name' => 'description', 'content' => $cache['set']['description']]);
 ?>
 <!--产品展示-->
 <div id="product">

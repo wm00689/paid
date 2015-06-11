@@ -1,5 +1,7 @@
 <?php
 $this->title = $cache['menu_'.$id]['cname'].'_'.$cache['set']['title'];
+$this->registerMetaTag(['name' => 'keywords', 'content' => $cache['set']['keywords']]);
+$this->registerMetaTag(['name' => 'description', 'content' => $cache['set']['description']]);
 ?>
 <?php
 use yii\widgets\LinkPager;
