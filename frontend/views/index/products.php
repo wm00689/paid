@@ -49,7 +49,8 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
                 <?= LinkPager::widget([
                     'pagination' => new yii\data\Pagination([
                         'totalCount'=>count($arr),
-                        'pageSize'=>$page_size
+                        'pageSize'=>$page_size,
+                        'maxButtonCount'=>4
                     ]),
                     'activePageCssClass'=>'hover'
 
