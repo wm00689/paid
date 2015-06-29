@@ -50,9 +50,9 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
                     'pagination' => new yii\data\Pagination([
                         'totalCount'=>count($arr),
                         'pageSize'=>$page_size,
-                        'maxButtonCount'=>4
                     ]),
-                    'activePageCssClass'=>'hover'
+                    'activePageCssClass'=>'hover',
+                    'maxButtonCount'=>4
 
                 ])?>
             </div>
