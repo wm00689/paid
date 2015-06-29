@@ -116,8 +116,5 @@ class Article extends \yii\db\ActiveRecord
 
     }
 
-    public function beforeSave($insert)
-    {
 
-    }
 }
