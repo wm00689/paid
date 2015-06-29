@@ -69,6 +69,8 @@ class Article extends \yii\db\ActiveRecord
             'meta_title',
             'keywords',
             'menu_id',
+            'file',
+            'content',
             'description',
             'created_at'=>function($this)
             {

@@ -24,8 +24,9 @@ $this->registerMetaTag(['name' => 'description', 'content' => $cache['article_'.
                     <div class="bd_chgBox">
                         <div class="bd_long">
                             <ul>
+                                <li><img src="http://yiipic.xiuyun99.com/<?= basename($cache['menu_'.$menu_id.'_article_'.$id]['file'])?>" /></li>
                                 <?php foreach($cache['article_'.$id.'_photos'] as $photo):?>
-                                <li><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" />				  </li>
+                                <li><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" /></li>
                                 <?php endforeach?>
 
                             </ul>
