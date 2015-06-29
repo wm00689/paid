@@ -31,7 +31,7 @@ $array = Yii::$app->request->get('page')?array_slice($arr,$page_size*(Yii::$app-
             </ul>
         </div>
         <div class="pro_right">
-            <div class="pro_right_weizhi">当前位置：首页<span>&gt;</span>产品展示<span></div>
+            <div class="pro_right_weizhi">当前位置：<a href="/">首页</a><span>&gt;</span><a href="/menu/<?= $id?>">产品展示<span></div>
             <div class="pro_right_list">
                 <ul>
                     <?php foreach($array as $article):?>

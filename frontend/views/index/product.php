@@ -26,7 +26,7 @@ $array = Yii::$app->request->get('page')?array_slice($cache['menu_'.$id.'_articl
             </ul>
         </div>
         <div class="pro_right">
-            <div class="pro_right_weizhi">当前位置：首页<span>&gt;</span><?= $cache['menu_'.$id.'_parent']['cname']?><span>&gt;</span><?= $cache['menu_'.$id]['cname']?></div>
+            <div class="pro_right_weizhi">当前位置：<a href="/">首页</a><span>&gt;</span><a href="/menu/1"><?= $cache['menu_'.$id.'_parent']['cname']?></a><span>&gt;</span><a href="/menu/<?= $id?>"><?= $cache['menu_'.$id]['cname']?></a></div>
             <div class="pro_right_list">
                 <ul>
                     <?php foreach($array as $article):?>

@@ -10,7 +10,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => $cache['article_'.
             <div class="pro_left_bt">产品展示<span>SHOW</span></div>
         </div>
         <div class="pro_right" style="height:57px">
-            <div class="pro_right_weizhi">当前位置：首页<span>&gt;</span>产品展示<span>&gt;</span>展览展示</div>
+            <div class="pro_right_weizhi">当前位置：<a href="/">首页</a><span>&gt;</span><a href="/menu/1">产品展示</a><span>&gt;</span><a href="/menu/<?= $menu_id?>"><?= $cache['menu_'.$menu_id]['cname']?></a></div>
         </div>
         <div class="clear"></div>
 
