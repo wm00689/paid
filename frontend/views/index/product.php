@@ -44,7 +44,7 @@ $array = Yii::$app->request->get('page')?array_slice($cache['menu_'.$id.'_articl
             <div class="pro_right_fenye">
                     <?= LinkPager::widget([
                         'pagination' => new yii\data\Pagination([
-                            'totalCount'=>count($cache['menu_'.$id.'_photos']),
+                            'totalCount'=>count($cache['menu_'.$id.'_articles']),
                             'pageSize'=>$page_size
                         ]),
                         'activePageCssClass'=>'hover'
