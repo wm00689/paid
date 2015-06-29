@@ -36,7 +36,7 @@ $this->registerMetaTag(['name' => 'description', 'content' => $cache['article_'.
         </div>
         <!--End-->
 
-        <div class="pro_name"><?= $cache['menu_'.$menu_id.'_article_'.$id]['title'] ?></div>
+        <div class="pro_name"><?= $cache['menu_'.$menu_id.'_article_'.$id]['content'] ?></div>
 
     </div>
 </div>
