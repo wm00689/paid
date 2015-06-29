@@ -47,7 +47,8 @@ $array = Yii::$app->request->get('page')?array_slice($cache['menu_'.$id.'_articl
                             'totalCount'=>count($cache['menu_'.$id.'_articles']),
                             'pageSize'=>$page_size
                         ]),
-                        'activePageCssClass'=>'hover'
+                        'activePageCssClass'=>'hover',
+                        'maxButtonCount'=>4
 
                     ])?>
             </div>

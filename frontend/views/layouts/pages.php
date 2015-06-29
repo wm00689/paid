@@ -102,7 +102,7 @@ foreach($cache['menu_19_photos'] as $photo)
         <div class="foot_xiangxi"><span class="xiangxistyle1">021-62790806</span><span class="xiangxistyle2">979821262@qq.com</span>版权所有@上海派登图文制作有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：上海静安区江宁路631号2楼整层&nbsp;&nbsp;<span class="fontmin">(灿知科技提供技术支持）</span></div>
     </div>
 </div>
-<script type="text/javascript" src="/js/jquery.js"></script>
+
 <SCRIPT type=text/javascript src="/js/jquery.cookies.2.2.0.min.js"></SCRIPT>
 <SCRIPT type="text/javascript" src="/js/jquery.scrollfollow.js"></SCRIPT>
 <script type="text/javascript" src="/js/index.js"></script>
