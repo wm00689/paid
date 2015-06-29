@@ -118,7 +118,7 @@
 .bd_rbtn:hover { background: url(../images/hbd_rbtn.png) no-repeat;  cursor:pointer }
 .bd_chgBox { float: left; height: 531px; width: 709px; overflow:hidden; position:relative;margin-left: 40px;}
 .bd_long { width:2000%; position: absolute; left: 0px; top: 0px; height:531px; }
-.bd_long ul li { height: 531px; width:709px; float: left; font-family: "΢���ź�"; }
+.bd_long ul li { height: 531px; width:709px; float: left; font-family: "΢���ź�";text-align: center }
 .bc_chgTitle { height: 54px; text-align: center; width: 268px; padding-top: 9px; font: bold 16px/54px "΢���ź�"; }
 .bd_lbtn img,.bd_rbtn img{cursor:pointer}
 .bd_long ul li p { font-size: 14px; line-height: 22px; padding-top: 12px; }
