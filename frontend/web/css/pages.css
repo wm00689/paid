@@ -26,7 +26,7 @@
 #pro .pro_right .pro_right_list ul li p a:hover{ color:#ff6600;}
 
 /*��ҳЧ��*/
-.pro_right_fenye{ width:265px; margin:0px auto;}
+.pro_right_fenye{ width:285px; margin:0px auto;}
 .pro_right_fenye ul li a{ width:34px; height:34px; background:#e0e0e0; display:block; float:left;text-align:center; font-size:14px; color:#585858; line-height:34px;  margin:0px 5px; margin-top:30px;}
 .pro_right_fenye ul li a:hover{ background:#fb5750; color:#FFFFFF;}
 .pro_right_fenye ul li.hover a{ background:#fb5750; color:#FFFFFF;}  
