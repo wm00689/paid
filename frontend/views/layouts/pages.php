@@ -126,8 +126,8 @@ foreach($cache['menu_19_photos'] as $photo)
         <DIV class=midtop><IMG src="/images/qq/kefu-midtop.png" width=140 height=24></DIV>
         <DIV class=shouhou_mid>
             <DIV class=line><SPAN>24小时客服热线：<BR>
-          <STRONG>4006-000-000</STRONG></SPAN> <SPAN>企业QQ：<BR>
-          <STRONG>4008828611</STRONG></SPAN> </DIV>
+          <STRONG>400-882-8611</STRONG></SPAN> <SPAN>企业QQ：<BR>
+          <STRONG>2853781669</STRONG></SPAN> </DIV>
         </DIV>
         <DIV class=bottom><IMG src="/images/qq/kefu-bottom.png" width=140 height=7></DIV>
     </DIV>
