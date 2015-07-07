@@ -124,7 +124,7 @@ foreach($cache['menu_19_photos'] as $photo)
         <div class="shouqian_mid">
             <ul>
                 <li>
-                    <script src="http://static.b.qq.com/account/bizqq/js/wpa.js?type=1&kfuin=4008828611&ws=www.lanrenzhijia.com.com&btn1=企业QQ=2&a=8" type="text/javascript"></script>
+                    <script src="http://static.b.qq.com/account/bizqq/js/wpa.js?type=1&kfuin=2853781669&ws=www.lanrenzhijia.com.com&btn1=企业QQ=2&a=8" type="text/javascript"></script>
                 </li>
 
 
