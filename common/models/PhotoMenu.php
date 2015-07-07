@@ -44,11 +44,9 @@ class PhotoMenu extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'url', 'description'], 'required'],
+            [['title', 'url'], 'required'],
             [['menu_id', 'status'], 'integer'],
-            [['sort','menu_id','place'],'safe'],
-            [['title', 'description'], 'string', 'max' => 255],
-            [['url'], 'string', 'max' => 200]
+            [['sort','menu_id','place','description','link'],'safe']
         ];
     }
 

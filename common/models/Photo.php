@@ -43,10 +43,8 @@ class Photo extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'url'], 'required'],
-            [['menu_id','article_id', 'status'], 'integer'],
-            [['sort','menu_id','link','description'],'safe'],
-            [['title', 'description'], 'string', 'max' => 255],
-            [['url'], 'string', 'max' => 200]
+            [['menu_id','article_id', 'status', 'description'], 'integer'],
+            [['sort','menu_id'],'safe']
         ];
     }
 
