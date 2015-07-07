@@ -17,6 +17,7 @@ use common\widgets\ImageUpload;
 <?= $form->field($model, 'sort')->textInput() ?>
 
 <?= $form->field($model, 'place')->textInput() ?>
+<?= $form->field($model, 'link')->textInput() ?>
 
 <?= ImageUpload::widget(['model'=>$model,'attribute'=>'url'])?>
 

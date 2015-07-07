@@ -86,7 +86,7 @@ foreach($cache['menu_19_photos'] as $photo)
             <?php if($goumai):?>
                 <?php foreach($goumai as $photo):?>
 
-                        <li><a href="#"><img src="<?= Yii::$app->params['adminUrl'].$photo['url']?>" /><p>购买方式一</p></a></li>
+                        <li><a href="<?= $photo['link']?>"><img src="<?= Yii::$app->params['adminUrl'].$photo['url']?>" /></a></li>
 
                 <?php endforeach;?>
             <?php endif;?>

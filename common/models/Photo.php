@@ -42,9 +42,9 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'url', 'description'], 'required'],
+            [['title', 'url'], 'required'],
             [['menu_id','article_id', 'status'], 'integer'],
-            [['sort','menu_id'],'safe'],
+            [['sort','menu_id','link','description'],'safe'],
             [['title', 'description'], 'string', 'max' => 255],
             [['url'], 'string', 'max' => 200]
         ];
