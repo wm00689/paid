@@ -16,7 +16,7 @@ $array = Yii::$app->request->get('page')?array_slice($cache['menu_'.$id.'_photos
             <ul class="hz_list">
 
                 <?php foreach($array as $photo):?>
-                    <li><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" style="max-width: 162;max-height: 92" /></li>
+                    <li><img src="http://yiipic.xiuyun99.com/<?= basename($photo['url'])?>" style="max-width: 162px;max-height: 92px" /></li>
                 <?php endforeach?>
 
             </ul>
