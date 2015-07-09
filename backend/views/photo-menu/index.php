@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <p>
-    <?= Html::a('添加栏目图片', ['create?column_id='.Yii::$app->request->get('column_id')], ['class' => 'btn btn-success']) ?>
+    <?= Html::a('添加栏目图片', ['create?menu_id='.Yii::$app->request->get('menu_id')], ['class' => 'btn btn-success']) ?>
 </p>
 
 

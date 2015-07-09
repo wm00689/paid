@@ -6,6 +6,7 @@ use backend\models\Menu;
 use Yii;
 use common\models\PhotoMenu;
 use backend\models\photoMenuSearch;
+use yii\helpers\Url;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -32,6 +33,7 @@ class PhotoMenuController extends BaseController
      */
     public function actionIndex()
     {
+        Url::remember();
         $articleObject = Menu::findOne(Yii::$app->request->get('menu_id'));
 
         $searchModel = new photoMenuSearch();
@@ -66,7 +68,7 @@ class PhotoMenuController extends BaseController
         $model = new PhotoMenu();
         $model->menu_id = Yii::$app->request->get('menu_id');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['index', 'menu_id' => $model->menu_id]);
+            return $this->redirect(Url::previous());
         } else {
             return $this->render('create', [
                 'model' => $model,
