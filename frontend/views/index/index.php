@@ -42,6 +42,15 @@ foreach($cache['menu_19_photos'] as $photo)
     <title><?= $cache['set']['title']?></title>
     <link type="text/css" rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="/css/main_qq.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?935660f328a716eb73bd6e8b4215bbda";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 
 <body>
