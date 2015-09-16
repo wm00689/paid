@@ -101,7 +101,7 @@ class menu extends \yii\db\ActiveRecord
 
     public function getBrother($id)
     {
-        return $this->find()->where("parentid=".$id)->asArray()->all();
+        return $this->find()->orderBy('sort')->where("parentid=".$id)->asArray()->all();
     }
 
     public function getParent($pid)
@@ -133,25 +133,5 @@ class menu extends \yii\db\ActiveRecord
         return $this->hasOne(Article::className(), ['menu_id' => 'id']);
     }
 
-    public function beforeSave2($insert)
-    {
-        parent::beforeSave($insert);
-        if($this->keywords=='')
-        {
 
-            $this->keywords = Article::siteSeo('keywords');
-        }
-
-        if($this->title=='')
-        {
-            $this->title = Article::siteSeo('title');
-        }
-
-        if($this->description=='')
-        {
-            $this->description=Article::siteSeo('description');
-        }
-
-        return true;
-    }
 }
